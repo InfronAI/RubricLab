@@ -1,0 +1,40 @@
+{
+  "openrubric_v2_rubric": {
+    "file_name": "openrubric_v2/rubric.json",
+    "formatting": "sharegpt"
+  },
+  "openrubric_v2_judge": {
+    "file_name": "openrubric_v2/judge.json",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
+  "alpaca_en_demo": {
+    "file_name": "alpaca_en_demo.json"
+  },
+  "alpaca_zh_demo": {
+    "file_name": "alpaca_zh_demo.json"
+  },
+  "identity": {
+    "file_name": "identity.json"
+  },
+  "glaive_toolcall_en_demo": {
+    "file_name": "glaive_toolcall_en_demo.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "tools": "tools"
+    }
+  },
+  "dpo_en_demo": {
+    "file_name": "dpo_en_demo.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  }
+}

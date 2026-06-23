@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# OpenRubrics: generated SFT data (rebuild with rubric-rm/scripts/prepare_data.py)
+rubric-rm/LLaMA-Factory/data/openrubric_v2/
