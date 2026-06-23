@@ -1,16 +1,12 @@
-# RubricARM GRPO release template
+# RubricARM GRPO 
 
-This folder contains release-clean scripts for alternating reinforcement
+This folder contains scripts for alternating reinforcement
 learning of rubric-based reward models with ms-swift GRPO. Local paths,
 checkpoint names, dataset names, and experiment identifiers have been replaced
 with placeholders or environment variables.
 
 See `ENVIRONMENT.md` for ms-swift environment installation instructions.
 
-The training semantics are intentionally unchanged from the original research
-scripts: prompts, output-format contracts, winner parsing, reward computation,
-and GRPO hyperparameter defaults are preserved. Only paths, model names,
-datasets, ports, and GPU placement should need editing.
 
 ## Files
 
