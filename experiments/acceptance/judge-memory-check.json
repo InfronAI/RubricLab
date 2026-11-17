@@ -1,0 +1,11 @@
+{
+  "role": "judge",
+  "steps": 1,
+  "examples": 1,
+  "first_loss": 1.2800763845443726,
+  "last_loss": 1.2800763845443726,
+  "adapter_sha256": "82bd1aaf12c42ef5a066a2337aa512b4d2f844d29290e087644938a1e95a2c13",
+  "seconds": 15.36332106590271,
+  "sequence_tokens_from_selection": 1996,
+  "mps_driver_gb_after": 2.377655029296875
+}

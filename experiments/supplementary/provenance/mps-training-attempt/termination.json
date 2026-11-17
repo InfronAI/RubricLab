@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-16T05:53:59.747916+00:00",
+  "reason": "Retire MPS-trained checkpoint diagnostics and restart after CPU-autograd correction.",
+  "first_model_job_outputs_complete": true,
+  "first_model_job_returncode_not_collected_by_paused_parent": true,
+  "old_execution_sha256": "4fb3c6cdcec7ac066f3dd84b8040197465e27236e256047e3c978e77b7e4a4bb"
+}

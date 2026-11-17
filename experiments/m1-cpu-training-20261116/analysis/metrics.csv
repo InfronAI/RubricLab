@@ -1,0 +1,11 @@
+experiment,n,accuracy,majority_accuracy,invalid_rate,abstention_rate,choose_a_rate_valid,group_all_correct
+04-base-direct,2,0.0,0.0,0.09999999999999998,0.0,0.7777777777777778,
+05-base-rubric,2,0.0,0.0,0.6,1.0,0.75,
+06-sft-evaluation,2,0.0,0.0,1.0,1.0,,
+08-arm-evaluation,2,0.0,0.0,1.0,1.0,,
+10-eval-no_format,2,0.0,0.0,1.0,1.0,,
+10-eval-reverse,2,0.0,0.0,1.0,1.0,,
+11-public-benchmarks/rewardbench,4,0.0,0.0,0.95,1.0,1.0,0.0
+11-public-benchmarks/rewardbench2,6,0.16666666666666666,0.0,0.8333333333333334,1.0,1.0,0.0
+11-public-benchmarks/rmbench,9,0.0,0.0,0.9555555555555556,1.0,1.0,0.0
+11-public-benchmarks/writing,4,0.0,0.0,0.85,1.0,1.0,0.0

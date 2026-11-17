@@ -1,0 +1,1 @@
+{"step": 1, "loss": 1.4168802499771118, "grad_norm": 1.0354949235916138, "sample_ids": ["f6987d33ec466a01"], "seconds": 2.6797760408371687, "mps_driver_allocated_gb": 2.7292327880859375, "mps_tensor_allocated_gb": 1.870985507965088}

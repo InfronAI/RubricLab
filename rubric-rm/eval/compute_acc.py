@@ -5,6 +5,7 @@ import argparse
 import numpy as np
 from typing import Optional, List
 import unicodedata
+from collections import Counter
 
 
 LABEL = {
@@ -17,21 +18,17 @@ LABEL = {
 
 def parse_winner_from_response(judge_response: str) -> str:
     """Parse the winner from the judge response string."""
-    lines = judge_response.split('\n')
-    for line in lines:
-        if line.strip().startswith('Winner:'):
-            winner = line.split('Winner:')[1].strip()
-            return winner
-    return 'Unknown'
+    text = normalize_text(judge_response)
+    matches = re.findall(r'^\s*Winner:\s*(?:Response\s+)?([AB])\s*[.!]?\s*$', text, re.M | re.I)
+    return f"Response {matches[0].upper()}" if len(matches) == 1 else "Unknown"
 
 
 def voting(winners: List[str]) -> str:
-    vote_count = {}
-    for pred in winners:
-        pred = pred.strip().lower()
-        vote_count[pred] = vote_count.get(pred, 0) + 1
-    sorted_votes = sorted(vote_count.items(), key=lambda x: x[1], reverse=True)
-    return sorted_votes[0][0]
+    vote_count = Counter(pred.strip().lower() for pred in winners)
+    for label in ("response a", "response b"):
+        if vote_count[label] > len(winners) / 2:
+            return label
+    return "unknown"
 
 
 def normalize_text(s: str) -> str:

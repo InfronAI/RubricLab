@@ -1,0 +1,15 @@
+{
+  "rounds": [
+    {
+      "status": "skipped_no_consistent_pairs",
+      "steps": 0,
+      "reason": "The judge produced no valid preferences consistent under both orders."
+    },
+    {
+      "status": "skipped_no_consistent_pairs",
+      "steps": 0,
+      "reason": "The judge produced no valid preferences consistent under both orders."
+    }
+  ],
+  "final_adapter": null
+}

@@ -1,0 +1,85 @@
+{
+  "sources": {
+    "helpsteer3": {
+      "repository": "nvidia/HelpSteer3",
+      "revision": "f6d145777bcbde96137596340fab89793acd1031",
+      "file": "preference/validation.jsonl.gz",
+      "source_sha256": "cd0d8b6efd7869a44c1b5ff91701232062555829b3c838abfd770d7dab6c7861",
+      "download_bytes": 5487516,
+      "source_rows": 2017,
+      "pairs": 2,
+      "excluded_before_selection": {
+        "multi_turn": 5
+      },
+      "output_sha256": "5b6040f28a025edd37d1a46f235ce0118bb7eca17e685bde05715d2f561a8bd9",
+      "scope": "Bounded single-turn/context-fitting pair diagnostic; not full paper or Best-of-K scores"
+    },
+    "ppe-ifeval": {
+      "repository": "lmarena-ai/PPE-IFEval-Best-of-K",
+      "revision": "a4f7fae2443d96529dee6b65863a816a051b3a4d",
+      "file": "data/train-00000-of-00001.parquet",
+      "source_sha256": "0cb8fac1afd7170eda42e6dcebba8dc993eee28fd97c5d61b1c232df53d7cc83",
+      "download_bytes": 13997516,
+      "source_rows": 512,
+      "pairs": 2,
+      "excluded_before_selection": {
+        "context_overflow": 1
+      },
+      "output_sha256": "2cdb43cf8b99a17ca539bea1fac41f8fbe4c9e86fadef1572f54152c203f2ef0",
+      "scope": "Bounded single-turn/context-fitting pair diagnostic; not full paper or Best-of-K scores"
+    }
+  },
+  "seed": 42,
+  "samples_per_source": 2,
+  "config": {
+    "profile": "m1-small-scale",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "device": "auto",
+    "seed": 42,
+    "prompt_style": "compact",
+    "max_context": 2048,
+    "source_limit": 1024,
+    "train_samples": 24,
+    "validation_samples": 4,
+    "sft_steps": 24,
+    "sft_lr": 0.0002,
+    "gradient_accumulation": 1,
+    "lora_rank": 8,
+    "curation_samples": 3,
+    "rubric_tokens": 128,
+    "judge_tokens": 320,
+    "eval_samples": 2,
+    "votes": 5,
+    "benchmark_groups": 1,
+    "benchmarks": [
+      "rewardbench",
+      "rewardbench2",
+      "rmbench",
+      "writing"
+    ],
+    "arm_rounds": 3,
+    "arm_samples_per_round": 1,
+    "group_size": 3,
+    "grpo_updates": 2,
+    "grpo_lr": 1e-05,
+    "kl_beta": 0.001,
+    "clip_low": 0.2,
+    "clip_high": 0.28,
+    "format_weight": 1.0,
+    "ablations": [
+      "reverse",
+      "no_format"
+    ],
+    "policy_samples": 2,
+    "policy_tokens": 96,
+    "dpo_steps": 4,
+    "dpo_lr": 1e-05,
+    "dpo_beta": 0.1,
+    "sft_weight": 0.2,
+    "iter_dpo_rounds": 2
+  },
+  "exporter_sha256": "b957891906a2c1145bd207dcc4d41c263750a4f787c312bab0c6e08165ebdff8",
+  "selection": "Seeded source-row shuffle; no training/validation overlap; no response truncation",
+  "exporter_snapshot": "exporter.py"
+}

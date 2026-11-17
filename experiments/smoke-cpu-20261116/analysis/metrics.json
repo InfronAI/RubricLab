@@ -1,0 +1,66 @@
+[
+  {
+    "experiment": "04-base-direct",
+    "n": 2,
+    "generations": 10,
+    "accuracy": 0.0,
+    "majority_accuracy": 0.0,
+    "majority_wilson95": [
+      0.0,
+      0.6576197724933469
+    ],
+    "invalid_rate": 1.0,
+    "abstention_rate": 1.0,
+    "choose_a_rate_valid": null,
+    "group_all_correct": null,
+    "groups": 0
+  },
+  {
+    "experiment": "05-base-rubric",
+    "n": 2,
+    "generations": 10,
+    "accuracy": 0.0,
+    "majority_accuracy": 0.0,
+    "majority_wilson95": [
+      0.0,
+      0.6576197724933469
+    ],
+    "invalid_rate": 1.0,
+    "abstention_rate": 1.0,
+    "choose_a_rate_valid": null,
+    "group_all_correct": null,
+    "groups": 0
+  },
+  {
+    "experiment": "06-sft-evaluation",
+    "n": 2,
+    "generations": 10,
+    "accuracy": 0.0,
+    "majority_accuracy": 0.0,
+    "majority_wilson95": [
+      0.0,
+      0.6576197724933469
+    ],
+    "invalid_rate": 1.0,
+    "abstention_rate": 1.0,
+    "choose_a_rate_valid": null,
+    "group_all_correct": null,
+    "groups": 0
+  },
+  {
+    "experiment": "08-arm-evaluation",
+    "n": 2,
+    "generations": 10,
+    "accuracy": 0.0,
+    "majority_accuracy": 0.0,
+    "majority_wilson95": [
+      0.0,
+      0.6576197724933469
+    ],
+    "invalid_rate": 1.0,
+    "abstention_rate": 1.0,
+    "choose_a_rate_valid": null,
+    "group_all_correct": null,
+    "groups": 0
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "compared_at": "2026-11-16T05:42:29.178559+00:00",
+  "same_adapter": true,
+  "parameters": 96,
+  "gradient_elements": 540672,
+  "cpu_norm": 0.9504836356531837,
+  "mps_norm": 2.4127362239021806,
+  "relative_l2_difference": 2.425005433118172,
+  "cosine_similarity": 0.30786268335016387,
+  "max_logp_absolute_difference": 0.0002205371856689453,
+  "diagnostic_tolerance": {
+    "relative_l2_at_most": 0.02,
+    "cosine_at_least": 0.999,
+    "max_logp_delta_at_most": 0.01
+  },
+  "within_diagnostic_tolerance": false,
+  "post_clip_norms": {
+    "cpu": 0.9504836356531774,
+    "mps": 0.9999996325424121
+  },
+  "optimizer_updates": 0,
+  "inputs": {
+    "/Users/apple/Projects/OpenRubrics/experiments/acceptance/online-gradient-check/cpu/summary.json": "2d087c5775c6a789990a0b59ba59d7e8b94ef6756fe0c6c79fd47e864bf32a98",
+    "/Users/apple/Projects/OpenRubrics/experiments/acceptance/online-gradient-check/mps/summary.json": "96a7c37cc0f2c2130790702cc585373a4470bfa0ba0a8d125ba902437cd5c699"
+  },
+  "script_sha256": "c02929b8a2bc11d7a5cf232aceb6be822fd7c73986231518a2b4151a26ca4f21",
+  "scope": "Numerical replay at the final saved online-policy weights, not validation of preference quality or every MPS kernel."
+}

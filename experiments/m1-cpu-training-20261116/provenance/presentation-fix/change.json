@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-16T10:18:31.972093+00:00",
+  "kind": "presentation_only",
+  "reason": "Fix mobile judgment-page intrinsic-width overflow and make recorder loopback readiness bypass environment HTTP proxies. Model/data/training/evaluation code and all completed stage artifacts are unchanged; no model stages need rerunning. Prior manifest, sources and media are archived.",
+  "signature": "7dfc416a13f756bf411f5743c35a776a25408eaef41507e1a3c8c8a1f313cd51",
+  "source_files": {
+    "configs/m1.json": "7bd44ccfad1f5d8ce3493dfe04f55592653c9b7e6c8a499b24bbaaad0ce13595",
+    "configs/smoke.json": "6e63d6c9678743a61ff10ed1764d41e1695397c2fea9230bf6a361bf62e3daad",
+    "scripts/evaluate_ifeval.py": "8041e9ebcc8e2f06113aac44c0154fd0a4a4c74c1d32e17ea0588755ee1d6cac",
+    "scripts/record_demo.py": "097c0d14d716927b07da5ebe0f8fd516e2ffa0f5a9f86d12a6dd6d8e067dcd91",
+    "src/openrubrics_lab/__init__.py": "71fd1f6a3abb4a8e6347817f15a83c57d7a612771d2192c94c19d0b6b49bcdae",
+    "src/openrubrics_lab/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "src/openrubrics_lab/backend.py": "43436bef9c325c22e72ad22bfb871ff231f091cf23b7eb8b13b3913693d4b78a",
+    "src/openrubrics_lab/cli.py": "8cfc34b917c0826175d3a3bf018d8f42b99a59e5cff3d1ff178fcb9323fc6e44",
+    "src/openrubrics_lab/config.py": "84a4e68219950464b319cd75feae4bfa9a98f99388f3159771f5f37f333c3ade",
+    "src/openrubrics_lab/data.py": "a3e3e9aeda827d8ad009ea22e2ef6cdc57207fdb44e9608e9026cb07884f830b",
+    "src/openrubrics_lab/demo.py": "dca18ddc93bf859750f740c6d468dabd43b2f5fccf104a995535724bd30db3e4",
+    "src/openrubrics_lab/experiments.py": "3d50d00d449ab7e198242b87296daa4f32088cb957cdaf2bb4f638576e33893c",
+    "src/openrubrics_lab/inference_worker.py": "a237001173520dd1ed55bbb05cf1a8d4575f42440718378c1e2c3a65c7ce1d56",
+    "src/openrubrics_lab/io.py": "adcc2294e3109a69e8b2a8e619adfe43d442d9eb5f2376b794a03bf804fcbe2c",
+    "src/openrubrics_lab/metrics.py": "39ce19fe1548880e884b6d4db9856b0d88c33d4d44809f340e39038d0e08f1f8",
+    "src/openrubrics_lab/original_prompts.py": "0f3c25eafbec7b6783757629cbd1a6aa66f347cf003a1aeb17e2a68863fb6abe",
+    "src/openrubrics_lab/prompts.py": "1b4a6849bb449fd417a8b853e4b4f4e7e5344d7467f9a97c6717abe3fd271167",
+    "src/openrubrics_lab/report.py": "0ed64283378ac58943ed2170d2789c13f008b7c122084a1e5254c60d97b616f2",
+    "src/openrubrics_lab/runner.py": "0d78003bb6c57d00f7b5896a92c6b65425bb4aa92c66e7b73d911ecdc3d76b4c",
+    "src/openrubrics_lab/training.py": "809f7cacb02be463d9ea48064126a2d732a9f70e8ad1f38146a055947d0e4459",
+    "src/openrubrics_lab/web/index.html": "040e3fc1d38b96623ced6c6a2c38ca0eb6f829c7341915dbcc84c6fed8f9bc9c",
+    "src/openrubrics_lab/worker.py": "cc15438c6179efe8ba6bc0766555a3fb48be368bb71a9e8758056b70b80e7e78",
+    "tests/test_model_contract.py": "abeee90fd0f11bb9b69fb44b5446325168b1f16cab2575a36f19c5aa040881c5",
+    "tests/test_scientific_invariants.py": "57dcb80e6f0b39d0b34eb9a29614ce02042d9fe892a7abe07af6ecf2e4fa086f"
+  },
+  "changed_files": {
+    "src/openrubrics_lab/web/index.html": {
+      "before": "040e3fc1d38b96623ced6c6a2c38ca0eb6f829c7341915dbcc84c6fed8f9bc9c",
+      "after": "03ad56528a4339113ef0f4a13a455578cb1db28241604c9e9d858179f09a5c8a"
+    },
+    "scripts/record_demo.py": {
+      "before": "097c0d14d716927b07da5ebe0f8fd516e2ffa0f5a9f86d12a6dd6d8e067dcd91",
+      "after": "adfe2ba80c0b1fe061f82c58f4382ddfbd1ef39637ead7043e42a662f5a7f0a6"
+    }
+  },
+  "superseded_stages": {},
+  "scientific_files_unchanged": true,
+  "model_stages_rerun": [],
+  "new_signature": "5bdfdda31d0f8d11796448011e5a4fe98b35e44a9e93ff06179cf367ca8f7769",
+  "prior_manifest_sha256": "2b0580da2a4191dc6d705ebf00ddad16a349034cdda37ec4cfa0918ad66a63be",
+  "current_manifest_sha256": "77e710d870452687e547ffdd51805f144b247952737209b488a8c98a15750e97"
+}

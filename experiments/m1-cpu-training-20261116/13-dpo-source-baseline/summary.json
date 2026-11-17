@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "pairs": 2,
+  "steps": 4,
+  "training_device": "cpu",
+  "adapter_sha256": "8fdf1ae4951415d3f98d18c1654939155e4d25dcbb3ddd04dd62254ada05f25d"
+}

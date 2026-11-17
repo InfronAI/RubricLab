@@ -1,0 +1,9 @@
+{
+  "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "instructions.py": "60e086f5342a03ce8e18b64bbcccf86308f523c08aa826707a562150a52f3edf",
+  "evaluation_lib.py": "40582b53ea8674b22a9ccb3b2c48fad78cfb0dd9225f168665506745f14c2ae3",
+  "README.md": "dd40cc38531ad862150d437766293e2dca629bdef1428d450ccd02f437b5a196",
+  "instructions_util.py": "a73797261eee5bf447e279d82a2b700b1bdd3cb1193412dbab1270a85832bc6b",
+  "instructions_registry.py": "ec92d72c264f6d906978613085db262356174300370a3fffe6fefd5969ce9cfc",
+  "data/input_data.jsonl": "67ffeee0fcb87c317c5b08a2de85557b4a7e96ada6178aa645b4954fe4b53d49"
+}

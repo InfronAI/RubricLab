@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-16T07:47:25.003044+00:00",
+  "primary_pid": 5902,
+  "worker_pid": 18900,
+  "waiting_queue_pid": 9182,
+  "reason": "Long-input MPS worker had not returned after more than 20 minutes, with high swapping; terminate owned worker, retain failed stage, add bounded fresh-process CPU retry. Unrelated model task untouched."
+}

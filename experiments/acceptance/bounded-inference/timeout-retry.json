@@ -1,0 +1,24 @@
+{
+  "verified_utc": "2026-11-16T07:50:38.368595+00:00",
+  "script_sha256": "860d66504238fe494f11d76463f66cf5cbebe227c3f32a17dcdf31888ea572ce",
+  "model": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "device": "mps",
+    "adapter": "experiments/m1-cpu-training-20261116/07-arm/round-3-judge",
+    "max_context": 2048,
+    "offline": true
+  },
+  "decoding": {
+    "max_new_tokens": 32,
+    "temperature": 0.7,
+    "seed": 244,
+    "n": 5
+  },
+  "request_sha256": "1634ac97f02dbf6542450d6cd148388ef6a3672089c1b2fe2fd69cee75694f17",
+  "timeout_seconds": 0.05,
+  "retry_wall_seconds": 29.778390290681273,
+  "cpu_retry_exact_token_match": true,
+  "votes": 5,
+  "note": "Forced short worker deadline exercises kill/reap and fresh CPU recovery. The 32-token diagnostic does not replace the primary 320-token benchmark."
+}

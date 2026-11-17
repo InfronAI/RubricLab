@@ -1,0 +1,9 @@
+{
+  "groups": 1,
+  "rollouts": 3,
+  "zero_variance_groups": 1,
+  "reward_mean": 0.0,
+  "reference_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+  "actor_adapter": "experiments/m1-complete-20261116/09-ablation-reverse/round-1-rubric",
+  "adapter_sha256": "3630c74592d430d9bce53f27c4e1e6b61d7bb08f4eefd42fa916d2efcc57fd7a"
+}

@@ -1,5 +1,7 @@
 # RubricRM
 
+> **Apple Silicon / CPU:** use the [portable workflow](../README.md) from the repository root. The instructions below describe the preserved original API/GPU environment.
+
 Training and evaluation code for **RubricRM**, the rubric-based reward model from
 OpenRubrics. RubricRM is made of two independently trained models:
 

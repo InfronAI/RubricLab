@@ -1,0 +1,35 @@
+{
+  "nvidia/HelpSteer3": {
+    "revision": "f6d145777bcbde96137596340fab89793acd1031",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "edit/train.jsonl.gz",
+      "edit/validation.jsonl.gz",
+      "edit_quality/train.jsonl.gz",
+      "edit_quality/validation.jsonl.gz",
+      "feedback/train.jsonl.gz",
+      "feedback/validation.jsonl.gz",
+      "preference/train.jsonl.gz",
+      "preference/validation.jsonl.gz",
+      "principle/train.jsonl.gz",
+      "principle/validation.jsonl.gz"
+    ]
+  },
+  "lmarena-ai/PPE-IFEval-Best-of-K": {
+    "revision": "a4f7fae2443d96529dee6b65863a816a051b3a4d",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "data/train-00000-of-00001.parquet"
+    ]
+  },
+  "THU-KEG/IFBench": {
+    "revision": "6fa6f03960d0e5eab9e5c8549a355a1ade70291e",
+    "files": [
+      ".gitattributes",
+      "IFBench.json",
+      "README.md"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "round": 1,
+    "phase": "judge",
+    "sample_ids": [
+      "0140971b9eb8e236"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+    "actor_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+    "adapter_sha256": "2576c515eed4691127c9a1a5412df939d303c520b4b03e0d4af81a2593545a67"
+  },
+  {
+    "round": 1,
+    "phase": "rubric",
+    "sample_ids": [
+      "0140971b9eb8e236"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+    "adapter_sha256": "259dccd4d5b8ae785f5c9a5aad6575e311408b1083790284d22d02c65e39cd35"
+  },
+  {
+    "round": 2,
+    "phase": "judge",
+    "sample_ids": [
+      "4f2f019b4af24b71"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+    "actor_adapter": "experiments/m1-complete-20261116/09-ablation-no_format/round-1-judge",
+    "adapter_sha256": "7fbf90d4078a5616953d78b641e9f9e1f8a5e676273e6e579dfbcc66cf0c150e"
+  },
+  {
+    "round": 2,
+    "phase": "rubric",
+    "sample_ids": [
+      "4f2f019b4af24b71"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/m1-complete-20261116/09-ablation-no_format/round-1-rubric",
+    "adapter_sha256": "3630c74592d430d9bce53f27c4e1e6b61d7bb08f4eefd42fa916d2efcc57fd7a"
+  },
+  {
+    "round": 3,
+    "phase": "judge",
+    "sample_ids": [
+      "4395e166f411ae2b"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+    "actor_adapter": "experiments/m1-complete-20261116/09-ablation-no_format/round-2-judge",
+    "adapter_sha256": "08b3a5127df0c8f567fc2779d8c931ab31e14fd4fc5d384f91e5feee7127bbd0"
+  },
+  {
+    "round": 3,
+    "phase": "rubric",
+    "sample_ids": [
+      "4395e166f411ae2b"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/m1-complete-20261116/09-ablation-no_format/round-2-rubric",
+    "adapter_sha256": "df19df5408dc450451cbf51e33138897e7ec3ce9fb4b4d8b9e749e167778ab12"
+  }
+]

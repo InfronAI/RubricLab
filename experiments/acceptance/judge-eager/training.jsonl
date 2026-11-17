@@ -1,0 +1,3 @@
+{"step": 1, "loss": 1.4168802499771118, "grad_norm": 1.0354949235916138, "sample_ids": ["f6987d33ec466a01"], "seconds": 3.087875375058502, "mps_driver_allocated_gb": 2.7136077880859375, "mps_tensor_allocated_gb": 1.8660688400268555}
+{"step": 2, "loss": 1.3398174047470093, "grad_norm": 0.9361613392829895, "sample_ids": ["ef5f44a8e692741a"], "seconds": 3.883695208001882, "mps_driver_allocated_gb": 2.6921539306640625, "mps_tensor_allocated_gb": 1.8778119087219238}
+{"step": 3, "loss": 0.9561631679534912, "grad_norm": 0.8505316376686096, "sample_ids": ["8ccd8f0c1c93d38a"], "seconds": 6.709574041888118, "mps_driver_allocated_gb": 3.6931610107421875, "mps_tensor_allocated_gb": 1.8778297901153564}

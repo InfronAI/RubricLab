@@ -1,0 +1,6 @@
+# Preserve exact artifact bytes so recorded SHA-256 hashes survive checkout.
+experiments/** -text
+
+# Raw diagnostic output preserves tool formatting; CSV writers emit CRLF.
+experiments/**/*.txt -whitespace
+experiments/**/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

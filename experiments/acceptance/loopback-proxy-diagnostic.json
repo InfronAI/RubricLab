@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-16T10:14:11.057676+00:00",
+  "proxy_kinds_present": [
+    "http",
+    "https"
+  ],
+  "default_probe": {
+    "error_class": "HTTPError",
+    "http_status": 500
+  },
+  "local_hits_after_default_probe": 0,
+  "direct_probe": {
+    "status": 200,
+    "matches_local_marker": true
+  }
+}

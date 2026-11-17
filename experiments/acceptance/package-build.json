@@ -1,0 +1,14 @@
+{
+  "verified_utc": "2026-11-16T10:22:16.655851+00:00",
+  "build_passed": true,
+  "wheel": "openrubrics_lab-0.1.0-py3-none-any.whl",
+  "sha256": "a578f656c83bc00082be9e2de6c5446c9eed5fc7e5ed609655f24359c4cfc6f7",
+  "files": 24,
+  "packaged_sources_matching_current_files": 18,
+  "source_fingerprint_digest": "3f5c33d73b46b4449b743f0cb5ca19541af417015c75be222e6ca3201392b39d",
+  "readme_sha256": "e61abdd74d35887ece824f3c6a52d39d13cb4fdd3844554c3ad1bbe91932b3a7",
+  "web_viewer_included": true,
+  "worker_included": true,
+  "entry_point": "[console_scripts]\nopenrubrics = openrubrics_lab.cli:main",
+  "note": "Final presentation fix included; built wheel checked locally, no remote publication."
+}

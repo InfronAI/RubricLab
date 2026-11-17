@@ -1,0 +1,32 @@
+{
+  "verified_utc": "2026-11-16T08:02:00.936480+00:00",
+  "before": "experiments/m1-cpu-training-20261116/11-public-benchmarks.superseded-1794815536368844000/rewardbench/predictions.jsonl",
+  "after": "experiments/m1-cpu-training-20261116/11-public-benchmarks/rewardbench/predictions.jsonl",
+  "before_sha256": "a358f5ab1db9ff8db4c96093dc2ca9c950dea01dfbddefce4bb1ccb409a181f2",
+  "after_sha256": "ac0352bcc25c6b9bd17a1bc16a44ef96d382bae109338606ac2ca048ac6777e4",
+  "pairs": 4,
+  "votes": 20,
+  "all_tokens_match": true,
+  "comparisons": [
+    {
+      "id": "rewardbench:2850:0:0",
+      "judgment_tokens_identical": true,
+      "rubric_tokens_identical": true
+    },
+    {
+      "id": "rewardbench:261:0:0",
+      "judgment_tokens_identical": true,
+      "rubric_tokens_identical": true
+    },
+    {
+      "id": "rewardbench:1066:0:0",
+      "judgment_tokens_identical": true,
+      "rubric_tokens_identical": true
+    },
+    {
+      "id": "rewardbench:1871:0:0",
+      "judgment_tokens_identical": true,
+      "rubric_tokens_identical": true
+    }
+  ]
+}

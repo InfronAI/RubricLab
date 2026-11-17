@@ -1,0 +1,10 @@
+{
+  "groups": 1,
+  "rollouts": 3,
+  "zero_variance_groups": 1,
+  "training_device": "cpu",
+  "reward_mean": 0.0,
+  "reference_adapter": "experiments/m1-cpu-training-20261116/02-sft-rubric",
+  "actor_adapter": "experiments/m1-cpu-training-20261116/09-ablation-reverse/round-1-rubric",
+  "adapter_sha256": "6944a068914d8fde813db16fef2c4615e13f255190af72d76306da3b4e9a7379"
+}

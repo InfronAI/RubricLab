@@ -1,0 +1,55 @@
+{
+  "purpose": "Hardware fault injection with tiny random models, never benchmark measurements.",
+  "cases": [
+    {
+      "status": "passed",
+      "peft_wrapped": false,
+      "calls": 2,
+      "output": [
+        {
+          "text": "[7, 5]",
+          "token_ids": [
+            7,
+            5
+          ],
+          "prompt_tokens": 2,
+          "tokens": 2,
+          "seconds": 1.6725034997798502,
+          "batch_seconds": 1.6725034997798502,
+          "batch_size": 1,
+          "seed": 42,
+          "device": "cpu",
+          "requested_device": "mps",
+          "fallback_reason": "probability tensor injected failure after real static cache allocation",
+          "tokens_per_second": 1.1958121464399074,
+          "hit_token_limit": true
+        }
+      ]
+    },
+    {
+      "status": "passed",
+      "peft_wrapped": true,
+      "calls": 2,
+      "output": [
+        {
+          "text": "[7, 5]",
+          "token_ids": [
+            7,
+            5
+          ],
+          "prompt_tokens": 2,
+          "tokens": 2,
+          "seconds": 0.5014025000855327,
+          "batch_seconds": 0.5014025000855327,
+          "batch_size": 1,
+          "seed": 42,
+          "device": "cpu",
+          "requested_device": "mps",
+          "fallback_reason": "probability tensor injected failure after real static cache allocation",
+          "tokens_per_second": 3.9888113833872514,
+          "hit_token_limit": true
+        }
+      ]
+    }
+  ]
+}

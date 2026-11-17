@@ -2,7 +2,6 @@ import asyncio
 from typing import List, Optional, Any
 from tqdm.asyncio import tqdm_asyncio
 
-from api import generate_response
 
 
 RUBRIC_PROMPT_TEMPLATE = (
@@ -121,6 +120,8 @@ class APIRubric:
     async def _gen_one(self, inst: str, sample_id: int, semaphore: asyncio.Semaphore) -> str:
         prompt = RUBRIC_PROMPT_TEMPLATE.format(prompt=inst)
         user_prompt = self.build_chat_inputs(prompt)
+
+        from api import generate_response
 
         resp = await generate_response(
             user_prompt=user_prompt,

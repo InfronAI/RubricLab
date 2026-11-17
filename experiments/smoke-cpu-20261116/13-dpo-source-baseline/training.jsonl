@@ -1,0 +1,2 @@
+{"step": 1, "loss": 1.0133538246154785, "preference_margin": 0.0, "grad_norm": 3.7437548637390137, "pair_id": "f7ddfa8f9b5dcc53"}
+{"step": 2, "loss": 1.0080418586730957, "preference_margin": 0.0106048583984375, "grad_norm": 3.7236740589141846, "pair_id": "f7ddfa8f9b5dcc53"}

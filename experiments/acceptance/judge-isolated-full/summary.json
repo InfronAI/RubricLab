@@ -1,0 +1,8 @@
+{
+  "role": "judge",
+  "steps": 24,
+  "examples": 24,
+  "first_loss": 1.4168802499771118,
+  "last_loss": 1.0784344673156738,
+  "adapter_sha256": "671571d5def5e1489bcbfa282093d4c31cd896b3efe624fc2780f147f8617cc1"
+}

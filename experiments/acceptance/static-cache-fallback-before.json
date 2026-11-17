@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "calls": 2,
+  "error": "index_copy_(): self, index and source expected to be in the same device, but got (self) mps:0, (index) cpu, and (source) cpu"
+}

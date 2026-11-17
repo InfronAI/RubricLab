@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "cpu",
+  "n": 5,
+  "max_tokens": 32,
+  "tokens": 160,
+  "seconds": 28.294977250043303,
+  "tokens_per_second": 5.654713859144564,
+  "concurrent_pipeline": true
+}

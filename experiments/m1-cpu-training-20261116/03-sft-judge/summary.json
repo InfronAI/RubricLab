@@ -1,0 +1,9 @@
+{
+  "role": "judge",
+  "steps": 24,
+  "examples": 24,
+  "training_device": "cpu",
+  "first_loss": 1.4168386459350586,
+  "last_loss": 1.0569590330123901,
+  "adapter_sha256": "d7846a24da302ce8ea39aec8c44784ae500776a110d1a9ce019a29459ab3b77c"
+}

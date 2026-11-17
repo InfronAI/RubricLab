@@ -1,0 +1,56 @@
+{
+  "kind": "dpo",
+  "arguments": {
+    "config": {
+      "profile": "smoke-mechanism-check",
+      "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+      "device": "cpu",
+      "seed": 42,
+      "prompt_style": "compact",
+      "max_context": 2048,
+      "source_limit": 256,
+      "train_samples": 8,
+      "validation_samples": 2,
+      "sft_steps": 4,
+      "sft_lr": 0.0002,
+      "gradient_accumulation": 1,
+      "lora_rank": 4,
+      "curation_samples": 1,
+      "rubric_tokens": 64,
+      "judge_tokens": 96,
+      "eval_samples": 2,
+      "votes": 5,
+      "benchmark_groups": 1,
+      "benchmarks": [],
+      "arm_rounds": 1,
+      "arm_samples_per_round": 1,
+      "group_size": 2,
+      "grpo_updates": 2,
+      "grpo_lr": 1e-05,
+      "kl_beta": 0.001,
+      "clip_low": 0.2,
+      "clip_high": 0.28,
+      "format_weight": 1.0,
+      "ablations": [],
+      "policy_samples": 1,
+      "policy_tokens": 32,
+      "dpo_steps": 2,
+      "dpo_lr": 1e-05,
+      "dpo_beta": 0.1,
+      "sft_weight": 0.2,
+      "iter_dpo_rounds": 2
+    },
+    "pairs": [
+      {
+        "id": "f7ddfa8f9b5dcc53",
+        "instruction": "Explain why the US Dollar is a reserve currency",
+        "chosen": "The U.S. dollar (USD) is considered a reserve currency for several key reasons:\n\n1. Economic Power: The United States has been one of the world's dominant economic powers for many decades. The size and strength of its economy have contributed to the USD being widely traded, held, and accepted across the globe.\n2. Political Stability: The U.S. is a stable democracy with a functioning government and a well-established legal system. This political stability contributes to the stability of the dollar, making it more reliable than the currencies of some other countries.\n3. Global Trade: The USD is widely used in international trade. The dollar's status as the currency in which oil is priced, known as the petrodollar, has greatly contributed to its status as a reserve currency. This is because countries need to hold dollars to purchase oil and other commodities, which are commonly priced in dollars.\n4. Financial Markets: The U.S. has a robust and liquid financial market, including the world's largest bond market. The liquidity of these markets makes it easy for foreign governments and institutions to buy and sell U.S. Treasurys and other dollar-denominated assets.\n5. Influence of the Bretton Woods System: Prior to 1971, the U.S. dollar was backed by gold, which meant countries could exchange their dollars for a certain amount of gold. This gold standard, established as part of the Bretton Woods system, further solidified the U.S. dollar's status as a global reserve currency.\n6. Lending and Borrowing: The U.S. dollar is the most popular currency for international lending and borrowing. This is partly due to the U.S. Federal Reserve's role as a lender of last resort, providing liquidity to other central banks in times of financial distress.\n\nBeing a reserve currency allows the U.S. to run persistent trade deficits and helps keep U.S. interest rates relatively low due to high global demand for U.S. Treasury securities.",
+        "rejected": "Thank you for asking! The US Dollar (USD) is widely regarded as a reserve currency, which means it is held in significant quantities as a medium of exchange, unit of account, and store of value by central banks, governments, and other financial institutions around the world.\nThere are several reasons why the US Dollar is considered a reserve currency:\n1. Economic Power: The United States has the largest economy in the world, with a diverse and stable financial system, which helps to reduce the risk of holding US Dollars.\n2. Historical Relevance: The US Dollar has been the dominant reserve currency since Bretton Woods (1944) when the International Monetary Fund (IMF) and the World Bank were established.\n3. Liquidity: The US Dollar is widely traded and liquid, making it easy for central banks and other financial institutions to buy and sell it as needed.\n4. Inflation Control: The US Federal Reserve, the central bank of the United States, is committed to controlling inflation, which helps to maintain the value of the US Dollar.\n5. Political Stability: The United States has a stable political system, which helps to reduce the risk of political instability and currency devaluation.\nHowever, it's important to note that the US Dollar is not the only reserve currency, and other currencies such as the Euro, Japanese Yen, British Pound, and Chinese Renminbi (RMB) are also widely held. The choice of reserve currency depends on various factors, including economic and political conditions, trade patterns, and investment flows. \nAs an AI assistant, I must emphasize that the accuracy of the response are based on available data and information, and my answers should not be taken as financial or investment advice. It's always important to consult with a financial professional before making any investment decisions."
+      }
+    ],
+    "actor_adapter": null,
+    "reference_adapter": null,
+    "output": "experiments/smoke-cpu-20261116/13-dpo-source-baseline"
+  }
+}

@@ -41,7 +41,12 @@ def extract_criteria_from_rubric(rubric_text: str) -> List[str]:
       Criterion 3 [Principle]: ...
     """
     pattern = r"^(Criterion\s+\d+.*?):"
-    return re.findall(pattern, rubric_text, flags=re.M)
+    named = re.findall(pattern, rubric_text, flags=re.M)
+    if named:
+        return named
+    # Released OpenRubric-v2 rubrics use numbered sentences with trailing tags.
+    numbered = re.findall(r"^\s*(\d+)\.\s+.*?\[(Hard Rule|Principle)\]", rubric_text, re.M)
+    return [f"Criterion {number} [{kind}]" for number, kind in numbered]
 
 
 class PairwiseJudgeReward(ORM):

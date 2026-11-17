@@ -1,0 +1,7 @@
+{
+  "requested_device": "mps",
+  "actual_device": "cpu",
+  "trainable": true,
+  "dtype": "torch.float32",
+  "apple_silicon_policy": "CPU autograd; MPS forward inference only"
+}

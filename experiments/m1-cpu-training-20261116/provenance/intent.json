@@ -1,0 +1,8 @@
+{
+  "started_from_base": true,
+  "trained_weights_reused": false,
+  "replaces": "experiments/m1-complete-20261116",
+  "reason": "CPU gradients agree with finite differences; the MPS backward path failed fixed-weight comparison.",
+  "pid": 5902,
+  "session_id": 57390
+}

@@ -1,0 +1,17 @@
+{
+  "declared_at": "2026-11-16T04:59:44.734923+00:00",
+  "before_model_execution": true,
+  "files": {
+    "configs/m1.json": "7bd44ccfad1f5d8ce3493dfe04f55592653c9b7e6c8a499b24bbaaad0ce13595",
+    "experiments/supplementary/long-decode-config.json": "7db137614fb597b641da81065020e1fa2ac4db871c176d83f7d972e3095990a8",
+    "experiments/supplementary/long-two-stage-config.json": "e008626378831484b02820a6f5937bf482ad2f3c11b74bb3bfe4424dea47b449",
+    "experiments/supplementary/validation-pairs.jsonl": "034ede0c6fd7495d19656c656662e4a6471aeb72f998bb9a1d21fc6b905383a8",
+    "experiments/supplementary/swapped-validation-pairs.jsonl": "a4361b685c8c712afab3ecaa163df11a740c02ec69fdc75e3c7dd44d5d6c2d9b",
+    "experiments/supplementary/teacher-target-lengths.json": "aaecea5b0e3ff10716f5d8c42492a894ddfe650bb7294975724e97932468f99a",
+    "experiments/supplementary/declared-plan.json": "b7322c3ebc4369de56063ac340ca5a14591ad8438698aa7ed7b3491d1fc1b4a7",
+    "experiments/supplementary/additional-data-v2/helpsteer3.jsonl": "5b6040f28a025edd37d1a46f235ce0118bb7eca17e685bde05715d2f561a8bd9",
+    "experiments/supplementary/additional-data-v2/ifbench.jsonl": "b4021a4269279757d3f78a6ecc7406f1bedd7ced69bfc611da2c1a8b2f5422b3",
+    "experiments/supplementary/additional-data-v2/manifest.json": "8c5df72e1d3981de80edb20e26516086e02fdd01b80c54bc145ae9f75707d053",
+    "experiments/supplementary/additional-data-v2/ppe-ifeval.jsonl": "2cdb43cf8b99a17ca539bea1fac41f8fbe4c9e86fadef1572f54152c203f2ef0"
+  }
+}

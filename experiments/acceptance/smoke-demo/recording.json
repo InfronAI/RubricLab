@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-11-16T03:57:07.296065+00:00",
+  "run": "experiments/smoke-cpu-20261116",
+  "manifest_sha256": "6b605df9d9ac1ee812ec4376748ce105c6fbf003a9a265417c175f56f1df7b4d",
+  "browser_errors": [],
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 900
+      }
+    ],
+    "format": {
+      "duration": "21.320000"
+    }
+  },
+  "mp4_sha256": "992c7ac49db11d4cb01daf6a7af89be0b47ae4602e5d1e794553696ee73ebd00",
+  "gif_sha256": "671579270fd5b991357e25af71b5e63acc2afaa10f9cfd1b2ec26b3dcb6f916a",
+  "description": "Actual browser capture of saved outputs; not a live training time-lapse"
+}

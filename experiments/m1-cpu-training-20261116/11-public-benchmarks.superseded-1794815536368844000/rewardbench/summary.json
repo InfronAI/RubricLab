@@ -1,0 +1,58 @@
+{
+  "n": 4,
+  "generations": 20,
+  "accuracy": 0.0,
+  "majority_accuracy": 0.0,
+  "majority_wilson95": [
+    0.0,
+    0.4898908364545973
+  ],
+  "invalid_rate": 0.95,
+  "abstention_rate": 1.0,
+  "choose_a_rate_valid": 1.0,
+  "group_all_correct": 0.0,
+  "groups": 4,
+  "by_subset": {
+    "chat": {
+      "n": 3,
+      "generations": 15,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "invalid_rate": 0.9333333333333333,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": 1.0,
+      "group_all_correct": 0.0,
+      "groups": 3
+    },
+    "chat_hard": {
+      "n": 1,
+      "generations": 5,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "invalid_rate": 1.0,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": null,
+      "group_all_correct": 0.0,
+      "groups": 1
+    }
+  },
+  "generation_seconds": 372.5607039998286,
+  "tokens": 6339,
+  "actual_devices": [
+    "mps"
+  ],
+  "fallback_generations": 0,
+  "tokens_per_second": 17.01467688874379,
+  "length_limit_rate": 0.95,
+  "rubric_unique_prompts": 2,
+  "rubric_generation_seconds": 36.95474841678515,
+  "order_consistency": null
+}

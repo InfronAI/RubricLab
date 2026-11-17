@@ -1,0 +1,9 @@
+{
+  "groups": 2,
+  "rollouts": 6,
+  "zero_variance_groups": 0,
+  "reward_mean": 0.25,
+  "reference_adapter": "base",
+  "actor_adapter": "base",
+  "adapter_sha256": "35d4a8eea6e12a667d4d8d000cc60215f4a475a7b897c09c92dd0aaa07bb22f1"
+}

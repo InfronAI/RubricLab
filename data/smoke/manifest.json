@@ -1,0 +1,20 @@
+{
+  "repository": "OpenRubrics/OpenRubric-v2",
+  "revision": "d1048e9e0375034d1dafb53392789cd368424861",
+  "url": "https://huggingface.co/datasets/OpenRubrics/OpenRubric-v2/resolve/d1048e9e0375034d1dafb53392789cd368424861/data/open_rubrics.jsonl",
+  "rows": 256,
+  "bytes_read": 1801887,
+  "row_limit": 256,
+  "byte_limit": 33554432,
+  "sha256": "7bdfc56671674e96660fdd27e6f051503423e4b76e9ecf47a505e060b003a7d1",
+  "eligible": 51,
+  "rejected": {
+    "context_overflow": 74,
+    "duplicate_prompt": 131
+  },
+  "train": 8,
+  "validation": 2,
+  "selection": "seeded shuffle after context/label validation",
+  "seed": 42,
+  "max_context": 2048
+}

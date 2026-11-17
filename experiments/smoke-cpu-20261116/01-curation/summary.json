@@ -1,0 +1,7 @@
+{
+  "attempted": 1,
+  "retained": 0,
+  "retention": 0.0,
+  "teacher": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "sft_source": "Published, already curated OpenRubric-v2 subset; fresh local CRG is a separate experiment"
+}

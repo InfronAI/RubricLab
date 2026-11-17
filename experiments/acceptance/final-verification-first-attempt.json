@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-16T10:12:51.244708+00:00",
+  "status": "failed_before_browser_checks",
+  "error": "Readiness TimeoutError for http://127.0.0.1:8768 after 80 readiness attempts",
+  "observations": "Viewer process remained alive; verification terminated its own servers in finally. The separately recorded actual demo completed successfully. Startup logs will be retained on retry.",
+  "resolution": "The default urllib request used the environment HTTP proxy and returned HTTP 500 without contacting the loopback server. Direct loopback probing returned HTTP 200. Final verification bypasses proxies only for local readiness checks.",
+  "diagnostic": "loopback-proxy-diagnostic.json"
+}

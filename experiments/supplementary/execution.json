@@ -1,0 +1,241 @@
+{
+  "started_utc": "2026-11-16T09:12:36.515369+00:00",
+  "jobs": [
+    {
+      "name": "long-decode-sft",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "-m",
+        "openrubrics_lab",
+        "evaluate",
+        "--config",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/long-decode-config.json",
+        "--data",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/validation-pairs.jsonl",
+        "--rubric-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/02-sft-rubric",
+        "--judge-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/03-sft-judge",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/long-decode-sft"
+      ],
+      "started_utc": "2026-11-16T09:12:36.521348+00:00",
+      "status": "completed",
+      "seconds": 411.58789008297026,
+      "returncode": 0
+    },
+    {
+      "name": "long-two-stage-sft",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "-m",
+        "openrubrics_lab",
+        "evaluate",
+        "--config",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/long-two-stage-config.json",
+        "--data",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/validation-pairs.jsonl",
+        "--rubric-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/02-sft-rubric",
+        "--judge-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/03-sft-judge",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/long-two-stage-sft"
+      ],
+      "started_utc": "2026-11-16T09:19:28.131512+00:00",
+      "status": "completed",
+      "seconds": 1488.6127655836754,
+      "returncode": 0
+    },
+    {
+      "name": "order-sft",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "-m",
+        "openrubrics_lab",
+        "evaluate",
+        "--data",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/swapped-validation-pairs.jsonl",
+        "--rubric-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/02-sft-rubric",
+        "--judge-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/03-sft-judge",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/order-sft"
+      ],
+      "started_utc": "2026-11-16T09:44:45.141036+00:00",
+      "status": "completed",
+      "seconds": 227.65412141708657,
+      "returncode": 0
+    },
+    {
+      "name": "order-arm",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "-m",
+        "openrubrics_lab",
+        "evaluate",
+        "--data",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/swapped-validation-pairs.jsonl",
+        "--rubric-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/07-arm/round-3-rubric",
+        "--judge-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/07-arm/round-3-judge",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/order-arm"
+      ],
+      "started_utc": "2026-11-16T09:48:32.808301+00:00",
+      "status": "completed",
+      "seconds": 275.93845887482166,
+      "returncode": 0
+    },
+    {
+      "name": "eval-helpsteer3",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "-m",
+        "openrubrics_lab",
+        "evaluate",
+        "--data",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/additional-data-v2/helpsteer3.jsonl",
+        "--rubric-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/07-arm/round-3-rubric",
+        "--judge-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/07-arm/round-3-judge",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/eval-helpsteer3"
+      ],
+      "started_utc": "2026-11-16T09:53:08.770231+00:00",
+      "status": "completed",
+      "seconds": 188.80653416691348,
+      "returncode": 0
+    },
+    {
+      "name": "eval-ppe-ifeval",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "-m",
+        "openrubrics_lab",
+        "evaluate",
+        "--data",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/additional-data-v2/ppe-ifeval.jsonl",
+        "--rubric-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/07-arm/round-3-rubric",
+        "--judge-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/07-arm/round-3-judge",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/eval-ppe-ifeval"
+      ],
+      "started_utc": "2026-11-16T09:56:17.585557+00:00",
+      "status": "completed",
+      "seconds": 168.39424745831639,
+      "returncode": 0
+    },
+    {
+      "name": "eval-ifbench",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "-m",
+        "openrubrics_lab",
+        "evaluate",
+        "--data",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/additional-data-v2/ifbench.jsonl",
+        "--rubric-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/07-arm/round-3-rubric",
+        "--judge-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/07-arm/round-3-judge",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/eval-ifbench"
+      ],
+      "started_utc": "2026-11-16T09:59:06.002030+00:00",
+      "status": "completed",
+      "seconds": 162.37249812530354,
+      "returncode": 0
+    },
+    {
+      "name": "ifeval-base",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "scripts/evaluate_ifeval.py",
+        "--samples",
+        "4",
+        "--max-tokens",
+        "512",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/ifeval-base"
+      ],
+      "started_utc": "2026-11-16T10:01:48.390212+00:00",
+      "status": "completed",
+      "seconds": 132.65101508423686,
+      "returncode": 0
+    },
+    {
+      "name": "ifeval-source-dpo",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "scripts/evaluate_ifeval.py",
+        "--samples",
+        "4",
+        "--max-tokens",
+        "512",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/ifeval-source-dpo",
+        "--adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/13-dpo-source-baseline"
+      ],
+      "started_utc": "2026-11-16T10:04:01.054830+00:00",
+      "status": "completed",
+      "seconds": 139.13665091712028,
+      "returncode": 0
+    },
+    {
+      "name": "ifeval-online-grpo",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "scripts/evaluate_ifeval.py",
+        "--samples",
+        "4",
+        "--max-tokens",
+        "512",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/ifeval-online-grpo",
+        "--adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/15-online-grpo"
+      ],
+      "started_utc": "2026-11-16T10:06:20.181789+00:00",
+      "status": "completed",
+      "seconds": 133.99433366628364,
+      "returncode": 0
+    },
+    {
+      "name": "analysis",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/analyze.py"
+      ],
+      "started_utc": "2026-11-16T10:08:34.179537+00:00",
+      "status": "completed",
+      "seconds": 1.2162002921104431,
+      "returncode": 0
+    },
+    {
+      "name": "demo-recording",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "scripts/record_demo.py",
+        "--run",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116"
+      ],
+      "started_utc": "2026-11-16T10:08:35.398413+00:00",
+      "status": "completed",
+      "seconds": 80.02052279189229,
+      "returncode": 0
+    }
+  ],
+  "code_hashes": {
+    "analyze.py": "ed6b0d197fa67e83c948d7a3c41a5545caa1003b125e0c3c4fc5d1d08874e4d8",
+    "prepare_extra_benchmarks.py": "8f7de48792ab82db0dad6c28268f433a45ae9701987f7eb6a9caa3d78fcd9795",
+    "run_after_primary.py": "4fe9ac575386de473a5307b340fa1f67d5e6c84eb44c793b3b349c26b527cd96"
+  },
+  "finished_utc": "2026-11-16T10:09:55.421105+00:00"
+}

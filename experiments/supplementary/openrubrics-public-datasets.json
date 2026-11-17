@@ -1,0 +1,13 @@
+{
+  "author": "OpenRubrics",
+  "limit": 30,
+  "datasets": [
+    "OpenRubrics/OpenRubrics",
+    "OpenRubrics/OpenRubric-v2",
+    "OpenRubrics/OpenRubric-Science",
+    "OpenRubrics/RubricARROW-Judge-SFT",
+    "OpenRubrics/ReVeR-Traces-Rubric",
+    "OpenRubrics/ReVeR-Traces-Judge"
+  ],
+  "scope": "Public author catalog only; absence here does not establish absence elsewhere"
+}

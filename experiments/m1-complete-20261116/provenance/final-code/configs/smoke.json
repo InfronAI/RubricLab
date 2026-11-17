@@ -1,0 +1,15 @@
+{
+  "profile": "smoke-mechanism-check", "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "device": "auto", "seed": 42, "prompt_style": "compact", "max_context": 2048,
+  "source_limit": 256, "train_samples": 8, "validation_samples": 2,
+  "sft_steps": 4, "sft_lr": 0.0002, "gradient_accumulation": 1, "lora_rank": 4,
+  "curation_samples": 1, "rubric_tokens": 64, "judge_tokens": 96,
+  "eval_samples": 2, "votes": 5, "benchmark_groups": 1, "benchmarks": [],
+  "arm_rounds": 1, "arm_samples_per_round": 1, "group_size": 2,
+  "grpo_updates": 2, "grpo_lr": 0.00001, "kl_beta": 0.001,
+  "clip_low": 0.2, "clip_high": 0.28, "format_weight": 1.0,
+  "ablations": [], "policy_samples": 1, "policy_tokens": 32,
+  "dpo_steps": 2, "dpo_lr": 0.00001, "dpo_beta": 0.1,
+  "sft_weight": 0.2, "iter_dpo_rounds": 2
+}

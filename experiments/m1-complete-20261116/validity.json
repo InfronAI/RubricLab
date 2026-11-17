@@ -1,0 +1,11 @@
+{
+  "assessed_at": "2026-11-16T05:53:59.746963+00:00",
+  "training_results_valid_for_final_claims": false,
+  "execution_did_complete": true,
+  "reason": "Fixed-weight MPS backward gradients disagreed with CPU and central finite differences; finite losses/gradient clipping were insufficient checks. Retained for numerical diagnosis only.",
+  "replacement_run": "experiments/m1-cpu-training-20261116",
+  "evidence": [
+    "experiments/acceptance/online-gradient-check/comparison.json",
+    "experiments/acceptance/online-gradient-check/finite-difference.json"
+  ]
+}

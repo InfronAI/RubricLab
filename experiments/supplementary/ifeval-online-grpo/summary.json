@@ -1,0 +1,45 @@
+{
+  "n": 4,
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "adapter": "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/15-online-grpo",
+  "seed": 42,
+  "max_tokens": 512,
+  "environment": {
+    "timestamp_utc": "2026-11-16T10:08:33.403562+00:00",
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "chip": "Apple M1 Pro",
+    "memory_gb": 16.0,
+    "python": "3.11.16 (main, Aug 12 2026, 23:03:19) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "mps_available": true,
+    "cuda_available": false,
+    "packages": {
+      "torch": "2.8.0",
+      "transformers": "4.57.1",
+      "peft": "0.17.1",
+      "datasets": "4.3.0",
+      "huggingface-hub": "0.36.0"
+    },
+    "git_commit": "1a40c14cb7827ae10bfdf0f6d61ca35a36770b5b",
+    "git_dirty": true
+  },
+  "verifier": {
+    "repository": "https://github.com/google-research/google-research",
+    "revision": "e6890f85757dd84e27ca6df2dd30651dafad28e0",
+    "directory": "instruction_following_eval",
+    "license": "Apache-2.0",
+    "modifications": "No algorithm changes; final newlines normalized in the selected official modules, input data and license."
+  },
+  "input_sha256": "67ffeee0fcb87c317c5b08a2de85557b4a7e96ada6178aa645b4954fe4b53d49",
+  "scope": "Bounded official-verifier evaluation; not the full IFEval benchmark",
+  "strict": {
+    "prompt_accuracy": 0.0,
+    "instruction_accuracy": 0.0,
+    "instructions": 6
+  },
+  "loose": {
+    "prompt_accuracy": 0.0,
+    "instruction_accuracy": 0.0,
+    "instructions": 6
+  }
+}

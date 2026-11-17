@@ -1,0 +1,5 @@
+{
+  "at": "2026-11-16T03:53:48.325889+00:00",
+  "completed_stage": "09-ablation-reverse",
+  "reason": "Apply demonstrated static-KV CPU fallback cleanup fix at a verified stage boundary"
+}

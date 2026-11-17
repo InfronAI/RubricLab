@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-16T07:52:40.053749+00:00",
+  "queue_pid": 22647,
+  "primary_pid": 22594,
+  "primary_session": 59656,
+  "reason": "Restarted waiting queue after bounded-inference recovery; no supplementary model jobs had begun."
+}

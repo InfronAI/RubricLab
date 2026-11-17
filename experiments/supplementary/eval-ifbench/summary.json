@@ -1,0 +1,43 @@
+{
+  "n": 2,
+  "generations": 10,
+  "accuracy": 0.0,
+  "majority_accuracy": 0.0,
+  "majority_wilson95": [
+    0.0,
+    0.6576197724933469
+  ],
+  "invalid_rate": 0.9,
+  "abstention_rate": 1.0,
+  "choose_a_rate_valid": 0.0,
+  "group_all_correct": null,
+  "groups": 0,
+  "by_subset": {
+    "IFBench": {
+      "n": 2,
+      "generations": 10,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "invalid_rate": 0.9,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": 0.0,
+      "group_all_correct": null,
+      "groups": 0
+    }
+  },
+  "generation_seconds": 115.00311616668478,
+  "tokens": 3200,
+  "actual_devices": [
+    "mps"
+  ],
+  "fallback_generations": 0,
+  "tokens_per_second": 27.825332970646993,
+  "length_limit_rate": 1.0,
+  "rubric_unique_prompts": 2,
+  "rubric_generation_seconds": 16.780701333656907,
+  "order_consistency": null
+}

@@ -1,0 +1,9 @@
+{
+  "role": "rubric",
+  "steps": 24,
+  "examples": 24,
+  "training_device": "cpu",
+  "first_loss": 1.709633469581604,
+  "last_loss": 1.4729028940200806,
+  "adapter_sha256": "51d7dc64de239f546d59469bf5dc182c38ee8cc4e2266baff28c44042a993ffe"
+}

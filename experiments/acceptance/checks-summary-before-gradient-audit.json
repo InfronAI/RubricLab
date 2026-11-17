@@ -1,0 +1,44 @@
+{
+  "core_tests": {
+    "passed": 23,
+    "command": ".venv/bin/pytest -q"
+  },
+  "lint": {
+    "status": "passed",
+    "command": ".venv/bin/ruff check src tests scripts"
+  },
+  "legacy_regressions": [
+    "JSON braces preserved",
+    "local Hub models not misclassified as APIs",
+    "empty/invalid votes abstain",
+    "local imports do not import API SDKs or vLLM"
+  ],
+  "viewer": {
+    "desktop": "passed",
+    "mobile_overflow": "none",
+    "browser_errors": []
+  },
+  "training_stability": "24 isolated FP32 MPS judge optimizer steps completed; see judge-isolated-full/",
+  "warning": "This acceptance receipt is engineering validation, not benchmark accuracy.",
+  "mps_generation_cpu_fallback_test": "passed",
+  "inference_isolation_test": "passed: MPS coordinator never loads model weights",
+  "static_cache_parity": "passed: tiny Llama greedy test and actual MPS five-vote token sequences",
+  "cpu_smoke": {
+    "status": "completed_small_scale_protocol",
+    "stages": 13,
+    "stage_seconds": 599.0823998325504,
+    "verified_resume": "smoke-resume-check.txt",
+    "benchmark_sweep": false,
+    "arm_rounds": 1,
+    "source_dpo_steps": 2
+  },
+  "real_static_cache_cpu_fallback": {
+    "status": "passed",
+    "cases": [
+      "base tiny Llama",
+      "PEFT-wrapped tiny Llama"
+    ],
+    "evidence": "static-cache-fallback-after.json",
+    "prior_failure": "static-cache-fallback-before.json"
+  }
+}

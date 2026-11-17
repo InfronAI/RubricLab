@@ -14,9 +14,8 @@ benchmark = script_stem.removeprefix('task_')
 _ROOT = Path(__file__).resolve().parent.parent
 
 
-def load_data(max_samples=None, cached_result_to_keep=None) -> list:
-    fild_path = \
-        str(_ROOT / "rubrics/magpie/magpie-o4-mini.jsonl")
+def load_data(max_samples=None, cached_result_to_keep=None, input_path=None) -> list:
+    fild_path = input_path or str(_ROOT / "rubrics/magpie/magpie-o4-mini.jsonl")
     
     if not os.path.exists(fild_path):
         raise FileNotFoundError(f"File not found: {fild_path}")
@@ -33,18 +32,12 @@ def load_data(max_samples=None, cached_result_to_keep=None) -> list:
                 cached_instruct.add(key)
                 start_sample_id += 1
         print(f"Loaded {len(cached_instruct)} cached instructions from {cached_result_to_keep}")
-        if max_samples is not None:
-            max_samples += len(cached_instruct)
 
     data = []
     flip_responses = random.random() < 0.5
     # flip_responses = False
     with open(fild_path, "r") as f:
         for sample_id, line in enumerate(f):
-            # This sample has been cached, skip it.
-            if sample_id < len(cached_instruct):
-                continue
-
             if max_samples is not None and sample_id >= max_samples:
                 break
             item = json.loads(line)
@@ -93,6 +86,8 @@ def load_data(max_samples=None, cached_result_to_keep=None) -> list:
 async def main():
     parser = argparse.ArgumentParser(description=f"judge generation runner")
     parser.add_argument("--max_samples", type=int, default=None)
+    parser.add_argument("--input_path", default=None)
+    parser.add_argument("--seed", type=int, default=42)
 
     parser.add_argument('--model_name', type=str, default='o4-mini', help='OpenAI model name')
     parser.add_argument("--concurrency_limit", type=int, default=50)
@@ -105,10 +100,11 @@ async def main():
     parser.add_argument("--dryrun", type=int, default=0, help="Dryrun to test the pipeline")
     parser.add_argument("--refresh", type=int, default=0, help="refresh the cached results")
     args = parser.parse_args()
+    random.seed(args.seed)
 
     runner = JudgeGenerator(
         benchmark_slug=benchmark.lower(),
-        load_dataset=load_data,
+        load_dataset=lambda **kwargs: load_data(**kwargs, input_path=args.input_path),
         make_judge_prompt=make_judge_prompt,
     )
     await runner.run(args)

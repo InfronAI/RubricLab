@@ -1,0 +1,10 @@
+{
+  "groups": 1,
+  "rollouts": 3,
+  "zero_variance_groups": 1,
+  "training_device": "cpu",
+  "reward_mean": 0.0,
+  "reference_adapter": "experiments/m1-cpu-training-20261116/03-sft-judge",
+  "actor_adapter": "experiments/m1-cpu-training-20261116/03-sft-judge",
+  "adapter_sha256": "0fa33dcd4e32136852c22cdd6e1a5c57c118a46a1ca7cfef7b19e27504c1befe"
+}

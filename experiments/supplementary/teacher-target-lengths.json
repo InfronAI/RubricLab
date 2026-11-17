@@ -1,0 +1,217 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "counting": "Target text only, without special tokens or appended EOS; model generation may have different lengths.",
+  "inputs": {
+    "data/m1/train.jsonl": "a6531d5a82ec53188e6d95b83c6a2e728988cb24f2561003d1f78f689dbc99b6",
+    "data/m1/validation.jsonl": "01e9ff8290037a8168bc8117735b5881bb29f271e4d2f7d04ccaa853bf8f8a87"
+  },
+  "summary": {
+    "train": {
+      "rubric": {
+        "min": 104,
+        "median": 175.5,
+        "max": 251,
+        "over_primary_cap": 19,
+        "n": 24,
+        "primary_cap": 128
+      },
+      "judge": {
+        "min": 402,
+        "median": 573.0,
+        "max": 803,
+        "over_primary_cap": 24,
+        "n": 24,
+        "primary_cap": 320
+      }
+    },
+    "validation": {
+      "rubric": {
+        "min": 85,
+        "median": 193.5,
+        "max": 281,
+        "over_primary_cap": 2,
+        "n": 4,
+        "primary_cap": 128
+      },
+      "judge": {
+        "min": 379,
+        "median": 630.0,
+        "max": 889,
+        "over_primary_cap": 4,
+        "n": 4,
+        "primary_cap": 320
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": "0140971b9eb8e236",
+      "split": "train",
+      "rubric_tokens": 163,
+      "judge_tokens": 555
+    },
+    {
+      "id": "4f2f019b4af24b71",
+      "split": "train",
+      "rubric_tokens": 243,
+      "judge_tokens": 790
+    },
+    {
+      "id": "4395e166f411ae2b",
+      "split": "train",
+      "rubric_tokens": 113,
+      "judge_tokens": 402
+    },
+    {
+      "id": "8dac8f248c080430",
+      "split": "train",
+      "rubric_tokens": 139,
+      "judge_tokens": 498
+    },
+    {
+      "id": "f3c653d4abbc1cc3",
+      "split": "train",
+      "rubric_tokens": 137,
+      "judge_tokens": 552
+    },
+    {
+      "id": "ef5f44a8e692741a",
+      "split": "train",
+      "rubric_tokens": 186,
+      "judge_tokens": 528
+    },
+    {
+      "id": "aca50b869d8cc0e7",
+      "split": "train",
+      "rubric_tokens": 127,
+      "judge_tokens": 461
+    },
+    {
+      "id": "4a7d44fb6afbad3e",
+      "split": "train",
+      "rubric_tokens": 227,
+      "judge_tokens": 803
+    },
+    {
+      "id": "b7bfb9d6a9fea929",
+      "split": "train",
+      "rubric_tokens": 140,
+      "judge_tokens": 569
+    },
+    {
+      "id": "8bbc7918399b0750",
+      "split": "train",
+      "rubric_tokens": 233,
+      "judge_tokens": 767
+    },
+    {
+      "id": "a244795f0d840063",
+      "split": "train",
+      "rubric_tokens": 176,
+      "judge_tokens": 567
+    },
+    {
+      "id": "0c792ac259bc157f",
+      "split": "train",
+      "rubric_tokens": 169,
+      "judge_tokens": 572
+    },
+    {
+      "id": "59dcd4a6b3007349",
+      "split": "train",
+      "rubric_tokens": 129,
+      "judge_tokens": 586
+    },
+    {
+      "id": "6740916556595093",
+      "split": "train",
+      "rubric_tokens": 207,
+      "judge_tokens": 720
+    },
+    {
+      "id": "811224b5762af0da",
+      "split": "train",
+      "rubric_tokens": 210,
+      "judge_tokens": 743
+    },
+    {
+      "id": "f6987d33ec466a01",
+      "split": "train",
+      "rubric_tokens": 114,
+      "judge_tokens": 434
+    },
+    {
+      "id": "14b5a551f6e2a145",
+      "split": "train",
+      "rubric_tokens": 251,
+      "judge_tokens": 769
+    },
+    {
+      "id": "5836ae4d9e5cc8d1",
+      "split": "train",
+      "rubric_tokens": 181,
+      "judge_tokens": 583
+    },
+    {
+      "id": "8ccd8f0c1c93d38a",
+      "split": "train",
+      "rubric_tokens": 230,
+      "judge_tokens": 744
+    },
+    {
+      "id": "882fd3b67165795b",
+      "split": "train",
+      "rubric_tokens": 209,
+      "judge_tokens": 574
+    },
+    {
+      "id": "5391d512b803c99b",
+      "split": "train",
+      "rubric_tokens": 104,
+      "judge_tokens": 449
+    },
+    {
+      "id": "0241a0e68c1a462e",
+      "split": "train",
+      "rubric_tokens": 175,
+      "judge_tokens": 613
+    },
+    {
+      "id": "d7d2e599d6398a8c",
+      "split": "train",
+      "rubric_tokens": 119,
+      "judge_tokens": 426
+    },
+    {
+      "id": "c5399af0cf368718",
+      "split": "train",
+      "rubric_tokens": 176,
+      "judge_tokens": 663
+    },
+    {
+      "id": "9e74fb45b4f5c465",
+      "split": "validation",
+      "rubric_tokens": 281,
+      "judge_tokens": 768
+    },
+    {
+      "id": "289be4c8f5dbe1e5",
+      "split": "validation",
+      "rubric_tokens": 117,
+      "judge_tokens": 492
+    },
+    {
+      "id": "66ea178ca174e3fc",
+      "split": "validation",
+      "rubric_tokens": 270,
+      "judge_tokens": 889
+    },
+    {
+      "id": "38e577bf9a31681d",
+      "split": "validation",
+      "rubric_tokens": 85,
+      "judge_tokens": 379
+    }
+  ]
+}

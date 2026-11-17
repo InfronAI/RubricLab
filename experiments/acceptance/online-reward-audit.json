@@ -1,0 +1,91 @@
+{
+  "source": "experiments/m1-complete-20261116/15-online-grpo/rollouts.jsonl",
+  "rows": [
+    {
+      "sample_id": "0140971b9eb8e236",
+      "reward": 0.0,
+      "advantage": -0.7068068981170654,
+      "judgments": [
+        null,
+        null
+      ],
+      "valid_orders": 0,
+      "wins": [
+        false,
+        false
+      ]
+    },
+    {
+      "sample_id": "0140971b9eb8e236",
+      "reward": 0.5,
+      "advantage": 1.4136136770248413,
+      "judgments": [
+        "A",
+        null
+      ],
+      "valid_orders": 1,
+      "wins": [
+        true,
+        false
+      ]
+    },
+    {
+      "sample_id": "0140971b9eb8e236",
+      "reward": 0.0,
+      "advantage": -0.7068068981170654,
+      "judgments": [
+        null,
+        null
+      ],
+      "valid_orders": 0,
+      "wins": [
+        false,
+        false
+      ]
+    },
+    {
+      "sample_id": "4f2f019b4af24b71",
+      "reward": 0.5,
+      "advantage": 0.7068068385124207,
+      "judgments": [
+        "A",
+        null
+      ],
+      "valid_orders": 1,
+      "wins": [
+        true,
+        false
+      ]
+    },
+    {
+      "sample_id": "4f2f019b4af24b71",
+      "reward": 0.0,
+      "advantage": -1.4136137962341309,
+      "judgments": [
+        null,
+        null
+      ],
+      "valid_orders": 0,
+      "wins": [
+        false,
+        false
+      ]
+    },
+    {
+      "sample_id": "4f2f019b4af24b71",
+      "reward": 0.5,
+      "advantage": 0.7068068385124207,
+      "judgments": [
+        "A",
+        null
+      ],
+      "valid_orders": 1,
+      "wins": [
+        true,
+        false
+      ]
+    }
+  ],
+  "nonzero_reward_rollouts": 3,
+  "full_win_rollouts": 0
+}

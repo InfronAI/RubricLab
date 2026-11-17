@@ -1,0 +1,9 @@
+{
+  "groups": 1,
+  "rollouts": 3,
+  "zero_variance_groups": 1,
+  "reward_mean": 0.0,
+  "reference_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+  "actor_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+  "adapter_sha256": "66591342c0dbeead433ed38c8a902e95fcc39282d1fff5cc46c2b32dbd6ea0b4"
+}

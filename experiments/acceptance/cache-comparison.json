@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "prompt": "validation[1] with published teacher rubric",
+  "seed": 143,
+  "batch_size": 5,
+  "max_new_tokens": 320,
+  "dynamic_batch_seconds": 95.21247895807028,
+  "static_batch_seconds": 70.42191845783964,
+  "all_token_ids_equal": true,
+  "dynamic_driver_gb": 4.5989990234375,
+  "static_driver_gb": 3.5986328125,
+  "limitation": "Single sequential diagnostic on a shared machine. Sampled physical memory is not a guaranteed peak or controlled benchmark."
+}

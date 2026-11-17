@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-11-16T05:29:30.762316+00:00",
+  "jobs": [
+    {
+      "name": "long-decode-sft",
+      "command": [
+        "/Users/apple/Projects/OpenRubrics/.venv/bin/python",
+        "-m",
+        "openrubrics_lab",
+        "evaluate",
+        "--config",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/long-decode-config.json",
+        "--data",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/validation-pairs.jsonl",
+        "--rubric-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-complete-20261116/02-sft-rubric",
+        "--judge-adapter",
+        "/Users/apple/Projects/OpenRubrics/experiments/m1-complete-20261116/03-sft-judge",
+        "--output",
+        "/Users/apple/Projects/OpenRubrics/experiments/supplementary/long-decode-sft"
+      ],
+      "started_utc": "2026-11-16T05:29:30.775627+00:00",
+      "status": "running"
+    }
+  ],
+  "code_hashes": {
+    "analyze.py": "f23800aa8a91d853aa451a48ad2b20232680ce04c72e891d34024ca4aeb85b2e",
+    "prepare_extra_benchmarks.py": "8f7de48792ab82db0dad6c28268f433a45ae9701987f7eb6a9caa3d78fcd9795",
+    "run_after_primary.py": "a75288a1d63048ae175c30c129c6f315c57a3238b02c415320ff4b7dffe23ce7"
+  }
+}

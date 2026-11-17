@@ -1,0 +1,10 @@
+{
+  "groups": 2,
+  "rollouts": 6,
+  "zero_variance_groups": 1,
+  "training_device": "cpu",
+  "reward_mean": 0.08333333333333333,
+  "reference_adapter": "base",
+  "actor_adapter": "base",
+  "adapter_sha256": "27543f5850b4aeb323ef3b81eefd497c8cecbf52c5e598df73fedf97d65ee801"
+}

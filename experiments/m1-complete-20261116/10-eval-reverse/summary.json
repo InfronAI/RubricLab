@@ -1,0 +1,43 @@
+{
+  "n": 2,
+  "generations": 10,
+  "accuracy": 0.0,
+  "majority_accuracy": 0.0,
+  "majority_wilson95": [
+    0.0,
+    0.6576197724933469
+  ],
+  "invalid_rate": 1.0,
+  "abstention_rate": 1.0,
+  "choose_a_rate_valid": null,
+  "group_all_correct": null,
+  "groups": 0,
+  "by_subset": {
+    "validation": {
+      "n": 2,
+      "generations": 10,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "invalid_rate": 1.0,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": null,
+      "group_all_correct": null,
+      "groups": 0
+    }
+  },
+  "generation_seconds": 203.45809116587043,
+  "tokens": 3200,
+  "actual_devices": [
+    "mps"
+  ],
+  "fallback_generations": 0,
+  "tokens_per_second": 15.728054763824462,
+  "length_limit_rate": 1.0,
+  "rubric_unique_prompts": 2,
+  "rubric_generation_seconds": 29.104466874618083,
+  "order_consistency": null
+}

@@ -2,7 +2,6 @@ import asyncio
 from typing import List, Optional, Any
 from tqdm.asyncio import tqdm_asyncio
 
-from api import generate_response
 
 # JUDGE_PROMPT_TEMPLATE = (# define the system prompt as a tuple of strings for readability and maintainability
 #     f"You are a fair and impartial judge. Your task is to evaluate 'Response A' and 'Response B' "
@@ -219,6 +218,8 @@ class APIJudge:
             response_b=response_b,
         )
         user_prompt = self.build_chat_inputs(judge_prompt)
+
+        from api import generate_response
 
         resp = await generate_response(
             user_prompt=user_prompt,

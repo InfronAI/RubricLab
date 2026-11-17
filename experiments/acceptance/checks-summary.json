@@ -1,0 +1,86 @@
+{
+  "core_tests": {
+    "passed": 26,
+    "command": ".venv/bin/pytest -q",
+    "latest_validation_utc": "2026-11-16T07:49:00.869783+00:00",
+    "seconds": 3.7,
+    "source_fingerprint_digest": "e7aef6e03d552530a958e1320251ca97d65838a8deb306a8f40049aa261b1aad"
+  },
+  "lint": {
+    "status": "passed",
+    "command": ".venv/bin/ruff check src tests scripts"
+  },
+  "legacy_regressions": [
+    "JSON braces preserved",
+    "local Hub models not misclassified as APIs",
+    "empty/invalid votes abstain",
+    "local imports do not import API SDKs or vLLM"
+  ],
+  "viewer": {
+    "run": "experiments/m1-cpu-training-20261116",
+    "desktop": "passed",
+    "mobile_overflow": "none",
+    "judgment_samples_per_viewport": 20,
+    "browser_errors": [],
+    "evidence": "final-delivery-check.json"
+  },
+  "training_stability": "24-step rubric and 24-step judge SFT completed with CPU autograd in m1-cpu-training-20261116; finite MPS gradients are not trusted for training.",
+  "warning": "This acceptance receipt is engineering validation, not benchmark accuracy.",
+  "mps_generation_cpu_fallback_test": "passed",
+  "inference_isolation_test": "passed: MPS coordinator never loads model weights",
+  "static_cache_parity": "passed: tiny Llama greedy test and actual MPS five-vote token sequences",
+  "cpu_smoke": {
+    "status": "completed_small_scale_protocol",
+    "stages": 13,
+    "stage_seconds": 599.0823998325504,
+    "verified_resume": "smoke-resume-check.txt",
+    "benchmark_sweep": false,
+    "arm_rounds": 1,
+    "source_dpo_steps": 2
+  },
+  "real_static_cache_cpu_fallback": {
+    "status": "passed",
+    "cases": [
+      "base tiny Llama",
+      "PEFT-wrapped tiny Llama"
+    ],
+    "evidence": "static-cache-fallback-after.json",
+    "prior_failure": "static-cache-fallback-before.json"
+  },
+  "gradient_audit": {
+    "mps_backward": "failed fixed-weight reference comparison",
+    "cpu_sdpa_relative_gradient_error": 1.7357312535167607e-05,
+    "cpu_gradient_finite_difference": 0.9502520163853847,
+    "cpu_gradient_prediction": 0.9504836510653225,
+    "default_resolution": "CPU training and reference scoring on Apple Silicon, MPS inference",
+    "evidence": "online-gradient-check/variants.json"
+  },
+  "primary_run": "experiments/m1-cpu-training-20261116",
+  "bounded_inference": {
+    "pytest_passed": 26,
+    "seconds": 3.7,
+    "ruff_passed": true,
+    "real_timeout_cpu_token_parity": true,
+    "evidence": "bounded-inference/timeout-retry.json"
+  },
+  "post_test_presentation_fix": {
+    "changed_files": [
+      "src/openrubrics_lab/web/index.html",
+      "scripts/record_demo.py"
+    ],
+    "all_model_data_evaluation_sources_unchanged": true,
+    "evidence": "../m1-cpu-training-20261116/provenance/presentation-fix/change.json",
+    "validation": "final-delivery-check.json"
+  },
+  "final_delivery": {
+    "verified_utc": "2026-11-16T10:22:20.793708+00:00",
+    "artifact_verification": "final-artifact-verification.json",
+    "local_links_checked": 102,
+    "autoplay": "passed",
+    "gif_loop": "infinite",
+    "supplementary_model_jobs": 10,
+    "supplementary_total_jobs": 12,
+    "lint": "passed",
+    "git_diff_check": "passed"
+  }
+}

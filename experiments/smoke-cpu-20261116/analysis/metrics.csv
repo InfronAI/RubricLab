@@ -1,0 +1,5 @@
+experiment,n,accuracy,majority_accuracy,invalid_rate,abstention_rate,choose_a_rate_valid,group_all_correct
+04-base-direct,2,0.0,0.0,1.0,1.0,,
+05-base-rubric,2,0.0,0.0,1.0,1.0,,
+06-sft-evaluation,2,0.0,0.0,1.0,1.0,,
+08-arm-evaluation,2,0.0,0.0,1.0,1.0,,

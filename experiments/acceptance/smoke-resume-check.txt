@@ -1,0 +1,14 @@
+Resume: 01-curation verified
+Resume: 02-sft-rubric verified
+Resume: 03-sft-judge verified
+Resume: 04-base-direct verified
+Resume: 05-base-rubric verified
+Resume: 06-sft-evaluation verified
+Resume: 07-arm verified
+Resume: 08-arm-evaluation verified
+Resume: 11-public-benchmarks verified
+Resume: 12-dpo-arm verified
+Resume: 13-dpo-source-baseline verified
+Resume: 14-iterative-dpo verified
+Resume: 15-online-grpo verified
+Report: experiments/smoke-cpu-20261116/analysis/REPORT.md

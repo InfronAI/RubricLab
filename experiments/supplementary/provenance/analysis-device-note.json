@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-16T09:38:20.012046+00:00",
+  "previous_source": "provenance/analyze-before-device-note.py",
+  "previous_sha256": "ed6b0d197fa67e83c948d7a3c41a5545caa1003b125e0c3c4fc5d1d08874e4d8",
+  "current_source": "analyze.py",
+  "current_sha256": "5dc2d8f474a1328d2faf287e8fb09ea222e758221ce1f242c9a9e21884c4ad11",
+  "reason": "Joint-budget evaluation used CPU timeout recovery, while primary SFT judgments used MPS. Add judge-device columns and explicitly identify device differences as a confound in decoding-budget comparisons. No data, metrics, model weights or evaluation settings changed.",
+  "execution_receipt_note": "execution.json retains queue-start hashes. This amendment and combined.json analysis_source_sha256 identify the analysis source actually executed."
+}

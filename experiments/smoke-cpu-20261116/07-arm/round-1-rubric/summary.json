@@ -1,0 +1,9 @@
+{
+  "groups": 1,
+  "rollouts": 2,
+  "zero_variance_groups": 1,
+  "reward_mean": 0.0,
+  "reference_adapter": "experiments/smoke-cpu-20261116/02-sft-rubric",
+  "actor_adapter": "experiments/smoke-cpu-20261116/02-sft-rubric",
+  "adapter_sha256": "798a375a9be2cbeb43efd16743a5aec00653c602536eeff7c1d4e3b3cbd0e7f8"
+}

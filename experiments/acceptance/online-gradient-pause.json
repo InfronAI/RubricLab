@@ -1,0 +1,11 @@
+{
+  "paused_at": "2026-11-16T05:34:26.401760+00:00",
+  "orchestrator_pid": 99016,
+  "active_evaluation_pid": 2813,
+  "reason": "Let the current long-decode job finish, then replay fixed online-GRPO gradients on CPU and MPS before starting further model jobs. Only the waiting orchestrator is stopped.",
+  "elapsed_time_note": "The first supplementary job wall-clock receipt includes this serial diagnostic pause; generation_stats retain actual generation times.",
+  "evaluation_finished_observed_at": "2026-11-16T05:41:34.593406+00:00",
+  "evaluation_summary_written_at": "2026-11-16T05:40:28.878339+00:00",
+  "resolved_at": "2026-11-16T06:06:05.050494+00:00",
+  "resolution": "Gradient audit failed for MPS backward. The paused orchestrator was terminated; fresh CPU training run PID 5902 and replacement queue PID 6704 are active."
+}

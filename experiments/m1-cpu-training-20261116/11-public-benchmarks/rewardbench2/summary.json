@@ -1,0 +1,59 @@
+{
+  "n": 6,
+  "generations": 30,
+  "accuracy": 0.16666666666666666,
+  "majority_accuracy": 0.0,
+  "majority_wilson95": [
+    2.7755575615628914e-17,
+    0.3903342879021653
+  ],
+  "invalid_rate": 0.8333333333333334,
+  "abstention_rate": 1.0,
+  "choose_a_rate_valid": 1.0,
+  "group_all_correct": 0.0,
+  "groups": 2,
+  "by_subset": {
+    "Focus": {
+      "n": 3,
+      "generations": 15,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "invalid_rate": 0.8666666666666667,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": 1.0,
+      "group_all_correct": 0.0,
+      "groups": 1
+    },
+    "Precise IF": {
+      "n": 3,
+      "generations": 15,
+      "accuracy": 0.3333333333333333,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "invalid_rate": 0.8,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": 1.0,
+      "group_all_correct": 0.0,
+      "groups": 1
+    }
+  },
+  "generation_seconds": 690.1097488328815,
+  "tokens": 9300,
+  "actual_devices": [
+    "cpu",
+    "mps"
+  ],
+  "fallback_generations": 5,
+  "tokens_per_second": 13.476117408467605,
+  "length_limit_rate": 0.8333333333333334,
+  "rubric_unique_prompts": 2,
+  "rubric_generation_seconds": 30.07010908285156,
+  "order_consistency": null
+}

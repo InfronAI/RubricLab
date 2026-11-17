@@ -1,5 +1,7 @@
 # OpenRubrics data generation
 
+> **Apple Silicon / CPU:** use the [portable workflow](../README.md) from the repository root. The instructions below describe the preserved original API/GPU environment.
+
 The two-stage pipeline that produces the OpenRubrics preference data
 ([OpenRubrics/OpenRubric-v2](https://huggingface.co/datasets/OpenRubrics/OpenRubric-v2)),
 which [RubricRM](../rubric-rm) is trained on.
@@ -37,9 +39,10 @@ a new `task_<dataset>.py` with its own `load_data()`.
 
 ## Input data
 
-The raw preference data is **not bundled** with this release. The loader in
-`gen_rubric/task_magpie.py` points at an uppercase placeholder
-(`PATH/TO/MAGPIE_LISTWISE.jsonl`) — edit it to your own file.
+The raw Magpie preference data is **not bundled**. Supply its path with
+`--input_path /path/to/magpie.jsonl` or the `MAGPIE_INPUT` environment variable.
+No source-code edit is needed. The portable root workflow provides a bounded
+released OpenRubric-v2 slice for local experiments.
 
 `load_data()` shows the expected schema: each line has a request and a list of
 `responses` with `scores`. The rubric prompt is **listwise** — responses are
@@ -70,6 +73,7 @@ export OPENAIKEY=...                       # Azure OpenAI key
 export AZURE_OPENAI_ENDPOINT=https://...   # Azure OpenAI endpoint
 export GOOGLE_API_KEY=...                  # for the judge stage (gemini)
 
+export MAGPIE_INPUT=/path/to/magpie.jsonl
 cd gen_rubric
 ./gen_rubric.sh -d magpie -t 1             # -t 1 = dry run (5 samples); -t 0 = full
 #   override the model per task with --model_name

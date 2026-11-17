@@ -1,0 +1,90 @@
+{
+  "n": 9,
+  "generations": 45,
+  "accuracy": 0.0,
+  "majority_accuracy": 0.0,
+  "majority_wilson95": [
+    0.0,
+    0.2991450484195441
+  ],
+  "invalid_rate": 0.9555555555555556,
+  "abstention_rate": 1.0,
+  "choose_a_rate_valid": 1.0,
+  "group_all_correct": 0.0,
+  "groups": 3,
+  "by_subset": {
+    "chat": {
+      "n": 9,
+      "generations": 45,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        0.0,
+        0.2991450484195441
+      ],
+      "invalid_rate": 0.9555555555555556,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": 1.0,
+      "group_all_correct": 0.0,
+      "groups": 3
+    }
+  },
+  "by_difficulty": {
+    "easy": {
+      "n": 3,
+      "generations": 15,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "invalid_rate": 1.0,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": null,
+      "group_all_correct": 0.0,
+      "groups": 2
+    },
+    "normal": {
+      "n": 3,
+      "generations": 15,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "invalid_rate": 1.0,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": null,
+      "group_all_correct": 0.0,
+      "groups": 3
+    },
+    "hard": {
+      "n": 3,
+      "generations": 15,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "invalid_rate": 0.8666666666666667,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": 1.0,
+      "group_all_correct": 0.0,
+      "groups": 2
+    }
+  },
+  "generation_seconds": 953.4802078348586,
+  "tokens": 14025,
+  "actual_devices": [
+    "mps"
+  ],
+  "fallback_generations": 0,
+  "tokens_per_second": 14.709272289823042,
+  "length_limit_rate": 0.8888888888888888,
+  "rubric_unique_prompts": 1,
+  "rubric_generation_seconds": 12.811840833164752,
+  "order_consistency": null
+}

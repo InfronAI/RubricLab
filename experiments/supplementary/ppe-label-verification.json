@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ppe-ifeval:225",
+    "expected_label": "A",
+    "checks": {
+      "A": {
+        "strict": true,
+        "loose": true
+      },
+      "B": {
+        "strict": false,
+        "loose": false
+      }
+    },
+    "stored_label_reproduced": true
+  },
+  {
+    "id": "ppe-ifeval:344",
+    "expected_label": "B",
+    "checks": {
+      "A": {
+        "strict": false,
+        "loose": false
+      },
+      "B": {
+        "strict": true,
+        "loose": true
+      }
+    },
+    "stored_label_reproduced": true
+  }
+]

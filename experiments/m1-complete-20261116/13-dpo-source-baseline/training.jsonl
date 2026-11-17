@@ -1,0 +1,4 @@
+{"step": 1, "loss": 0.8937826156616211, "preference_margin": 0.0, "grad_norm": 15.001264572143555, "pair_id": "0140971b9eb8e236"}
+{"step": 2, "loss": 0.9126865267753601, "preference_margin": 3.662109520519152e-05, "grad_norm": 21.670032501220703, "pair_id": "4f2f019b4af24b71"}
+{"step": 3, "loss": 0.8540236949920654, "preference_margin": 0.07975921779870987, "grad_norm": 14.366767883300781, "pair_id": "0140971b9eb8e236"}
+{"step": 4, "loss": 0.8774001598358154, "preference_margin": 0.071441650390625, "grad_norm": 20.880720138549805, "pair_id": "4f2f019b4af24b71"}

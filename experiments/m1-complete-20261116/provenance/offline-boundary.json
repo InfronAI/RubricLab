@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-16T03:32:50.573757+00:00",
+  "completed_stage": "07-arm",
+  "reason": "Cached assets verified; disable unnecessary Hub HEAD probes after transient TLS failure",
+  "numerical_configuration_changed": false
+}

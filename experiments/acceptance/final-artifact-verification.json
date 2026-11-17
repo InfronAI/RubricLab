@@ -1,0 +1,9 @@
+{
+  "stages": 17,
+  "artifacts": 386,
+  "source_fingerprint_matches": true,
+  "all_hashes_match": true,
+  "config_signature_and_input_hashes_match": true,
+  "cpu_training_checkpoint_receipts": 22,
+  "supplementary_input_hashes_verified": 11
+}

@@ -1,0 +1,2 @@
+{"step": 1, "loss": 0.0, "kl": 0.0, "grad_norm": 0.0, "zero_variance_groups": 1}
+{"step": 2, "loss": -4.967053967204945e-13, "kl": -4.967053851556713e-10, "grad_norm": 2.033533696987888e-08, "zero_variance_groups": 1}

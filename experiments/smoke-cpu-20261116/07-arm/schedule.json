@@ -1,0 +1,30 @@
+[
+  {
+    "round": 1,
+    "phase": "judge",
+    "sample_ids": [
+      "f7ddfa8f9b5dcc53"
+    ],
+    "groups": 1,
+    "rollouts": 2,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/smoke-cpu-20261116/03-sft-judge",
+    "actor_adapter": "experiments/smoke-cpu-20261116/03-sft-judge",
+    "adapter_sha256": "ceda97381a616011d9264789b8ec9dab17178f1886a6a78f76a1e13509ef75bb"
+  },
+  {
+    "round": 1,
+    "phase": "rubric",
+    "sample_ids": [
+      "f7ddfa8f9b5dcc53"
+    ],
+    "groups": 1,
+    "rollouts": 2,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/smoke-cpu-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/smoke-cpu-20261116/02-sft-rubric",
+    "adapter_sha256": "798a375a9be2cbeb43efd16743a5aec00653c602536eeff7c1d4e3b3cbd0e7f8"
+  }
+]

@@ -8,7 +8,6 @@ import argparse
 import json
 from datasets import load_dataset
 from transformers import AutoTokenizer
-from vllm import LLM, SamplingParams
 from common import resolve_models, is_api_model
 
 
@@ -97,6 +96,8 @@ def main():
     rubric_maker = None
 
     if rubric_backend == "vllm":
+        from vllm import LLM, SamplingParams
+
         tokenizer = AutoTokenizer.from_pretrained(rubric_model, trust_remote_code=True)
         rubric_core = LLM(
             model=rubric_model,
@@ -182,6 +183,8 @@ def main():
     judge_maker = None
 
     if judge_backend == "vllm":
+        from vllm import LLM, SamplingParams
+
         # load the judge model's own tokenizer (don't reuse the rubric tokenizer)
         judge_tokenizer = AutoTokenizer.from_pretrained(judge_model, trust_remote_code=True)
 

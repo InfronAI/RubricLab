@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-16T05:51:06.822688+00:00",
+  "epsilon": 0.001,
+  "directions": {
+    "cpu": {
+      "finite_difference": 0.9502520163853847,
+      "cpu_autograd_prediction": 0.9504836510653225,
+      "native_autograd_prediction": 0.9504836356531774,
+      "plus_objective": 0.0005488097667693814,
+      "minus_objective": -0.001351694266001388
+    },
+    "mps": {
+      "finite_difference": 0.29285252094268105,
+      "cpu_autograd_prediction": 0.2926184482758145,
+      "native_autograd_prediction": 2.412736223902164,
+      "plus_objective": -0.00010968248049418594,
+      "minus_objective": -0.000695387522379548
+    }
+  },
+  "optimizer_updates": 0,
+  "adapter_sha256": "35d4a8eea6e12a667d4d8d000cc60215f4a475a7b897c09c92dd0aaa07bb22f1",
+  "script_sha256": "1dcd6c5d230531acf2ee14bc12c13a18a6e7e7500d29351a9e9a991e3afdd26e",
+  "baseline_objective": -0.00040164589881895585
+}

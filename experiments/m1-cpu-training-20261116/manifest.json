@@ -1,0 +1,1322 @@
+{
+  "signature": "5bdfdda31d0f8d11796448011e5a4fe98b35e44a9e93ff06179cf367ca8f7769",
+  "config": {
+    "profile": "m1-small-scale",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "device": "auto",
+    "seed": 42,
+    "prompt_style": "compact",
+    "max_context": 2048,
+    "source_limit": 1024,
+    "train_samples": 24,
+    "validation_samples": 4,
+    "sft_steps": 24,
+    "sft_lr": 0.0002,
+    "gradient_accumulation": 1,
+    "lora_rank": 8,
+    "curation_samples": 3,
+    "rubric_tokens": 128,
+    "judge_tokens": 320,
+    "eval_samples": 2,
+    "votes": 5,
+    "benchmark_groups": 1,
+    "benchmarks": [
+      "rewardbench",
+      "rewardbench2",
+      "rmbench",
+      "writing"
+    ],
+    "arm_rounds": 3,
+    "arm_samples_per_round": 1,
+    "group_size": 3,
+    "grpo_updates": 2,
+    "grpo_lr": 1e-05,
+    "kl_beta": 0.001,
+    "clip_low": 0.2,
+    "clip_high": 0.28,
+    "format_weight": 1.0,
+    "ablations": [
+      "reverse",
+      "no_format"
+    ],
+    "policy_samples": 2,
+    "policy_tokens": 96,
+    "dpo_steps": 4,
+    "dpo_lr": 1e-05,
+    "dpo_beta": 0.1,
+    "sft_weight": 0.2,
+    "iter_dpo_rounds": 2
+  },
+  "inputs": {
+    "train.jsonl": "a6531d5a82ec53188e6d95b83c6a2e728988cb24f2561003d1f78f689dbc99b6",
+    "validation.jsonl": "01e9ff8290037a8168bc8117735b5881bb29f271e4d2f7d04ccaa853bf8f8a87"
+  },
+  "source_files": {
+    "configs/m1.json": "7bd44ccfad1f5d8ce3493dfe04f55592653c9b7e6c8a499b24bbaaad0ce13595",
+    "configs/smoke.json": "6e63d6c9678743a61ff10ed1764d41e1695397c2fea9230bf6a361bf62e3daad",
+    "scripts/evaluate_ifeval.py": "8041e9ebcc8e2f06113aac44c0154fd0a4a4c74c1d32e17ea0588755ee1d6cac",
+    "scripts/record_demo.py": "adfe2ba80c0b1fe061f82c58f4382ddfbd1ef39637ead7043e42a662f5a7f0a6",
+    "src/openrubrics_lab/__init__.py": "71fd1f6a3abb4a8e6347817f15a83c57d7a612771d2192c94c19d0b6b49bcdae",
+    "src/openrubrics_lab/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "src/openrubrics_lab/backend.py": "43436bef9c325c22e72ad22bfb871ff231f091cf23b7eb8b13b3913693d4b78a",
+    "src/openrubrics_lab/cli.py": "8cfc34b917c0826175d3a3bf018d8f42b99a59e5cff3d1ff178fcb9323fc6e44",
+    "src/openrubrics_lab/config.py": "84a4e68219950464b319cd75feae4bfa9a98f99388f3159771f5f37f333c3ade",
+    "src/openrubrics_lab/data.py": "a3e3e9aeda827d8ad009ea22e2ef6cdc57207fdb44e9608e9026cb07884f830b",
+    "src/openrubrics_lab/demo.py": "dca18ddc93bf859750f740c6d468dabd43b2f5fccf104a995535724bd30db3e4",
+    "src/openrubrics_lab/experiments.py": "3d50d00d449ab7e198242b87296daa4f32088cb957cdaf2bb4f638576e33893c",
+    "src/openrubrics_lab/inference_worker.py": "a237001173520dd1ed55bbb05cf1a8d4575f42440718378c1e2c3a65c7ce1d56",
+    "src/openrubrics_lab/io.py": "adcc2294e3109a69e8b2a8e619adfe43d442d9eb5f2376b794a03bf804fcbe2c",
+    "src/openrubrics_lab/metrics.py": "39ce19fe1548880e884b6d4db9856b0d88c33d4d44809f340e39038d0e08f1f8",
+    "src/openrubrics_lab/original_prompts.py": "0f3c25eafbec7b6783757629cbd1a6aa66f347cf003a1aeb17e2a68863fb6abe",
+    "src/openrubrics_lab/prompts.py": "1b4a6849bb449fd417a8b853e4b4f4e7e5344d7467f9a97c6717abe3fd271167",
+    "src/openrubrics_lab/report.py": "0ed64283378ac58943ed2170d2789c13f008b7c122084a1e5254c60d97b616f2",
+    "src/openrubrics_lab/runner.py": "0d78003bb6c57d00f7b5896a92c6b65425bb4aa92c66e7b73d911ecdc3d76b4c",
+    "src/openrubrics_lab/training.py": "809f7cacb02be463d9ea48064126a2d732a9f70e8ad1f38146a055947d0e4459",
+    "src/openrubrics_lab/web/index.html": "03ad56528a4339113ef0f4a13a455578cb1db28241604c9e9d858179f09a5c8a",
+    "src/openrubrics_lab/worker.py": "cc15438c6179efe8ba6bc0766555a3fb48be368bb71a9e8758056b70b80e7e78",
+    "tests/test_model_contract.py": "abeee90fd0f11bb9b69fb44b5446325168b1f16cab2575a36f19c5aa040881c5",
+    "tests/test_scientific_invariants.py": "57dcb80e6f0b39d0b34eb9a29614ce02042d9fe892a7abe07af6ecf2e4fa086f"
+  },
+  "environment": {
+    "timestamp_utc": "2026-11-16T05:54:56.764777+00:00",
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "chip": "Apple M1 Pro",
+    "memory_gb": 16.0,
+    "python": "3.11.16 (main, Aug 12 2026, 23:03:19) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "mps_available": true,
+    "cuda_available": false,
+    "packages": {
+      "torch": "2.8.0",
+      "transformers": "4.57.1",
+      "peft": "0.17.1",
+      "datasets": "4.3.0",
+      "huggingface-hub": "0.36.0"
+    },
+    "git_commit": "1a40c14cb7827ae10bfdf0f6d61ca35a36770b5b",
+    "git_dirty": true
+  },
+  "started_utc": "2026-11-16T05:54:56.934358+00:00",
+  "stages": {
+    "01-curation": {
+      "status": "completed",
+      "started_utc": "2026-11-16T05:54:56.936454+00:00",
+      "seconds": 79.38043754175305,
+      "result": {
+        "attempted": 3,
+        "retained": 0,
+        "retention": 0.0,
+        "teacher": "Qwen/Qwen2.5-0.5B-Instruct",
+        "sft_source": "Published, already curated OpenRubric-v2 subset; fresh local CRG is a separate experiment"
+      },
+      "artifacts": {
+        "01-curation/filtered.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "01-curation/raw.jsonl": "788f3482b60b42aa28f6bbdde7f720fcf5033e0fa8054055d83f7ce5d0c4ba15",
+        "01-curation/summary.json": "f9218bfe2b4aa6eb34d0b23055f44e46972eb03305fa87a63c73aa3b9fd266a1"
+      }
+    },
+    "02-sft-rubric": {
+      "status": "completed",
+      "started_utc": "2026-11-16T05:56:16.318478+00:00",
+      "seconds": 35.26435770886019,
+      "result": {
+        "role": "rubric",
+        "steps": 24,
+        "examples": 24,
+        "training_device": "cpu",
+        "first_loss": 1.709633469581604,
+        "last_loss": 1.4729028940200806,
+        "adapter_sha256": "51d7dc64de239f546d59469bf5dc182c38ee8cc4e2266baff28c44042a993ffe"
+      },
+      "artifacts": {
+        "02-sft-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "02-sft-rubric/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "02-sft-rubric/adapter_model.safetensors": "51d7dc64de239f546d59469bf5dc182c38ee8cc4e2266baff28c44042a993ffe",
+        "02-sft-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "02-sft-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "02-sft-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "02-sft-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "02-sft-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "02-sft-rubric/summary.json": "39d9651d7cbf65d3ba041790235179b082bfbb041a1e770470d2ad05f5e21b54",
+        "02-sft-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "02-sft-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "02-sft-rubric/training.jsonl": "16f64acba0fc7f69f7209ba2e5c6781ae1cd1ef4d7f748ef068155fde4a929c6",
+        "02-sft-rubric/training_request.json": "8a4493f0c263fce5889f5be5a5078205fd6682ca277613c8a95cb9097e70db12",
+        "02-sft-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "03-sft-judge": {
+      "status": "completed",
+      "started_utc": "2026-11-16T05:56:51.584624+00:00",
+      "seconds": 159.06079454161227,
+      "result": {
+        "role": "judge",
+        "steps": 24,
+        "examples": 24,
+        "training_device": "cpu",
+        "first_loss": 1.4168386459350586,
+        "last_loss": 1.0569590330123901,
+        "adapter_sha256": "d7846a24da302ce8ea39aec8c44784ae500776a110d1a9ce019a29459ab3b77c"
+      },
+      "artifacts": {
+        "03-sft-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "03-sft-judge/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "03-sft-judge/adapter_model.safetensors": "d7846a24da302ce8ea39aec8c44784ae500776a110d1a9ce019a29459ab3b77c",
+        "03-sft-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "03-sft-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "03-sft-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "03-sft-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "03-sft-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "03-sft-judge/summary.json": "b0508f168cfa7bf38addf303f4106e497577112071a6d5df55a0ad708da40dc1",
+        "03-sft-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "03-sft-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "03-sft-judge/training.jsonl": "9fc1b900b0665039fc901aa80b4bd140fc8e4108ce2c5da39dc2fad5af9f8e32",
+        "03-sft-judge/training_request.json": "f6b23c56ac22cd7b68a64f86e27f0908b9b31d816bf45178b19a1680f5fef780",
+        "03-sft-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "04-base-direct": {
+      "status": "completed",
+      "started_utc": "2026-11-16T05:59:30.648864+00:00",
+      "seconds": 20.364663917105645,
+      "result": {
+        "n": 2,
+        "generations": 10,
+        "accuracy": 0.0,
+        "majority_accuracy": 0.0,
+        "majority_wilson95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "invalid_rate": 0.09999999999999998,
+        "abstention_rate": 0.0,
+        "choose_a_rate_valid": 0.7777777777777778,
+        "group_all_correct": null,
+        "groups": 0,
+        "by_subset": {
+          "validation": {
+            "n": 2,
+            "generations": 10,
+            "accuracy": 0.0,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              0.0,
+              0.6576197724933469
+            ],
+            "invalid_rate": 0.09999999999999998,
+            "abstention_rate": 0.0,
+            "choose_a_rate_valid": 0.7777777777777778,
+            "group_all_correct": null,
+            "groups": 0
+          }
+        },
+        "generation_seconds": 8.94744679098949,
+        "tokens": 51,
+        "actual_devices": [
+          "mps"
+        ],
+        "fallback_generations": 0,
+        "tokens_per_second": 5.699950074177525,
+        "length_limit_rate": 0.0,
+        "rubric_unique_prompts": 0,
+        "rubric_generation_seconds": 0,
+        "order_consistency": null
+      },
+      "artifacts": {
+        "04-base-direct/predictions.jsonl": "fb9849d9a15c5fd72db17bcbffb8ca8d6deb62ccbd0cb1ab6e4f673b599f6aaf",
+        "04-base-direct/summary.json": "61e279d0e5090270cf29ee62dafbbd490f445217d9114c50e734e311e740022b"
+      }
+    },
+    "05-base-rubric": {
+      "status": "completed",
+      "started_utc": "2026-11-16T05:59:51.014916+00:00",
+      "seconds": 125.61038570804521,
+      "result": {
+        "n": 2,
+        "generations": 10,
+        "accuracy": 0.0,
+        "majority_accuracy": 0.0,
+        "majority_wilson95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "invalid_rate": 0.6,
+        "abstention_rate": 1.0,
+        "choose_a_rate_valid": 0.75,
+        "group_all_correct": null,
+        "groups": 0,
+        "by_subset": {
+          "validation": {
+            "n": 2,
+            "generations": 10,
+            "accuracy": 0.0,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              0.0,
+              0.6576197724933469
+            ],
+            "invalid_rate": 0.6,
+            "abstention_rate": 1.0,
+            "choose_a_rate_valid": 0.75,
+            "group_all_correct": null,
+            "groups": 0
+          }
+        },
+        "generation_seconds": 93.31472404208033,
+        "tokens": 1934,
+        "actual_devices": [
+          "mps"
+        ],
+        "fallback_generations": 0,
+        "tokens_per_second": 20.725560942856795,
+        "length_limit_rate": 0.1,
+        "rubric_unique_prompts": 2,
+        "rubric_generation_seconds": 10.372836084105074,
+        "order_consistency": null
+      },
+      "artifacts": {
+        "05-base-rubric/predictions.jsonl": "fdfe837cd99ae8b44eecd577c200a88e2d955b7e71256caa8ba5679592108fc3",
+        "05-base-rubric/rubrics.jsonl": "8a6de94f509a9660727fd0adeee06a80d3ee9b39afb61579c69fb90ec8579d3a",
+        "05-base-rubric/summary.json": "6a992a2f5d0be05b188aca9ce7cf09931eb334eb321ed32b85f5d4709667ad42"
+      }
+    },
+    "06-sft-evaluation": {
+      "status": "completed",
+      "started_utc": "2026-11-16T06:01:56.631262+00:00",
+      "seconds": 239.93822920927778,
+      "result": {
+        "n": 2,
+        "generations": 10,
+        "accuracy": 0.0,
+        "majority_accuracy": 0.0,
+        "majority_wilson95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "invalid_rate": 1.0,
+        "abstention_rate": 1.0,
+        "choose_a_rate_valid": null,
+        "group_all_correct": null,
+        "groups": 0,
+        "by_subset": {
+          "validation": {
+            "n": 2,
+            "generations": 10,
+            "accuracy": 0.0,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              0.0,
+              0.6576197724933469
+            ],
+            "invalid_rate": 1.0,
+            "abstention_rate": 1.0,
+            "choose_a_rate_valid": null,
+            "group_all_correct": null,
+            "groups": 0
+          }
+        },
+        "generation_seconds": 120.49676845781504,
+        "tokens": 3149,
+        "actual_devices": [
+          "mps"
+        ],
+        "fallback_generations": 0,
+        "tokens_per_second": 26.133480924863473,
+        "length_limit_rate": 0.9,
+        "rubric_unique_prompts": 2,
+        "rubric_generation_seconds": 16.963153165765107,
+        "order_consistency": 0.0
+      },
+      "artifacts": {
+        "06-sft-evaluation/predictions.jsonl": "955479fda0199410ca5231ee36f2da237f7701ebac347c81dba82a67143929a9",
+        "06-sft-evaluation/rubrics.jsonl": "c605482fd240508d3d5b18b431f238d3e139d2a0dd6769d7e95ad274ab9e296e",
+        "06-sft-evaluation/summary.json": "bf43ab43a1bcec2d9b5265d2734f946365b5e08506cd1c7aa220cbf4ba9b37e7"
+      }
+    },
+    "07-arm": {
+      "status": "completed",
+      "started_utc": "2026-11-16T06:05:56.587175+00:00",
+      "seconds": 837.3661470832303,
+      "result": {
+        "rubric": "experiments/m1-cpu-training-20261116/07-arm/round-3-rubric",
+        "judge": "experiments/m1-cpu-training-20261116/07-arm/round-3-judge"
+      },
+      "artifacts": {
+        "07-arm/checkpoints.json": "ba89d80f152cd20f08a9580b9ba23825af76b1fc0ff875728e5448641c09498f",
+        "07-arm/round-1-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "07-arm/round-1-judge/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "07-arm/round-1-judge/adapter_model.safetensors": "b0795a99e3b06143082a766e79dec3a417e0962129c559742421ffbdf7863d4c",
+        "07-arm/round-1-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "07-arm/round-1-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "07-arm/round-1-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "07-arm/round-1-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "07-arm/round-1-judge/rollouts.jsonl": "b28155637a1cd33d0a65d8862b270e3ed91ac3e196633958f043ccfbd33c9586",
+        "07-arm/round-1-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "07-arm/round-1-judge/summary.json": "285f380d6f1c924923fb1216aa3939614d16c794c52fc56063a9e67fe6a7562c",
+        "07-arm/round-1-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "07-arm/round-1-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "07-arm/round-1-judge/training.jsonl": "ee476f0a41c67b65bc96161ac5e31f628a20ae674b7e65c0210e0c82bb346415",
+        "07-arm/round-1-judge/training_request.json": "dd255ae08b9f1354de809fb455e166809a5801f68f58691654e62a236003a9e2",
+        "07-arm/round-1-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "07-arm/round-1-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "07-arm/round-1-rubric/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "07-arm/round-1-rubric/adapter_model.safetensors": "5ed82d330536aa4b8cc73a02aa92c412aa13ad27520a445007a0d592f3836b36",
+        "07-arm/round-1-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "07-arm/round-1-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "07-arm/round-1-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "07-arm/round-1-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "07-arm/round-1-rubric/rollouts.jsonl": "19613b33dafb2a42200cf597c3bcb4d25035b98dbf4d863c34144a9a3e3c00db",
+        "07-arm/round-1-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "07-arm/round-1-rubric/summary.json": "a577271ae6d88f17a75c16c5e6c604ed45eec63413e8339416a8258f0f510e98",
+        "07-arm/round-1-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "07-arm/round-1-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "07-arm/round-1-rubric/training.jsonl": "ac5bb02296b4b826fd0d117fbbeb1ecdf028b9e7ef1be9242365b6cf9e0d6cd7",
+        "07-arm/round-1-rubric/training_request.json": "330ccb0defecf029adac37b08d77b9627efb7f6b4b5d3cb32e52177deff04919",
+        "07-arm/round-1-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "07-arm/round-2-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "07-arm/round-2-judge/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "07-arm/round-2-judge/adapter_model.safetensors": "45d1c787d6da8033730908f0376c9242c69d15c91435fc985f9023a61245c824",
+        "07-arm/round-2-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "07-arm/round-2-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "07-arm/round-2-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "07-arm/round-2-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "07-arm/round-2-judge/rollouts.jsonl": "d19345ed7e94c4eafdf8ec2ac8e47e3aeb12816f64ce1aba11aa077811584009",
+        "07-arm/round-2-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "07-arm/round-2-judge/summary.json": "231d86c9a18cb252890d46243f3212afc6c9174facff1f486ebafcda1dd5c04a",
+        "07-arm/round-2-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "07-arm/round-2-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "07-arm/round-2-judge/training.jsonl": "9476bc8210b8a71095cee743289e4ef468f06d78e333f9923ac7099e6ad2fc43",
+        "07-arm/round-2-judge/training_request.json": "54e4523bbd50e4610361933351a0d1cd037a24d884bda9f16f5f0b079a8aa3fe",
+        "07-arm/round-2-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "07-arm/round-2-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "07-arm/round-2-rubric/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "07-arm/round-2-rubric/adapter_model.safetensors": "6944a068914d8fde813db16fef2c4615e13f255190af72d76306da3b4e9a7379",
+        "07-arm/round-2-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "07-arm/round-2-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "07-arm/round-2-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "07-arm/round-2-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "07-arm/round-2-rubric/rollouts.jsonl": "aafdb455ed5d3b2948ebb35f99c59275e7b88c2a25c9e9cde3c1c12b9e4f3e60",
+        "07-arm/round-2-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "07-arm/round-2-rubric/summary.json": "7ad0ab68cfcadcad59ccb00d220de116efbe1e100065357f9bb55c38bb1dff0b",
+        "07-arm/round-2-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "07-arm/round-2-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "07-arm/round-2-rubric/training.jsonl": "c8c9e8cb5dac3e419fa590d7318a716b049a764966b65f5391726050fa609077",
+        "07-arm/round-2-rubric/training_request.json": "421122971eee741437309774e007e63a454b2b09804cbee38b8d5083dc80feee",
+        "07-arm/round-2-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "07-arm/round-3-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "07-arm/round-3-judge/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "07-arm/round-3-judge/adapter_model.safetensors": "486ddce59d0faf590d9bbb720dbc77b2db4df703fbf53e4a4024f5ab3fa570e2",
+        "07-arm/round-3-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "07-arm/round-3-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "07-arm/round-3-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "07-arm/round-3-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "07-arm/round-3-judge/rollouts.jsonl": "610c185ee79e61b3c9e4cb6ad3fe84b25a65d1953875a48d08e889366961dca9",
+        "07-arm/round-3-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "07-arm/round-3-judge/summary.json": "6c311f0dd850481b84668e40d0d6b32a034718aa62a92d55f2de583be55b3ac1",
+        "07-arm/round-3-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "07-arm/round-3-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "07-arm/round-3-judge/training.jsonl": "fd2cdcea73a43774c934297845c8362a9b263a8d6649fc01514a0aaf3c4b6a6e",
+        "07-arm/round-3-judge/training_request.json": "e8fa6a12cfb391620bd9c1e0906ed27193eb2088037fdcfd8cd33c2eb504be57",
+        "07-arm/round-3-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "07-arm/round-3-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "07-arm/round-3-rubric/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "07-arm/round-3-rubric/adapter_model.safetensors": "9f341c27b46890058eead9be1e8c93583db568e5c458635d487afc23a9a2ee5c",
+        "07-arm/round-3-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "07-arm/round-3-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "07-arm/round-3-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "07-arm/round-3-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "07-arm/round-3-rubric/rollouts.jsonl": "c488bab7cb1b2dbacbab5bcb8f9d4324e1ddd4717753236adf95602aa9b113d9",
+        "07-arm/round-3-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "07-arm/round-3-rubric/summary.json": "5e53495f8656fb424f1973c6b8ef57486603cbd4840f83c09548b5078b124b2d",
+        "07-arm/round-3-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "07-arm/round-3-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "07-arm/round-3-rubric/training.jsonl": "25863cb54610d5049ad92a55a844bd4a19d80808937cfd32b6f683b6b805e867",
+        "07-arm/round-3-rubric/training_request.json": "3bc4c2b04669cc46642525dace19eca46743f9baf3c64cccb6a5b9c749f51136",
+        "07-arm/round-3-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "07-arm/schedule.json": "b1eb9fee6820921b1795f030e52a3f6a0315189d6b6fa956a3fc7ac726caae4b"
+      }
+    },
+    "08-arm-evaluation": {
+      "status": "completed",
+      "started_utc": "2026-11-16T06:19:53.950389+00:00",
+      "seconds": 291.8148783752695,
+      "result": {
+        "n": 2,
+        "generations": 10,
+        "accuracy": 0.0,
+        "majority_accuracy": 0.0,
+        "majority_wilson95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "invalid_rate": 1.0,
+        "abstention_rate": 1.0,
+        "choose_a_rate_valid": null,
+        "group_all_correct": null,
+        "groups": 0,
+        "by_subset": {
+          "validation": {
+            "n": 2,
+            "generations": 10,
+            "accuracy": 0.0,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              0.0,
+              0.6576197724933469
+            ],
+            "invalid_rate": 1.0,
+            "abstention_rate": 1.0,
+            "choose_a_rate_valid": null,
+            "group_all_correct": null,
+            "groups": 0
+          }
+        },
+        "generation_seconds": 144.7699782513082,
+        "tokens": 3200,
+        "actual_devices": [
+          "mps"
+        ],
+        "fallback_generations": 0,
+        "tokens_per_second": 22.10403039810558,
+        "length_limit_rate": 1.0,
+        "rubric_unique_prompts": 2,
+        "rubric_generation_seconds": 23.038268834352493,
+        "order_consistency": 0.0
+      },
+      "artifacts": {
+        "08-arm-evaluation/predictions.jsonl": "3510d959b72f028da9724e4e30df62388e6d2db76bd03bfdff05ca6fb7c3ca3d",
+        "08-arm-evaluation/rubrics.jsonl": "1d0f6945c540edd2bc7d1e1c050722989a197f8c1c2c89d38b4a6b512b1a0d9b",
+        "08-arm-evaluation/summary.json": "ae72f613029aa72fdc13283f7a81563888dcb0fe1c88c8eb07aedf480a57eed5"
+      }
+    },
+    "09-ablation-reverse": {
+      "status": "completed",
+      "started_utc": "2026-11-16T06:24:45.770943+00:00",
+      "seconds": 972.4066327088512,
+      "result": {
+        "rubric": "experiments/m1-cpu-training-20261116/09-ablation-reverse/round-3-rubric",
+        "judge": "experiments/m1-cpu-training-20261116/09-ablation-reverse/round-3-judge"
+      },
+      "artifacts": {
+        "09-ablation-reverse/checkpoints.json": "05f4ba708847afb8d1c996eaa7bccafab226d38be8f52d46a617ef15265a54ee",
+        "09-ablation-reverse/round-1-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-reverse/round-1-judge/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "09-ablation-reverse/round-1-judge/adapter_model.safetensors": "b0795a99e3b06143082a766e79dec3a417e0962129c559742421ffbdf7863d4c",
+        "09-ablation-reverse/round-1-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-reverse/round-1-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-reverse/round-1-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-reverse/round-1-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-reverse/round-1-judge/rollouts.jsonl": "eccf1d7cb8b63e52ed4b8c74592dda0a8b08de19cb802d620d3377873f9c08a4",
+        "09-ablation-reverse/round-1-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-reverse/round-1-judge/summary.json": "285f380d6f1c924923fb1216aa3939614d16c794c52fc56063a9e67fe6a7562c",
+        "09-ablation-reverse/round-1-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-reverse/round-1-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-reverse/round-1-judge/training.jsonl": "ee476f0a41c67b65bc96161ac5e31f628a20ae674b7e65c0210e0c82bb346415",
+        "09-ablation-reverse/round-1-judge/training_request.json": "dee31684fcf6e24dcb16d8ada06effec7037b23816cce9ba7c93f5b89cef7444",
+        "09-ablation-reverse/round-1-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-reverse/round-1-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-reverse/round-1-rubric/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "09-ablation-reverse/round-1-rubric/adapter_model.safetensors": "5ed82d330536aa4b8cc73a02aa92c412aa13ad27520a445007a0d592f3836b36",
+        "09-ablation-reverse/round-1-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-reverse/round-1-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-reverse/round-1-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-reverse/round-1-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-reverse/round-1-rubric/rollouts.jsonl": "290332acfaf19204d95c3cf75391ca97e115e8a2b3f75704e4ae050dbe8d66c1",
+        "09-ablation-reverse/round-1-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-reverse/round-1-rubric/summary.json": "a577271ae6d88f17a75c16c5e6c604ed45eec63413e8339416a8258f0f510e98",
+        "09-ablation-reverse/round-1-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-reverse/round-1-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-reverse/round-1-rubric/training.jsonl": "ac5bb02296b4b826fd0d117fbbeb1ecdf028b9e7ef1be9242365b6cf9e0d6cd7",
+        "09-ablation-reverse/round-1-rubric/training_request.json": "67b3e0b0b252b02185858f286ebba3ad3ddec91777e6fc05170e821d93ad9cd8",
+        "09-ablation-reverse/round-1-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-reverse/round-2-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-reverse/round-2-judge/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "09-ablation-reverse/round-2-judge/adapter_model.safetensors": "45d1c787d6da8033730908f0376c9242c69d15c91435fc985f9023a61245c824",
+        "09-ablation-reverse/round-2-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-reverse/round-2-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-reverse/round-2-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-reverse/round-2-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-reverse/round-2-judge/rollouts.jsonl": "abc917a9afe2d2607fbc1da58841b6d90ec4821ceaa2f0156ba3ff4183df0ea4",
+        "09-ablation-reverse/round-2-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-reverse/round-2-judge/summary.json": "8349887f49b3b0f37fa50628cb4acc7ebfe6af5d3e3e9da44fca7c09eea7a20c",
+        "09-ablation-reverse/round-2-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-reverse/round-2-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-reverse/round-2-judge/training.jsonl": "9476bc8210b8a71095cee743289e4ef468f06d78e333f9923ac7099e6ad2fc43",
+        "09-ablation-reverse/round-2-judge/training_request.json": "b96ac7cf1a08f649bec1df95254d2907b183e39ac6d1d981c7f708e58ab82652",
+        "09-ablation-reverse/round-2-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-reverse/round-2-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-reverse/round-2-rubric/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "09-ablation-reverse/round-2-rubric/adapter_model.safetensors": "6944a068914d8fde813db16fef2c4615e13f255190af72d76306da3b4e9a7379",
+        "09-ablation-reverse/round-2-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-reverse/round-2-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-reverse/round-2-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-reverse/round-2-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-reverse/round-2-rubric/rollouts.jsonl": "c14b4d81a66a036994b18fb5da516cfe5d618885091f2542deeaba9af4ed87be",
+        "09-ablation-reverse/round-2-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-reverse/round-2-rubric/summary.json": "82ec9b3cec67f0172c882e975d5850952addc1547b004bed94c377d729c7a1f3",
+        "09-ablation-reverse/round-2-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-reverse/round-2-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-reverse/round-2-rubric/training.jsonl": "c8c9e8cb5dac3e419fa590d7318a716b049a764966b65f5391726050fa609077",
+        "09-ablation-reverse/round-2-rubric/training_request.json": "f86f5252d49338092037d63eb2ae8a3d30917985d8b8c64a3c33498b08428131",
+        "09-ablation-reverse/round-2-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-reverse/round-3-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-reverse/round-3-judge/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "09-ablation-reverse/round-3-judge/adapter_model.safetensors": "486ddce59d0faf590d9bbb720dbc77b2db4df703fbf53e4a4024f5ab3fa570e2",
+        "09-ablation-reverse/round-3-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-reverse/round-3-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-reverse/round-3-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-reverse/round-3-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-reverse/round-3-judge/rollouts.jsonl": "a73c168728cd93134650ee9f548bb1ac9d641b00041b1f4d6007e69fdf6e54e2",
+        "09-ablation-reverse/round-3-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-reverse/round-3-judge/summary.json": "d9a6c7cb859c13ca728dfb1fa42f267ef9e1cd33ec32e7ab8123e264ee5ad525",
+        "09-ablation-reverse/round-3-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-reverse/round-3-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-reverse/round-3-judge/training.jsonl": "fd2cdcea73a43774c934297845c8362a9b263a8d6649fc01514a0aaf3c4b6a6e",
+        "09-ablation-reverse/round-3-judge/training_request.json": "862c272eb442f3b3d52e6ec20930fe8d4a06097da430c103d8f2dbd205a3f67b",
+        "09-ablation-reverse/round-3-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-reverse/round-3-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-reverse/round-3-rubric/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "09-ablation-reverse/round-3-rubric/adapter_model.safetensors": "9f341c27b46890058eead9be1e8c93583db568e5c458635d487afc23a9a2ee5c",
+        "09-ablation-reverse/round-3-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-reverse/round-3-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-reverse/round-3-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-reverse/round-3-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-reverse/round-3-rubric/rollouts.jsonl": "1bb4bb6a1c7d4ed132f4727a5882829475b5f8b2f4fdd142091edd4c2a337fb3",
+        "09-ablation-reverse/round-3-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-reverse/round-3-rubric/summary.json": "80ce23a7c648fbe176d3bbe67056c6416a830c7f214854f7b59f855db5331b08",
+        "09-ablation-reverse/round-3-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-reverse/round-3-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-reverse/round-3-rubric/training.jsonl": "25863cb54610d5049ad92a55a844bd4a19d80808937cfd32b6f683b6b805e867",
+        "09-ablation-reverse/round-3-rubric/training_request.json": "59d39f563b0ccfbc70671e3791a0b576552002856f65e71ac6f5373fdf301494",
+        "09-ablation-reverse/round-3-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-reverse/schedule.json": "6f85bbf28e6d928903a0f67a48e680d49bd768c8f773d200a65afa2dd21071e4"
+      }
+    },
+    "10-eval-reverse": {
+      "status": "completed",
+      "started_utc": "2026-11-16T06:40:58.172455+00:00",
+      "seconds": 207.9958800827153,
+      "result": {
+        "n": 2,
+        "generations": 10,
+        "accuracy": 0.0,
+        "majority_accuracy": 0.0,
+        "majority_wilson95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "invalid_rate": 1.0,
+        "abstention_rate": 1.0,
+        "choose_a_rate_valid": null,
+        "group_all_correct": null,
+        "groups": 0,
+        "by_subset": {
+          "validation": {
+            "n": 2,
+            "generations": 10,
+            "accuracy": 0.0,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              0.0,
+              0.6576197724933469
+            ],
+            "invalid_rate": 1.0,
+            "abstention_rate": 1.0,
+            "choose_a_rate_valid": null,
+            "group_all_correct": null,
+            "groups": 0
+          }
+        },
+        "generation_seconds": 135.32221408281475,
+        "tokens": 3200,
+        "actual_devices": [
+          "mps"
+        ],
+        "fallback_generations": 0,
+        "tokens_per_second": 23.64726310228458,
+        "length_limit_rate": 1.0,
+        "rubric_unique_prompts": 2,
+        "rubric_generation_seconds": 27.90193899953738,
+        "order_consistency": null
+      },
+      "artifacts": {
+        "10-eval-reverse/predictions.jsonl": "b97860821ef851768e002c06e211aded74c0f4f534a041288f2af8bc1b745aa2",
+        "10-eval-reverse/rubrics.jsonl": "bf33fcc82a9700f13ad5c1e823313af4f38fc2d5fc0042e92193a426ff84b183",
+        "10-eval-reverse/summary.json": "ded8af4666193fae070087e6a0329b0bfcfa3c5032d305da4c2027f2af80e15c"
+      }
+    },
+    "09-ablation-no_format": {
+      "status": "completed",
+      "started_utc": "2026-11-16T06:44:26.172301+00:00",
+      "seconds": 928.7815525829792,
+      "result": {
+        "rubric": "experiments/m1-cpu-training-20261116/09-ablation-no_format/round-3-rubric",
+        "judge": "experiments/m1-cpu-training-20261116/09-ablation-no_format/round-3-judge"
+      },
+      "artifacts": {
+        "09-ablation-no_format/checkpoints.json": "655520cd56733c0c45c04a927813001609152f3874883f6b7c1beb09638d01ba",
+        "09-ablation-no_format/round-1-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-no_format/round-1-judge/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "09-ablation-no_format/round-1-judge/adapter_model.safetensors": "0fa33dcd4e32136852c22cdd6e1a5c57c118a46a1ca7cfef7b19e27504c1befe",
+        "09-ablation-no_format/round-1-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-no_format/round-1-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-no_format/round-1-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-no_format/round-1-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-no_format/round-1-judge/rollouts.jsonl": "d0bbf99de683209d708dd1149ebbea7f2277e9a65f103e074385db11a8533fce",
+        "09-ablation-no_format/round-1-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-no_format/round-1-judge/summary.json": "16c015653f45c2646d275493dc8a8c9546abdb310f15eabc0a304a78d1d44f29",
+        "09-ablation-no_format/round-1-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-no_format/round-1-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-no_format/round-1-judge/training.jsonl": "18e2b000394e5742d205547afd781bac03c1f8d6583df01d8ff34c7b225d77e0",
+        "09-ablation-no_format/round-1-judge/training_request.json": "a4a8161e34922b03a0d32df38d4e2a1defb25625b856b3bddc1b222e402fe251",
+        "09-ablation-no_format/round-1-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-no_format/round-1-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-no_format/round-1-rubric/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "09-ablation-no_format/round-1-rubric/adapter_model.safetensors": "5ed82d330536aa4b8cc73a02aa92c412aa13ad27520a445007a0d592f3836b36",
+        "09-ablation-no_format/round-1-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-no_format/round-1-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-no_format/round-1-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-no_format/round-1-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-no_format/round-1-rubric/rollouts.jsonl": "93a0fdae9b620c8e75d6261a218197c0f53ea7844ccfa66a1168530af3d0d680",
+        "09-ablation-no_format/round-1-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-no_format/round-1-rubric/summary.json": "a577271ae6d88f17a75c16c5e6c604ed45eec63413e8339416a8258f0f510e98",
+        "09-ablation-no_format/round-1-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-no_format/round-1-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-no_format/round-1-rubric/training.jsonl": "ac5bb02296b4b826fd0d117fbbeb1ecdf028b9e7ef1be9242365b6cf9e0d6cd7",
+        "09-ablation-no_format/round-1-rubric/training_request.json": "b3379d3a67d393d280f89d00798fa791a16a384a566b2f14cabe006d9a622afa",
+        "09-ablation-no_format/round-1-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-no_format/round-2-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-no_format/round-2-judge/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "09-ablation-no_format/round-2-judge/adapter_model.safetensors": "0ef0125449a61893c7325790592fa373c637f0a47b329d12a6f7856cc86f1df1",
+        "09-ablation-no_format/round-2-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-no_format/round-2-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-no_format/round-2-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-no_format/round-2-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-no_format/round-2-judge/rollouts.jsonl": "0db7c1164932d195c48efd1d7d33d7b22ffced3e3aab8c6005d5d4b66b377e6a",
+        "09-ablation-no_format/round-2-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-no_format/round-2-judge/summary.json": "70502da8803e17356a4f59c8f8f1ff459fa5f56415caf30c9ebc1ed4d315eef4",
+        "09-ablation-no_format/round-2-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-no_format/round-2-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-no_format/round-2-judge/training.jsonl": "6a7cc173b9fd86f3adcf088614e2b9c604b56483eb736aa5d78780eb66a3bb36",
+        "09-ablation-no_format/round-2-judge/training_request.json": "96af85c2a6d474080f247ecbc82c9e1af14cc1d0472a8dcc2021a00f6d33031c",
+        "09-ablation-no_format/round-2-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-no_format/round-2-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-no_format/round-2-rubric/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "09-ablation-no_format/round-2-rubric/adapter_model.safetensors": "6944a068914d8fde813db16fef2c4615e13f255190af72d76306da3b4e9a7379",
+        "09-ablation-no_format/round-2-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-no_format/round-2-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-no_format/round-2-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-no_format/round-2-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-no_format/round-2-rubric/rollouts.jsonl": "9f0dad351da48f9300f70cbd1e185bfa3ee878d4d457345f381f0c472d319bd4",
+        "09-ablation-no_format/round-2-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-no_format/round-2-rubric/summary.json": "f2cb9a4ac44c7b1c0903fe7497e2b21b207230f1c8d4640e6b84cfa58b9a32fd",
+        "09-ablation-no_format/round-2-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-no_format/round-2-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-no_format/round-2-rubric/training.jsonl": "c8c9e8cb5dac3e419fa590d7318a716b049a764966b65f5391726050fa609077",
+        "09-ablation-no_format/round-2-rubric/training_request.json": "590b7123515f62acd4c5a9d0a34bcc2b84dd6321eb113f52d00ac3132ec2bdd8",
+        "09-ablation-no_format/round-2-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-no_format/round-3-judge/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-no_format/round-3-judge/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "09-ablation-no_format/round-3-judge/adapter_model.safetensors": "e0b26c6ca610acdd2a0570b3a4d16103a1839eaca7ee31f19e6c935b5585640b",
+        "09-ablation-no_format/round-3-judge/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-no_format/round-3-judge/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-no_format/round-3-judge/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-no_format/round-3-judge/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-no_format/round-3-judge/rollouts.jsonl": "e7e27e4932e6753d40fb5b1341456664fe03e40521e054551cfb306486521574",
+        "09-ablation-no_format/round-3-judge/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-no_format/round-3-judge/summary.json": "add1de6cb1d1c72b1bad6cf6aa88f47d3d9f467ecb5b12d988e51b74955ed3a4",
+        "09-ablation-no_format/round-3-judge/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-no_format/round-3-judge/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-no_format/round-3-judge/training.jsonl": "2daf5eac82f0f17d9a5ba791edb29d8a2bfb56d3f43bfae52b90587a964c2390",
+        "09-ablation-no_format/round-3-judge/training_request.json": "85f6db58b7d11ea544d5fae8abdd660017fcd9c1c09862d64048183d3ac673b6",
+        "09-ablation-no_format/round-3-judge/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-no_format/round-3-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "09-ablation-no_format/round-3-rubric/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "09-ablation-no_format/round-3-rubric/adapter_model.safetensors": "9f341c27b46890058eead9be1e8c93583db568e5c458635d487afc23a9a2ee5c",
+        "09-ablation-no_format/round-3-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "09-ablation-no_format/round-3-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "09-ablation-no_format/round-3-rubric/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "09-ablation-no_format/round-3-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "09-ablation-no_format/round-3-rubric/rollouts.jsonl": "764713463e766c76e7dc46d99c51f1c2e47b0cfbff9969357ae74d8b9acdec94",
+        "09-ablation-no_format/round-3-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "09-ablation-no_format/round-3-rubric/summary.json": "e61bed4057c3b66c3a080afeda2657be07d91f92be8eb7fcb29c79480edaf11f",
+        "09-ablation-no_format/round-3-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "09-ablation-no_format/round-3-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "09-ablation-no_format/round-3-rubric/training.jsonl": "25863cb54610d5049ad92a55a844bd4a19d80808937cfd32b6f683b6b805e867",
+        "09-ablation-no_format/round-3-rubric/training_request.json": "7bf2db682ed2c78e27750da51e9fc87d80266d43d324072131647ec878f56b62",
+        "09-ablation-no_format/round-3-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "09-ablation-no_format/schedule.json": "3fd0f739bdbb1b6ded96b2235c5d995af547a45f6d7412d649deebe2e425e292"
+      }
+    },
+    "10-eval-no_format": {
+      "status": "completed",
+      "started_utc": "2026-11-16T06:59:54.916119+00:00",
+      "seconds": 364.0684115830809,
+      "result": {
+        "n": 2,
+        "generations": 10,
+        "accuracy": 0.0,
+        "majority_accuracy": 0.0,
+        "majority_wilson95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "invalid_rate": 1.0,
+        "abstention_rate": 1.0,
+        "choose_a_rate_valid": null,
+        "group_all_correct": null,
+        "groups": 0,
+        "by_subset": {
+          "validation": {
+            "n": 2,
+            "generations": 10,
+            "accuracy": 0.0,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              0.0,
+              0.6576197724933469
+            ],
+            "invalid_rate": 1.0,
+            "abstention_rate": 1.0,
+            "choose_a_rate_valid": null,
+            "group_all_correct": null,
+            "groups": 0
+          }
+        },
+        "generation_seconds": 268.84862412465736,
+        "tokens": 3149,
+        "actual_devices": [
+          "mps"
+        ],
+        "fallback_generations": 0,
+        "tokens_per_second": 11.712910974541195,
+        "length_limit_rate": 0.9,
+        "rubric_unique_prompts": 2,
+        "rubric_generation_seconds": 46.82653412548825,
+        "order_consistency": null
+      },
+      "artifacts": {
+        "10-eval-no_format/predictions.jsonl": "ad10b1c9bea24116628ad27ad1b7cbd547e9640e300a7c36e56ddb288a7a8c57",
+        "10-eval-no_format/rubrics.jsonl": "39936e54d084801cc61256cd69122727222856db8e072d297a683c54cc761c7a",
+        "10-eval-no_format/summary.json": "7ba9978add66e7fb0d4641b19bba67c92c7301fd1d616d9dddf842a56b90e457"
+      }
+    },
+    "11-public-benchmarks": {
+      "status": "completed",
+      "started_utc": "2026-11-16T07:52:16.782586+00:00",
+      "seconds": 3443.7218918330036,
+      "result": {
+        "data": {
+          "rewardbench": {
+            "repository": "allenai/reward-bench",
+            "revision": "168d848cdbbea9764fae4a544dc9ca1e6cca4931",
+            "pairs": 4,
+            "prompt_groups_by_subset": {
+              "chat_hard": 1,
+              "chat": 1
+            },
+            "skipped": {},
+            "sha256": "da2578cd9c842978c7476830ac42287c4aea092f7eeb80bfa9845bc3c8083ca6",
+            "selection_bias": "Short contexts; bounded seeded sample, not full benchmark"
+          },
+          "rewardbench2": {
+            "repository": "allenai/reward-bench-2",
+            "revision": "7ff08853b0d5686e79b13fda8677024f566a104a",
+            "pairs": 6,
+            "prompt_groups_by_subset": {
+              "Focus": 1,
+              "Precise IF": 1
+            },
+            "skipped": {},
+            "sha256": "e7a9664ebf0fad47e20525a48b58d5f4bf18f62f2357af0987dd6a511c87ce5a",
+            "selection_bias": "Short contexts; bounded seeded sample, not full benchmark"
+          },
+          "rmbench": {
+            "repository": "THU-KEG/RM-Bench",
+            "revision": "5e094adbde982855284918147e84a169f7282a2a",
+            "pairs": 9,
+            "prompt_groups_by_subset": {
+              "chat": 1
+            },
+            "skipped": {},
+            "sha256": "91628adcf3d82d32f32ee0053d012bf395a939ea633789aa35b7bd00d64c6613",
+            "selection_bias": "Short contexts; bounded seeded sample, not full benchmark"
+          },
+          "writing": {
+            "repository": "m-a-p/Writing-Preference-Bench",
+            "revision": "676d7114ce37ad5d8eff5b39f3648b855730bf77",
+            "pairs": 4,
+            "prompt_groups_by_subset": {
+              "writing": 1
+            },
+            "skipped": {
+              "context_overflow_groups": 17
+            },
+            "sha256": "c3b1a0f1dce07565363712056c3ca582df6b467f6366c573dbf2719534cf3e29",
+            "selection_bias": "Short contexts; bounded seeded sample, not full benchmark"
+          }
+        },
+        "metrics": {
+          "rewardbench": {
+            "n": 4,
+            "generations": 20,
+            "accuracy": 0.0,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              0.0,
+              0.4898908364545973
+            ],
+            "invalid_rate": 0.95,
+            "abstention_rate": 1.0,
+            "choose_a_rate_valid": 1.0,
+            "group_all_correct": 0.0,
+            "groups": 4,
+            "by_subset": {
+              "chat": {
+                "n": 3,
+                "generations": 15,
+                "accuracy": 0.0,
+                "majority_accuracy": 0.0,
+                "majority_wilson95": [
+                  5.551115123125783e-17,
+                  0.5614970317550454
+                ],
+                "invalid_rate": 0.9333333333333333,
+                "abstention_rate": 1.0,
+                "choose_a_rate_valid": 1.0,
+                "group_all_correct": 0.0,
+                "groups": 3
+              },
+              "chat_hard": {
+                "n": 1,
+                "generations": 5,
+                "accuracy": 0.0,
+                "majority_accuracy": 0.0,
+                "majority_wilson95": [
+                  0.0,
+                  0.7934506856227626
+                ],
+                "invalid_rate": 1.0,
+                "abstention_rate": 1.0,
+                "choose_a_rate_valid": null,
+                "group_all_correct": 0.0,
+                "groups": 1
+              }
+            },
+            "generation_seconds": 410.5055017084816,
+            "tokens": 6339,
+            "actual_devices": [
+              "mps"
+            ],
+            "fallback_generations": 0,
+            "tokens_per_second": 15.441936767272876,
+            "length_limit_rate": 0.95,
+            "rubric_unique_prompts": 2,
+            "rubric_generation_seconds": 31.38418020820245,
+            "order_consistency": null
+          },
+          "rewardbench2": {
+            "n": 6,
+            "generations": 30,
+            "accuracy": 0.16666666666666666,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              2.7755575615628914e-17,
+              0.3903342879021653
+            ],
+            "invalid_rate": 0.8333333333333334,
+            "abstention_rate": 1.0,
+            "choose_a_rate_valid": 1.0,
+            "group_all_correct": 0.0,
+            "groups": 2,
+            "by_subset": {
+              "Focus": {
+                "n": 3,
+                "generations": 15,
+                "accuracy": 0.0,
+                "majority_accuracy": 0.0,
+                "majority_wilson95": [
+                  5.551115123125783e-17,
+                  0.5614970317550454
+                ],
+                "invalid_rate": 0.8666666666666667,
+                "abstention_rate": 1.0,
+                "choose_a_rate_valid": 1.0,
+                "group_all_correct": 0.0,
+                "groups": 1
+              },
+              "Precise IF": {
+                "n": 3,
+                "generations": 15,
+                "accuracy": 0.3333333333333333,
+                "majority_accuracy": 0.0,
+                "majority_wilson95": [
+                  5.551115123125783e-17,
+                  0.5614970317550454
+                ],
+                "invalid_rate": 0.8,
+                "abstention_rate": 1.0,
+                "choose_a_rate_valid": 1.0,
+                "group_all_correct": 0.0,
+                "groups": 1
+              }
+            },
+            "generation_seconds": 690.1097488328815,
+            "tokens": 9300,
+            "actual_devices": [
+              "cpu",
+              "mps"
+            ],
+            "fallback_generations": 5,
+            "tokens_per_second": 13.476117408467605,
+            "length_limit_rate": 0.8333333333333334,
+            "rubric_unique_prompts": 2,
+            "rubric_generation_seconds": 30.07010908285156,
+            "order_consistency": null
+          },
+          "rmbench": {
+            "n": 9,
+            "generations": 45,
+            "accuracy": 0.0,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              0.0,
+              0.2991450484195441
+            ],
+            "invalid_rate": 0.9555555555555556,
+            "abstention_rate": 1.0,
+            "choose_a_rate_valid": 1.0,
+            "group_all_correct": 0.0,
+            "groups": 3,
+            "by_subset": {
+              "chat": {
+                "n": 9,
+                "generations": 45,
+                "accuracy": 0.0,
+                "majority_accuracy": 0.0,
+                "majority_wilson95": [
+                  0.0,
+                  0.2991450484195441
+                ],
+                "invalid_rate": 0.9555555555555556,
+                "abstention_rate": 1.0,
+                "choose_a_rate_valid": 1.0,
+                "group_all_correct": 0.0,
+                "groups": 3
+              }
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "generations": 15,
+                "accuracy": 0.0,
+                "majority_accuracy": 0.0,
+                "majority_wilson95": [
+                  5.551115123125783e-17,
+                  0.5614970317550454
+                ],
+                "invalid_rate": 0.9333333333333333,
+                "abstention_rate": 1.0,
+                "choose_a_rate_valid": 1.0,
+                "group_all_correct": 0.0,
+                "groups": 2
+              },
+              "normal": {
+                "n": 3,
+                "generations": 15,
+                "accuracy": 0.0,
+                "majority_accuracy": 0.0,
+                "majority_wilson95": [
+                  5.551115123125783e-17,
+                  0.5614970317550454
+                ],
+                "invalid_rate": 0.9333333333333333,
+                "abstention_rate": 1.0,
+                "choose_a_rate_valid": 1.0,
+                "group_all_correct": 0.0,
+                "groups": 3
+              },
+              "hard": {
+                "n": 3,
+                "generations": 15,
+                "accuracy": 0.0,
+                "majority_accuracy": 0.0,
+                "majority_wilson95": [
+                  5.551115123125783e-17,
+                  0.5614970317550454
+                ],
+                "invalid_rate": 1.0,
+                "abstention_rate": 1.0,
+                "choose_a_rate_valid": null,
+                "group_all_correct": 0.0,
+                "groups": 2
+              }
+            },
+            "generation_seconds": 990.8980046669019,
+            "tokens": 13970,
+            "actual_devices": [
+              "cpu",
+              "mps"
+            ],
+            "fallback_generations": 5,
+            "tokens_per_second": 14.098322868957764,
+            "length_limit_rate": 0.8666666666666667,
+            "rubric_unique_prompts": 1,
+            "rubric_generation_seconds": 13.147470457945019,
+            "order_consistency": null
+          },
+          "writing": {
+            "n": 4,
+            "generations": 20,
+            "accuracy": 0.0,
+            "majority_accuracy": 0.0,
+            "majority_wilson95": [
+              0.0,
+              0.4898908364545973
+            ],
+            "invalid_rate": 0.85,
+            "abstention_rate": 1.0,
+            "choose_a_rate_valid": 1.0,
+            "group_all_correct": 0.0,
+            "groups": 4,
+            "by_subset": {
+              "writing": {
+                "n": 4,
+                "generations": 20,
+                "accuracy": 0.0,
+                "majority_accuracy": 0.0,
+                "majority_wilson95": [
+                  0.0,
+                  0.4898908364545973
+                ],
+                "invalid_rate": 0.85,
+                "abstention_rate": 1.0,
+                "choose_a_rate_valid": 1.0,
+                "group_all_correct": 0.0,
+                "groups": 4
+              }
+            },
+            "generation_seconds": 364.3730152077041,
+            "tokens": 6126,
+            "actual_devices": [
+              "mps"
+            ],
+            "fallback_generations": 0,
+            "tokens_per_second": 16.812441493528237,
+            "length_limit_rate": 0.8,
+            "rubric_unique_prompts": 1,
+            "rubric_generation_seconds": 16.04378787521273,
+            "order_consistency": null
+          }
+        }
+      },
+      "artifacts": {
+        "11-public-benchmarks/data/benchmarks.json": "439a474b93a2545b8de815470c63e45c2a9893a8feeb56eecab6f9531b889cf5",
+        "11-public-benchmarks/data/rewardbench.jsonl": "da2578cd9c842978c7476830ac42287c4aea092f7eeb80bfa9845bc3c8083ca6",
+        "11-public-benchmarks/data/rewardbench2.jsonl": "e7a9664ebf0fad47e20525a48b58d5f4bf18f62f2357af0987dd6a511c87ce5a",
+        "11-public-benchmarks/data/rmbench.jsonl": "91628adcf3d82d32f32ee0053d012bf395a939ea633789aa35b7bd00d64c6613",
+        "11-public-benchmarks/data/writing.jsonl": "c3b1a0f1dce07565363712056c3ca582df6b467f6366c573dbf2719534cf3e29",
+        "11-public-benchmarks/rewardbench/predictions.jsonl": "ac0352bcc25c6b9bd17a1bc16a44ef96d382bae109338606ac2ca048ac6777e4",
+        "11-public-benchmarks/rewardbench/rubrics.jsonl": "ec57238ccd53af3d8223a512c690396e4e7e35ce5fc2b06f74b3b1e0dbd16c37",
+        "11-public-benchmarks/rewardbench/summary.json": "9ff50c1bf734591f24e4f770d7d67ebc2b19d3fd3c43a4cd088c36c7847b17cb",
+        "11-public-benchmarks/rewardbench2/predictions.jsonl": "86e80388c7f4797e611fd06b21bdaee38d3698ac0bef8b16613b3392232f172f",
+        "11-public-benchmarks/rewardbench2/rubrics.jsonl": "764514728f001f665c2e948f1ff53ceeff0b008950d714240234d40ac3c4741e",
+        "11-public-benchmarks/rewardbench2/summary.json": "ddaa6febf34ba322ef9fc3869948f96a19da110bbd118b6a3c53f03208578f16",
+        "11-public-benchmarks/rmbench/predictions.jsonl": "b1cad89ea2251dcad9c25e360b50f422996fd022b7c5a4bb91b350d0932396bf",
+        "11-public-benchmarks/rmbench/rubrics.jsonl": "e29e8f31049ab99703adff6e52844c55b3266570f03a24730f4f4d54229fd8f8",
+        "11-public-benchmarks/rmbench/summary.json": "a8f8608f23effb82c28b672c775d6a28d282dc33920f4d5e0568f263ab1cfc7d",
+        "11-public-benchmarks/writing/predictions.jsonl": "26ad508247f700e5e7a2d2bf7ee53c993d729b1e429e6ae55eaf5c54ef825ddc",
+        "11-public-benchmarks/writing/rubrics.jsonl": "bf0f608f58a1f35c2079bce3504301034f81e278470a2b6468d2316211f9c1f2",
+        "11-public-benchmarks/writing/summary.json": "049e25161a504f1b204ce1b0e57929773ebc0ed5882cdeead57bce6897e895c8"
+      }
+    },
+    "12-dpo-arm": {
+      "status": "completed",
+      "started_utc": "2026-11-16T08:50:09.031087+00:00",
+      "seconds": 197.8509211661294,
+      "result": {
+        "status": "skipped_no_consistent_pairs",
+        "steps": 0,
+        "reason": "The judge produced no valid preferences consistent under both orders."
+      },
+      "artifacts": {
+        "12-dpo-arm/adapter/summary.json": "e4b48626b088c3d691a27864d0b20b4519a7610f52bfd276c70f7d343e5e3721",
+        "12-dpo-arm/adapter/training_request.json": "4f35ceff2aea2b854c34c6882f56c5098d964d39ffef59565f7afe2d27a08947",
+        "12-dpo-arm/labels/pairs.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "12-dpo-arm/labels/raw.jsonl": "06a229c534e64130d7a8773c643ab9d87c1168c031fc9ab0b0c653faf67b54b1",
+        "12-dpo-arm/labels/summary.json": "38a115e35675755fc58bdf8fcd500ab75a7f305e71cf60d14123c2d6e7189780"
+      }
+    },
+    "13-dpo-source-baseline": {
+      "status": "completed",
+      "started_utc": "2026-11-16T08:53:26.887929+00:00",
+      "seconds": 21.925157375168055,
+      "result": {
+        "status": "completed",
+        "pairs": 2,
+        "steps": 4,
+        "training_device": "cpu",
+        "adapter_sha256": "8fdf1ae4951415d3f98d18c1654939155e4d25dcbb3ddd04dd62254ada05f25d"
+      },
+      "artifacts": {
+        "13-dpo-source-baseline/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "13-dpo-source-baseline/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "13-dpo-source-baseline/adapter_model.safetensors": "8fdf1ae4951415d3f98d18c1654939155e4d25dcbb3ddd04dd62254ada05f25d",
+        "13-dpo-source-baseline/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "13-dpo-source-baseline/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "13-dpo-source-baseline/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "13-dpo-source-baseline/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "13-dpo-source-baseline/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "13-dpo-source-baseline/summary.json": "638acac77426f782cfac85c3da682e02228e7cf8b05766c0a302e88160a8866c",
+        "13-dpo-source-baseline/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "13-dpo-source-baseline/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "13-dpo-source-baseline/training.jsonl": "45009af3ac1d3e9acfd99b3a7b3cc4bff90660ac94165a5dd5914dbf044b2280",
+        "13-dpo-source-baseline/training_request.json": "574237d39d3b0287564dc69718d7da01df483bf0fbe3127b6c910f26895f3bcc",
+        "13-dpo-source-baseline/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "14-iterative-dpo": {
+      "status": "completed",
+      "started_utc": "2026-11-16T08:53:48.816334+00:00",
+      "seconds": 544.9523174171336,
+      "result": "None",
+      "artifacts": {
+        "14-iterative-dpo/round-1-dpo/summary.json": "e4b48626b088c3d691a27864d0b20b4519a7610f52bfd276c70f7d343e5e3721",
+        "14-iterative-dpo/round-1-dpo/training_request.json": "600a642dcaa6dfdbddbe117d324d717642508ce736320afe221e33196186b851",
+        "14-iterative-dpo/round-1-labels/pairs.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "14-iterative-dpo/round-1-labels/raw.jsonl": "e4a351b099c6a9dd97a47e8a6b0c83d4064a773796fc398bcc3c0b7502ee49a6",
+        "14-iterative-dpo/round-1-labels/summary.json": "38a115e35675755fc58bdf8fcd500ab75a7f305e71cf60d14123c2d6e7189780",
+        "14-iterative-dpo/round-2-dpo/summary.json": "e4b48626b088c3d691a27864d0b20b4519a7610f52bfd276c70f7d343e5e3721",
+        "14-iterative-dpo/round-2-dpo/training_request.json": "a430f9ae0d380540db7c338ccd18b75678f5e796a2ee40c2122a618af5d77d62",
+        "14-iterative-dpo/round-2-labels/pairs.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "14-iterative-dpo/round-2-labels/raw.jsonl": "92077a9d9baeb7e1887149f015611896144e92a4bed5558b9b3bfecfd9e1098c",
+        "14-iterative-dpo/round-2-labels/summary.json": "38a115e35675755fc58bdf8fcd500ab75a7f305e71cf60d14123c2d6e7189780",
+        "14-iterative-dpo/summary.json": "1e04bda742691b3ab5e710244dad54b34db8134024e3229306a9b429aefaa946"
+      }
+    },
+    "15-online-grpo": {
+      "status": "completed",
+      "started_utc": "2026-11-16T09:02:53.777867+00:00",
+      "seconds": 575.8040775419213,
+      "result": {
+        "groups": 2,
+        "rollouts": 6,
+        "zero_variance_groups": 1,
+        "training_device": "cpu",
+        "reward_mean": 0.08333333333333333,
+        "reference_adapter": "base",
+        "actor_adapter": "base",
+        "adapter_sha256": "27543f5850b4aeb323ef3b81eefd497c8cecbf52c5e598df73fedf97d65ee801"
+      },
+      "artifacts": {
+        "15-online-grpo/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "15-online-grpo/adapter_config.json": "d36e3e6dac1c28d4eba737ca5ee0ccbed94dad2c33646d55a1e9497363919f1d",
+        "15-online-grpo/adapter_model.safetensors": "27543f5850b4aeb323ef3b81eefd497c8cecbf52c5e598df73fedf97d65ee801",
+        "15-online-grpo/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "15-online-grpo/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "15-online-grpo/execution_device.json": "be53c7c05bb5882ae75b654099b370b12da2dd382c8ab055a6a878ba3696d5c8",
+        "15-online-grpo/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "15-online-grpo/rollouts.jsonl": "168b01c8f1975c73e81cf8eef0290987c775a7db2fff53e155a7d2298f5c17c8",
+        "15-online-grpo/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "15-online-grpo/summary.json": "49718c1473e3a0f654c21c42aaca6d59812043eda032eeb86c6cfe916ec7274c",
+        "15-online-grpo/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "15-online-grpo/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "15-online-grpo/training.jsonl": "b4382b680e0e7608dc272faa4fb15602507bd4feb858498398db39cfb68f0aca",
+        "15-online-grpo/training_request.json": "26256279a450d551790e6c317f988ef6533d683c5a41b3f527768b5db5c9c215",
+        "15-online-grpo/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    }
+  },
+  "claim": "Small-scale mechanism experiments; not paper-scale reproduction",
+  "code_fix_history": [
+    {
+      "at": "2026-11-16T07:52:16.368850+00:00",
+      "reason": "Bound isolated MPS workers to 300s after a long-input worker exceeded 20 minutes under swapping; kill/reap then retry unchanged request in a fresh CPU process. Retain completed successful CPU-training stages, archive and rerun public benchmarks.",
+      "signature": "dfadb7019908a9a15d574f6069681eb5fdb7970db277e55377bc913d219d1492",
+      "source_files": {
+        "configs/m1.json": "7bd44ccfad1f5d8ce3493dfe04f55592653c9b7e6c8a499b24bbaaad0ce13595",
+        "configs/smoke.json": "6e63d6c9678743a61ff10ed1764d41e1695397c2fea9230bf6a361bf62e3daad",
+        "scripts/evaluate_ifeval.py": "8041e9ebcc8e2f06113aac44c0154fd0a4a4c74c1d32e17ea0588755ee1d6cac",
+        "scripts/record_demo.py": "097c0d14d716927b07da5ebe0f8fd516e2ffa0f5a9f86d12a6dd6d8e067dcd91",
+        "src/openrubrics_lab/__init__.py": "71fd1f6a3abb4a8e6347817f15a83c57d7a612771d2192c94c19d0b6b49bcdae",
+        "src/openrubrics_lab/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+        "src/openrubrics_lab/backend.py": "f88c4879eff62e532033fdb92211d17b3ad3789fad45f609912ac2adeadd54da",
+        "src/openrubrics_lab/cli.py": "8cfc34b917c0826175d3a3bf018d8f42b99a59e5cff3d1ff178fcb9323fc6e44",
+        "src/openrubrics_lab/config.py": "84a4e68219950464b319cd75feae4bfa9a98f99388f3159771f5f37f333c3ade",
+        "src/openrubrics_lab/data.py": "a3e3e9aeda827d8ad009ea22e2ef6cdc57207fdb44e9608e9026cb07884f830b",
+        "src/openrubrics_lab/demo.py": "dca18ddc93bf859750f740c6d468dabd43b2f5fccf104a995535724bd30db3e4",
+        "src/openrubrics_lab/experiments.py": "3d50d00d449ab7e198242b87296daa4f32088cb957cdaf2bb4f638576e33893c",
+        "src/openrubrics_lab/inference_worker.py": "a237001173520dd1ed55bbb05cf1a8d4575f42440718378c1e2c3a65c7ce1d56",
+        "src/openrubrics_lab/io.py": "adcc2294e3109a69e8b2a8e619adfe43d442d9eb5f2376b794a03bf804fcbe2c",
+        "src/openrubrics_lab/metrics.py": "39ce19fe1548880e884b6d4db9856b0d88c33d4d44809f340e39038d0e08f1f8",
+        "src/openrubrics_lab/original_prompts.py": "0f3c25eafbec7b6783757629cbd1a6aa66f347cf003a1aeb17e2a68863fb6abe",
+        "src/openrubrics_lab/prompts.py": "1b4a6849bb449fd417a8b853e4b4f4e7e5344d7467f9a97c6717abe3fd271167",
+        "src/openrubrics_lab/report.py": "0ed64283378ac58943ed2170d2789c13f008b7c122084a1e5254c60d97b616f2",
+        "src/openrubrics_lab/runner.py": "0d78003bb6c57d00f7b5896a92c6b65425bb4aa92c66e7b73d911ecdc3d76b4c",
+        "src/openrubrics_lab/training.py": "809f7cacb02be463d9ea48064126a2d732a9f70e8ad1f38146a055947d0e4459",
+        "src/openrubrics_lab/web/index.html": "040e3fc1d38b96623ced6c6a2c38ca0eb6f829c7341915dbcc84c6fed8f9bc9c",
+        "src/openrubrics_lab/worker.py": "cc15438c6179efe8ba6bc0766555a3fb48be368bb71a9e8758056b70b80e7e78",
+        "tests/test_model_contract.py": "7f22cd985bff3f3c2b716c264ce0b258dbecde604257ed14de30991ca5236d1e",
+        "tests/test_scientific_invariants.py": "57dcb80e6f0b39d0b34eb9a29614ce02042d9fe892a7abe07af6ecf2e4fa086f"
+      },
+      "superseded_stages": {
+        "11-public-benchmarks": {
+          "status": "failed",
+          "started_utc": "2026-11-16T07:05:58.986309+00:00",
+          "error": "Command '['/Users/apple/Projects/OpenRubrics/.venv/bin/python', '-m', 'openrubrics_lab.inference_worker', '/var/folders/3c/xsvsnqrs3p74vp08g1cgpxgh0000gn/T/openrubrics-inference-lvvg3bl6/request.json']' died with <Signals.SIGTERM: 15>.",
+          "traceback": "Traceback (most recent call last):\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/runner.py\", line 77, in stage\n    result = fn(dest)\n             ^^^^^^^^\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/runner.py\", line 114, in benchmark_stage\n    results[name] = evaluate(config, rows, rubric, judge, dest / name)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/experiments.py\", line 70, in evaluate\n    predictions = _generate(lm, prompt, config, \"judge\", config[\"seed\"]+i*101,\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/experiments.py\", line 16, in _generate\n    return lm.generate(prompt, max_new_tokens=config[f\"{role}_tokens\"], temperature=temperature, seed=seed, n=n)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/backend.py\", line 132, in generate\n    return self._generate_isolated(prompt, max_new_tokens, temperature, seed, n)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/backend.py\", line 199, in _generate_isolated\n    subprocess.run([sys.executable, \"-m\", \"openrubrics_lab.inference_worker\", str(request)],\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/Users/apple/Projects/OpenRubrics/.venv/bin/python', '-m', 'openrubrics_lab.inference_worker', '/var/folders/3c/xsvsnqrs3p74vp08g1cgpxgh0000gn/T/openrubrics-inference-lvvg3bl6/request.json']' died with <Signals.SIGTERM: 15>.\n",
+          "seconds": 2489.608796332963,
+          "archive": "11-public-benchmarks.superseded-1794815536368844000"
+        }
+      }
+    },
+    {
+      "at": "2026-11-16T10:18:31.972093+00:00",
+      "kind": "presentation_only",
+      "reason": "Fix mobile judgment-page intrinsic-width overflow and make recorder loopback readiness bypass environment HTTP proxies. Model/data/training/evaluation code and all completed stage artifacts are unchanged; no model stages need rerunning. Prior manifest, sources and media are archived.",
+      "signature": "7dfc416a13f756bf411f5743c35a776a25408eaef41507e1a3c8c8a1f313cd51",
+      "source_files": {
+        "configs/m1.json": "7bd44ccfad1f5d8ce3493dfe04f55592653c9b7e6c8a499b24bbaaad0ce13595",
+        "configs/smoke.json": "6e63d6c9678743a61ff10ed1764d41e1695397c2fea9230bf6a361bf62e3daad",
+        "scripts/evaluate_ifeval.py": "8041e9ebcc8e2f06113aac44c0154fd0a4a4c74c1d32e17ea0588755ee1d6cac",
+        "scripts/record_demo.py": "097c0d14d716927b07da5ebe0f8fd516e2ffa0f5a9f86d12a6dd6d8e067dcd91",
+        "src/openrubrics_lab/__init__.py": "71fd1f6a3abb4a8e6347817f15a83c57d7a612771d2192c94c19d0b6b49bcdae",
+        "src/openrubrics_lab/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+        "src/openrubrics_lab/backend.py": "43436bef9c325c22e72ad22bfb871ff231f091cf23b7eb8b13b3913693d4b78a",
+        "src/openrubrics_lab/cli.py": "8cfc34b917c0826175d3a3bf018d8f42b99a59e5cff3d1ff178fcb9323fc6e44",
+        "src/openrubrics_lab/config.py": "84a4e68219950464b319cd75feae4bfa9a98f99388f3159771f5f37f333c3ade",
+        "src/openrubrics_lab/data.py": "a3e3e9aeda827d8ad009ea22e2ef6cdc57207fdb44e9608e9026cb07884f830b",
+        "src/openrubrics_lab/demo.py": "dca18ddc93bf859750f740c6d468dabd43b2f5fccf104a995535724bd30db3e4",
+        "src/openrubrics_lab/experiments.py": "3d50d00d449ab7e198242b87296daa4f32088cb957cdaf2bb4f638576e33893c",
+        "src/openrubrics_lab/inference_worker.py": "a237001173520dd1ed55bbb05cf1a8d4575f42440718378c1e2c3a65c7ce1d56",
+        "src/openrubrics_lab/io.py": "adcc2294e3109a69e8b2a8e619adfe43d442d9eb5f2376b794a03bf804fcbe2c",
+        "src/openrubrics_lab/metrics.py": "39ce19fe1548880e884b6d4db9856b0d88c33d4d44809f340e39038d0e08f1f8",
+        "src/openrubrics_lab/original_prompts.py": "0f3c25eafbec7b6783757629cbd1a6aa66f347cf003a1aeb17e2a68863fb6abe",
+        "src/openrubrics_lab/prompts.py": "1b4a6849bb449fd417a8b853e4b4f4e7e5344d7467f9a97c6717abe3fd271167",
+        "src/openrubrics_lab/report.py": "0ed64283378ac58943ed2170d2789c13f008b7c122084a1e5254c60d97b616f2",
+        "src/openrubrics_lab/runner.py": "0d78003bb6c57d00f7b5896a92c6b65425bb4aa92c66e7b73d911ecdc3d76b4c",
+        "src/openrubrics_lab/training.py": "809f7cacb02be463d9ea48064126a2d732a9f70e8ad1f38146a055947d0e4459",
+        "src/openrubrics_lab/web/index.html": "040e3fc1d38b96623ced6c6a2c38ca0eb6f829c7341915dbcc84c6fed8f9bc9c",
+        "src/openrubrics_lab/worker.py": "cc15438c6179efe8ba6bc0766555a3fb48be368bb71a9e8758056b70b80e7e78",
+        "tests/test_model_contract.py": "abeee90fd0f11bb9b69fb44b5446325168b1f16cab2575a36f19c5aa040881c5",
+        "tests/test_scientific_invariants.py": "57dcb80e6f0b39d0b34eb9a29614ce02042d9fe892a7abe07af6ecf2e4fa086f"
+      },
+      "changed_files": {
+        "src/openrubrics_lab/web/index.html": {
+          "before": "040e3fc1d38b96623ced6c6a2c38ca0eb6f829c7341915dbcc84c6fed8f9bc9c",
+          "after": "03ad56528a4339113ef0f4a13a455578cb1db28241604c9e9d858179f09a5c8a"
+        },
+        "scripts/record_demo.py": {
+          "before": "097c0d14d716927b07da5ebe0f8fd516e2ffa0f5a9f86d12a6dd6d8e067dcd91",
+          "after": "adfe2ba80c0b1fe061f82c58f4382ddfbd1ef39637ead7043e42a662f5a7f0a6"
+        }
+      },
+      "superseded_stages": {},
+      "scientific_files_unchanged": true,
+      "model_stages_rerun": []
+    }
+  ],
+  "finished_utc": "2026-11-16T09:12:29.591200+00:00",
+  "status": "completed_small_scale_protocol"
+}

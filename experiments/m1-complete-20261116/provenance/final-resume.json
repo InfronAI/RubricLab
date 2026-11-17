@@ -1,0 +1,6 @@
+{
+  "pid": 92383,
+  "at": "2026-11-16T03:55:33.723279+00:00",
+  "HF_HUB_OFFLINE": "1",
+  "reason": "Discard static MPS cache before CPU fallback; preserve verified stages with no fallback; improve recording navigation and display order"
+}

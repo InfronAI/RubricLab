@@ -219,3 +219,15 @@ __marimo__/
 
 # OpenRubrics: generated SFT data (rebuild with rubric-rm/scripts/prepare_data.py)
 rubric-rm/LLaMA-Factory/data/openrubric_v2/
+
+# Portable lab: large checkpoints stay local; metrics, manifests and sampled data are tracked.
+experiments/**/adapter_model.safetensors
+experiments/**/tokenizer.json
+experiments/**/tokenizer_config.json
+experiments/**/vocab.json
+experiments/**/merges.txt
+experiments/**/special_tokens_map.json
+experiments/**/chat_template.jinja
+data/**/source.jsonl
+docs/assets/*.webm
+.DS_Store

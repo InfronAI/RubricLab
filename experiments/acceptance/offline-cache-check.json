@@ -1,0 +1,54 @@
+{
+  "status": "all_required_files_cached",
+  "files": [
+    {
+      "repository": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "filename": "model.safetensors",
+      "bytes": 988097824,
+      "sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe"
+    },
+    {
+      "repository": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "filename": "tokenizer.json",
+      "bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    {
+      "repository": "allenai/reward-bench",
+      "revision": "168d848cdbbea9764fae4a544dc9ca1e6cca4931",
+      "filename": "data/filtered-00000-of-00001.parquet",
+      "bytes": 2354751,
+      "sha256": "65473c20ed0627e02503557ae102c25c6b0e66b5ed69ee327e224bb95e70ca29"
+    },
+    {
+      "repository": "allenai/reward-bench-2",
+      "revision": "7ff08853b0d5686e79b13fda8677024f566a104a",
+      "filename": "data/test-00000-of-00001.parquet",
+      "bytes": 6973189,
+      "sha256": "c8ec60efbd75d2f9dcba4121e6101f7a6015abc38a34e034ae2c7ae886265958"
+    },
+    {
+      "repository": "THU-KEG/RM-Bench",
+      "revision": "5e094adbde982855284918147e84a169f7282a2a",
+      "filename": "total_dataset.json",
+      "bytes": 11017078,
+      "sha256": "ea371d3c54ff7c912c619cde580296fbc764f8f1e49e8f4853320ec698e40e81"
+    },
+    {
+      "repository": "m-a-p/Writing-Preference-Bench",
+      "revision": "676d7114ce37ad5d8eff5b39f3648b855730bf77",
+      "filename": "WP_bench_english-1.json",
+      "bytes": 9036937,
+      "sha256": "49a952b788d8239efd07cb4cfd048b7c84cb9159a9e65c26784918d65960c4b7"
+    },
+    {
+      "repository": "m-a-p/Writing-Preference-Bench",
+      "revision": "676d7114ce37ad5d8eff5b39f3648b855730bf77",
+      "filename": "WP_bench_english-2.json",
+      "bytes": 10039340,
+      "sha256": "24352761e3e55c034bf57d341ae02be561820a94df92f41cfac796fab1a5cc18"
+    }
+  ]
+}

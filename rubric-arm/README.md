@@ -1,5 +1,7 @@
 # RubricARM GRPO 
 
+> **Apple Silicon / CPU:** use the [portable workflow](../README.md) from the repository root. The instructions below describe the preserved original API/GPU environment.
+
 This folder contains scripts for alternating reinforcement
 learning of rubric-based reward models with ms-swift GRPO. Local paths,
 checkpoint names, dataset names, and experiment identifiers have been replaced

@@ -1,0 +1,92 @@
+[
+  {
+    "round": 1,
+    "phase": "judge",
+    "sample_ids": [
+      "0140971b9eb8e236"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "training_device": "cpu",
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-cpu-training-20261116/03-sft-judge",
+    "actor_adapter": "experiments/m1-cpu-training-20261116/03-sft-judge",
+    "adapter_sha256": "0fa33dcd4e32136852c22cdd6e1a5c57c118a46a1ca7cfef7b19e27504c1befe"
+  },
+  {
+    "round": 1,
+    "phase": "rubric",
+    "sample_ids": [
+      "0140971b9eb8e236"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "training_device": "cpu",
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-cpu-training-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/m1-cpu-training-20261116/02-sft-rubric",
+    "adapter_sha256": "5ed82d330536aa4b8cc73a02aa92c412aa13ad27520a445007a0d592f3836b36"
+  },
+  {
+    "round": 2,
+    "phase": "judge",
+    "sample_ids": [
+      "4f2f019b4af24b71"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "training_device": "cpu",
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-cpu-training-20261116/03-sft-judge",
+    "actor_adapter": "experiments/m1-cpu-training-20261116/09-ablation-no_format/round-1-judge",
+    "adapter_sha256": "0ef0125449a61893c7325790592fa373c637f0a47b329d12a6f7856cc86f1df1"
+  },
+  {
+    "round": 2,
+    "phase": "rubric",
+    "sample_ids": [
+      "4f2f019b4af24b71"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "training_device": "cpu",
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-cpu-training-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/m1-cpu-training-20261116/09-ablation-no_format/round-1-rubric",
+    "adapter_sha256": "6944a068914d8fde813db16fef2c4615e13f255190af72d76306da3b4e9a7379"
+  },
+  {
+    "round": 3,
+    "phase": "judge",
+    "sample_ids": [
+      "4395e166f411ae2b"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "training_device": "cpu",
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-cpu-training-20261116/03-sft-judge",
+    "actor_adapter": "experiments/m1-cpu-training-20261116/09-ablation-no_format/round-2-judge",
+    "adapter_sha256": "e0b26c6ca610acdd2a0570b3a4d16103a1839eaca7ee31f19e6c935b5585640b"
+  },
+  {
+    "round": 3,
+    "phase": "rubric",
+    "sample_ids": [
+      "4395e166f411ae2b"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "training_device": "cpu",
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-cpu-training-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/m1-cpu-training-20261116/09-ablation-no_format/round-2-rubric",
+    "adapter_sha256": "9f341c27b46890058eead9be1e8c93583db568e5c458635d487afc23a9a2ee5c"
+  }
+]

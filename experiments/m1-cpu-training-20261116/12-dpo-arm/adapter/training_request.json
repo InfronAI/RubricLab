@@ -1,0 +1,57 @@
+{
+  "kind": "dpo",
+  "arguments": {
+    "config": {
+      "profile": "m1-small-scale",
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "device": "auto",
+      "seed": 42,
+      "prompt_style": "compact",
+      "max_context": 2048,
+      "source_limit": 1024,
+      "train_samples": 24,
+      "validation_samples": 4,
+      "sft_steps": 24,
+      "sft_lr": 0.0002,
+      "gradient_accumulation": 1,
+      "lora_rank": 8,
+      "curation_samples": 3,
+      "rubric_tokens": 128,
+      "judge_tokens": 320,
+      "eval_samples": 2,
+      "votes": 5,
+      "benchmark_groups": 1,
+      "benchmarks": [
+        "rewardbench",
+        "rewardbench2",
+        "rmbench",
+        "writing"
+      ],
+      "arm_rounds": 3,
+      "arm_samples_per_round": 1,
+      "group_size": 3,
+      "grpo_updates": 2,
+      "grpo_lr": 1e-05,
+      "kl_beta": 0.001,
+      "clip_low": 0.2,
+      "clip_high": 0.28,
+      "format_weight": 1.0,
+      "ablations": [
+        "reverse",
+        "no_format"
+      ],
+      "policy_samples": 2,
+      "policy_tokens": 96,
+      "dpo_steps": 4,
+      "dpo_lr": 1e-05,
+      "dpo_beta": 0.1,
+      "sft_weight": 0.2,
+      "iter_dpo_rounds": 2
+    },
+    "pairs": [],
+    "actor_adapter": null,
+    "reference_adapter": null,
+    "output": "experiments/m1-cpu-training-20261116/12-dpo-arm/adapter"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_sha256": "67ffeee0fcb87c317c5b08a2de85557b4a7e96ada6178aa645b4954fe4b53d49",
+  "seed": 42,
+  "max_tokens": 512,
+  "max_context": 2048,
+  "selected": [
+    {
+      "key": 1601,
+      "prompt_tokens": 88,
+      "train_overlap": false,
+      "validation_overlap": false
+    },
+    {
+      "key": 1531,
+      "prompt_tokens": 77,
+      "train_overlap": false,
+      "validation_overlap": false
+    },
+    {
+      "key": 2482,
+      "prompt_tokens": 98,
+      "train_overlap": false,
+      "validation_overlap": false
+    },
+    {
+      "key": 2908,
+      "prompt_tokens": 67,
+      "train_overlap": false,
+      "validation_overlap": false
+    }
+  ],
+  "overlap_count": 0
+}

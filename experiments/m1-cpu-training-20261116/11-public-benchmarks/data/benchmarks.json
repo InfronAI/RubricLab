@@ -1,0 +1,50 @@
+{
+  "rewardbench": {
+    "repository": "allenai/reward-bench",
+    "revision": "168d848cdbbea9764fae4a544dc9ca1e6cca4931",
+    "pairs": 4,
+    "prompt_groups_by_subset": {
+      "chat_hard": 1,
+      "chat": 1
+    },
+    "skipped": {},
+    "sha256": "da2578cd9c842978c7476830ac42287c4aea092f7eeb80bfa9845bc3c8083ca6",
+    "selection_bias": "Short contexts; bounded seeded sample, not full benchmark"
+  },
+  "rewardbench2": {
+    "repository": "allenai/reward-bench-2",
+    "revision": "7ff08853b0d5686e79b13fda8677024f566a104a",
+    "pairs": 6,
+    "prompt_groups_by_subset": {
+      "Focus": 1,
+      "Precise IF": 1
+    },
+    "skipped": {},
+    "sha256": "e7a9664ebf0fad47e20525a48b58d5f4bf18f62f2357af0987dd6a511c87ce5a",
+    "selection_bias": "Short contexts; bounded seeded sample, not full benchmark"
+  },
+  "rmbench": {
+    "repository": "THU-KEG/RM-Bench",
+    "revision": "5e094adbde982855284918147e84a169f7282a2a",
+    "pairs": 9,
+    "prompt_groups_by_subset": {
+      "chat": 1
+    },
+    "skipped": {},
+    "sha256": "91628adcf3d82d32f32ee0053d012bf395a939ea633789aa35b7bd00d64c6613",
+    "selection_bias": "Short contexts; bounded seeded sample, not full benchmark"
+  },
+  "writing": {
+    "repository": "m-a-p/Writing-Preference-Bench",
+    "revision": "676d7114ce37ad5d8eff5b39f3648b855730bf77",
+    "pairs": 4,
+    "prompt_groups_by_subset": {
+      "writing": 1
+    },
+    "skipped": {
+      "context_overflow_groups": 17
+    },
+    "sha256": "c3b1a0f1dce07565363712056c3ca582df6b467f6366c573dbf2719534cf3e29",
+    "selection_bias": "Short contexts; bounded seeded sample, not full benchmark"
+  }
+}

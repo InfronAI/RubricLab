@@ -75,19 +75,12 @@ def clean_rubric_format(rubric_text: str) -> str:
     return cleaned
 
 
-def _escape_braces(s: str) -> str:
-    """Escape braces before str.format to avoid KeyError from { } in text."""
-    if not s:
-        return ""
-    return s.replace("{", "{{").replace("}", "}}")
-
-
 def make_rubric_prompt_listwise(request: str, responses: list[str],  context: str = "") -> str:
     combined_responses = make_response_list(responses)
     return rubrics_generation_template_listwise.format(
-        request=_escape_braces(request or ""),
-        context=_escape_braces(context or ""),
-        responses=_escape_braces(combined_responses or ""),
+        request=request or "",
+        context=context or "",
+        responses=combined_responses or "",
     )
 
 def make_response_list(responses: list[str]) -> str:

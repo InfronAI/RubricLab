@@ -1,0 +1,53 @@
+{
+  "long_decode": {
+    "config": "long-decode-config.json",
+    "data": "validation-pairs.jsonl",
+    "adapter_source": "../m1-complete-20261116/02-sft-rubric and 03-sft-judge",
+    "purpose": "Separate completion truncation from judgment correctness; same held-out pairs and five votes."
+  },
+  "ifeval": {
+    "samples": 4,
+    "max_tokens": 512,
+    "seed": 42,
+    "variants": [
+      "base",
+      "source-label DPO",
+      "online GRPO"
+    ],
+    "purpose": "Official strict/loose instruction-following checks on actual generated policy outputs."
+  },
+  "status": "planned_not_yet_executed",
+  "additional_pair_diagnostics": {
+    "data": "additional-data-v2",
+    "samples_per_source": 2,
+    "sources": [
+      "HelpSteer3",
+      "PPE-IFEval",
+      "THU-KEG/IFBench (Peng et al.)"
+    ],
+    "selection_precedes_model_evaluation": true
+  },
+  "controlled_order": {
+    "data": "swapped-validation-pairs.jsonl",
+    "variants": [
+      "sft",
+      "arm"
+    ],
+    "votes": 5,
+    "temperature": 0.7,
+    "purpose": "Compare swapped order with saved original votes under matched seed, temperature and vote count; primary single reverse generation used greedy decoding and is only a mixed-decoding diagnostic."
+  },
+  "two_stage_budget_diagnostic": {
+    "config": "long-two-stage-config.json",
+    "data": "validation-pairs.jsonl",
+    "variants": [
+      "SFT"
+    ],
+    "rubric_tokens": 320,
+    "judge_tokens": 1024,
+    "context": 4096,
+    "declared_utc": "2026-11-16T04:58:27.334462+00:00",
+    "trigger": "Teacher-target length audit: all 24 training judgments exceed the 320-token cap; 19/24 rubrics exceed 128 tokens. Primary protocol remains frozen.",
+    "purpose": "Exploratory joint budget intervention, using the same fixed SFT weights, two held-out pairs and five votes; not an isolated single-factor comparison."
+  }
+}

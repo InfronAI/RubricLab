@@ -1,0 +1,151 @@
+{
+  "signature": "dcc494d5455d3f376393c3b2e1e94614d09079fae1ba1dbfb21108013da86485",
+  "config": {
+    "profile": "m1-small-scale",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "device": "auto",
+    "seed": 42,
+    "prompt_style": "compact",
+    "max_context": 2048,
+    "source_limit": 1024,
+    "train_samples": 24,
+    "validation_samples": 4,
+    "sft_steps": 24,
+    "sft_lr": 0.0002,
+    "gradient_accumulation": 1,
+    "lora_rank": 8,
+    "curation_samples": 3,
+    "rubric_tokens": 128,
+    "judge_tokens": 320,
+    "eval_samples": 2,
+    "votes": 5,
+    "benchmark_groups": 1,
+    "benchmarks": [
+      "rewardbench",
+      "rewardbench2",
+      "rmbench",
+      "writing"
+    ],
+    "arm_rounds": 3,
+    "arm_samples_per_round": 1,
+    "group_size": 3,
+    "grpo_updates": 2,
+    "grpo_lr": 1e-05,
+    "kl_beta": 0.001,
+    "clip_low": 0.2,
+    "clip_high": 0.28,
+    "format_weight": 1.0,
+    "ablations": [
+      "reverse",
+      "no_format"
+    ],
+    "policy_samples": 2,
+    "policy_tokens": 96,
+    "dpo_steps": 4,
+    "dpo_lr": 1e-05,
+    "dpo_beta": 0.1,
+    "sft_weight": 0.2,
+    "iter_dpo_rounds": 2
+  },
+  "inputs": {
+    "train.jsonl": "ff764798348a77ffa3efbea9bb24bac6b31cad93ad4bfa4d6982db2f45c049fb",
+    "validation.jsonl": "6eee0131d526a65eeec6561c0defb3b08c90ea9db630ac8152b3aa35db8bfbd0"
+  },
+  "source_files": {
+    "configs/m1.json": "7bd44ccfad1f5d8ce3493dfe04f55592653c9b7e6c8a499b24bbaaad0ce13595",
+    "configs/smoke.json": "6e63d6c9678743a61ff10ed1764d41e1695397c2fea9230bf6a361bf62e3daad",
+    "src/openrubrics_lab/__init__.py": "71fd1f6a3abb4a8e6347817f15a83c57d7a612771d2192c94c19d0b6b49bcdae",
+    "src/openrubrics_lab/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "src/openrubrics_lab/backend.py": "9b993db9b08d1f7479a66e2589e475baf78f2bad019a75d1ac7ec339525366d8",
+    "src/openrubrics_lab/cli.py": "dc29c6137dabef017b0792f13f26081e198347f555df53fe1669930d81ef283c",
+    "src/openrubrics_lab/config.py": "84a4e68219950464b319cd75feae4bfa9a98f99388f3159771f5f37f333c3ade",
+    "src/openrubrics_lab/data.py": "a3e3e9aeda827d8ad009ea22e2ef6cdc57207fdb44e9608e9026cb07884f830b",
+    "src/openrubrics_lab/demo.py": "dca18ddc93bf859750f740c6d468dabd43b2f5fccf104a995535724bd30db3e4",
+    "src/openrubrics_lab/experiments.py": "2048c34ccd95cab7050443612927872905e0ccb3a8f4660a77afb333dbda7802",
+    "src/openrubrics_lab/io.py": "adcc2294e3109a69e8b2a8e619adfe43d442d9eb5f2376b794a03bf804fcbe2c",
+    "src/openrubrics_lab/metrics.py": "39ce19fe1548880e884b6d4db9856b0d88c33d4d44809f340e39038d0e08f1f8",
+    "src/openrubrics_lab/original_prompts.py": "0f3c25eafbec7b6783757629cbd1a6aa66f347cf003a1aeb17e2a68863fb6abe",
+    "src/openrubrics_lab/prompts.py": "1b4a6849bb449fd417a8b853e4b4f4e7e5344d7467f9a97c6717abe3fd271167",
+    "src/openrubrics_lab/report.py": "992ca54a0ff22982c3ac5834297a363d08af62ac8492a6958ceab3da81ce5cec",
+    "src/openrubrics_lab/runner.py": "7fd94aa0fae20d2f4629c1e9da970037278a9301736756e5f1cd0aa2eccc65fc",
+    "src/openrubrics_lab/training.py": "0ad960020cc27c01543a6732ca9837ac36b48bb46d063a2d57f34813a5753258",
+    "src/openrubrics_lab/web/index.html": "040e3fc1d38b96623ced6c6a2c38ca0eb6f829c7341915dbcc84c6fed8f9bc9c",
+    "tests/test_model_contract.py": "ce8293bde1f9046b4c75da9b4a1e405e9c54bc9389fa17267874d29f2557a188",
+    "tests/test_scientific_invariants.py": "57dcb80e6f0b39d0b34eb9a29614ce02042d9fe892a7abe07af6ecf2e4fa086f"
+  },
+  "environment": {
+    "timestamp_utc": "2026-11-16T02:04:17.152409+00:00",
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "chip": "Apple M1 Pro",
+    "memory_gb": 16.0,
+    "python": "3.11.16 (main, Aug 12 2026, 23:03:19) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "mps_available": true,
+    "cuda_available": false,
+    "packages": {
+      "torch": "2.8.0",
+      "transformers": "4.57.1",
+      "peft": "0.17.1",
+      "datasets": "4.3.0",
+      "huggingface-hub": "0.36.0"
+    },
+    "git_commit": "1a40c14cb7827ae10bfdf0f6d61ca35a36770b5b",
+    "git_dirty": true
+  },
+  "started_utc": "2026-11-16T02:04:17.380093+00:00",
+  "stages": {
+    "01-curation": {
+      "status": "completed",
+      "started_utc": "2026-11-16T02:04:17.382271+00:00",
+      "seconds": 55.8409229577519,
+      "result": {
+        "attempted": 3,
+        "retained": 0,
+        "retention": 0.0,
+        "teacher": "Qwen/Qwen2.5-0.5B-Instruct",
+        "sft_source": "Published, already curated OpenRubric-v2 subset; fresh local CRG is a separate experiment"
+      },
+      "artifacts": {
+        "01-curation/filtered.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "01-curation/raw.jsonl": "c6746342250b92dfb2e988fc598411755a586a81ea90bd832a6f13732a4b1c0e",
+        "01-curation/summary.json": "f9218bfe2b4aa6eb34d0b23055f44e46972eb03305fa87a63c73aa3b9fd266a1"
+      }
+    },
+    "02-sft-rubric": {
+      "status": "completed",
+      "started_utc": "2026-11-16T02:05:13.223272+00:00",
+      "seconds": 25.016859584022313,
+      "result": {
+        "role": "rubric",
+        "steps": 24,
+        "examples": 24,
+        "first_loss": 1.5372003316879272,
+        "last_loss": 1.5609278678894043,
+        "adapter_sha256": "975e9766cb7f79cf0fd580893825891f0645e76f4ff8ce33e0c16d464b1cf34b"
+      },
+      "artifacts": {
+        "02-sft-rubric/README.md": "42d0e4793306462ecc78650475691804993198c54c89f51becd388224322453f",
+        "02-sft-rubric/adapter_config.json": "18ff232c59168d6de7327e030e825ababcc6ef89e922b8541d5e38a8bf70cd32",
+        "02-sft-rubric/adapter_model.safetensors": "975e9766cb7f79cf0fd580893825891f0645e76f4ff8ce33e0c16d464b1cf34b",
+        "02-sft-rubric/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "02-sft-rubric/chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "02-sft-rubric/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "02-sft-rubric/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "02-sft-rubric/summary.json": "4c31a2d7fddf1931539274a57745d799554f71da20f9b4045fd7d523effde3dd",
+        "02-sft-rubric/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "02-sft-rubric/tokenizer_config.json": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+        "02-sft-rubric/training.jsonl": "c8f4289aec01fc133b0c0142d2a8182dc6d1aa112e7f681e320607f582c6e946",
+        "02-sft-rubric/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "03-sft-judge": {
+      "status": "failed",
+      "started_utc": "2026-11-16T02:05:38.240644+00:00",
+      "error": "Sequence exceeds context: 2050 > 2048",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/runner.py\", line 56, in stage\n    result = fn(dest)\n             ^^^^^^^^\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/runner.py\", line 70, in <lambda>\n    stage(\"03-sft-judge\", lambda dest: sft(config, train, \"judge\", dest))\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/training.py\", line 44, in sft\n    lm.encode(prompt, target)\n  File \"/Users/apple/Projects/OpenRubrics/src/openrubrics_lab/backend.py\", line 89, in encode\n    raise ValueError(f\"Sequence exceeds context: {len(prefix)+len(suffix)} > {self.max_context}\")\nValueError: Sequence exceeds context: 2050 > 2048\n",
+      "seconds": 3.080977375153452
+    }
+  },
+  "claim": "Small-scale mechanism experiments; not paper-scale reproduction"
+}

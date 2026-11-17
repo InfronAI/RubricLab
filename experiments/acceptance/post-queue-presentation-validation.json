@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-16T10:25:21.965842+00:00",
+  "reason": "Final mobile-layout and recorder loopback-readiness correction after the numerical queue completed. All model/data/evaluation sources and 17 stage receipts remain unchanged.",
+  "presentation_change": "experiments/m1-cpu-training-20261116/provenance/presentation-fix/change.json",
+  "analysis_regenerated": true,
+  "media_rerecorded": true,
+  "final_browser_checks": "final-delivery-check.json",
+  "manifest_sha256": "77e710d870452687e547ffdd51805f144b247952737209b488a8c98a15750e97",
+  "recording_sha256": "4ce2da00b86ad18a014e3c7ed0e6eefe777ac9bccd1e864ef21b4f1ee2b3740b",
+  "current_source_and_verified_wheel_match": true
+}

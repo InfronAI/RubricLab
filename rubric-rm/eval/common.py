@@ -20,9 +20,9 @@ API_KEYWORDS = ("gpt", "gemini", "deepseek", "claude", "o1", "o3", "o4")
 
 
 def is_api_model(model_name: str) -> bool:
-    if os.path.exists(model_name):
+    if os.path.exists(model_name) or "/" in model_name:
         return False
-    return any(k in model_name.lower() for k in API_KEYWORDS)
+    return model_name.lower().startswith(API_KEYWORDS)
 
 
 def resolve_models(size: str, rubric_override=None, judge_override=None):

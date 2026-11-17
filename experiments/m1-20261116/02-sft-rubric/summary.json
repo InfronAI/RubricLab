@@ -1,0 +1,8 @@
+{
+  "role": "rubric",
+  "steps": 24,
+  "examples": 24,
+  "first_loss": 1.5372003316879272,
+  "last_loss": 1.5591154098510742,
+  "adapter_sha256": "12682090f83b2724345308a7e2b3ca5557c021f29f3f501aa0a71bd4518619a2"
+}

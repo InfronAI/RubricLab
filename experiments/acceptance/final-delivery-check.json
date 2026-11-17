@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-11-16T10:22:20.793708+00:00",
+  "run": "experiments/m1-cpu-training-20261116",
+  "viewer": {
+    "desktop": {
+      "horizontal_overflow": {
+        "results": false,
+        "pipeline": false,
+        "judgment": false
+      },
+      "stages": 17,
+      "judgment_samples_checked": 20
+    },
+    "mobile": {
+      "horizontal_overflow": {
+        "results": false,
+        "pipeline": false,
+        "judgment": false
+      },
+      "stages": 17,
+      "judgment_samples_checked": 20
+    }
+  },
+  "browser_errors": [],
+  "autoplay": {
+    "paused": false,
+    "muted": true,
+    "loop": true,
+    "currentTime": 1.0333,
+    "readyState": 4
+  },
+  "gif": {
+    "frames": 126,
+    "loop": 0,
+    "size": [
+      960,
+      675
+    ]
+  },
+  "media_hashes_match": true,
+  "recorded_manifest_matches": true,
+  "local_document_links_checked": 102,
+  "vendored_verifier_hashes_checked": 7,
+  "ifeval_policies_share_verified_disjoint_inputs": true,
+  "completed_supplementary_jobs": 12,
+  "analysis_source_hash_and_documented_amendment_verified": true
+}

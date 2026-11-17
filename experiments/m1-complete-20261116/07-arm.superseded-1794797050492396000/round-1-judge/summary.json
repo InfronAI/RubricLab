@@ -1,0 +1,9 @@
+{
+  "groups": 1,
+  "rollouts": 3,
+  "zero_variance_groups": 1,
+  "reward_mean": 0.0,
+  "reference_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+  "actor_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+  "adapter_sha256": "1b6e3ab7fc4d2ea3908f9472ee33063e5e121102d9b9418ab44052c6ca3319eb"
+}

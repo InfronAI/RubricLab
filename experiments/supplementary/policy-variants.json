@@ -1,0 +1,17 @@
+{
+  "policies": [
+    {
+      "name": "base",
+      "adapter": null
+    },
+    {
+      "name": "source-dpo",
+      "adapter": "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/13-dpo-source-baseline"
+    },
+    {
+      "name": "online-grpo",
+      "adapter": "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116/15-online-grpo"
+    }
+  ],
+  "rule": "Evaluate every available trained policy; empty ARM/IterDPO stages have no policy score."
+}

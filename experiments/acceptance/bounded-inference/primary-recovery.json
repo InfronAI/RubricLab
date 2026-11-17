@@ -1,0 +1,64 @@
+{
+  "verified_utc": "2026-11-16T08:15:17.030270+00:00",
+  "source": "experiments/m1-cpu-training-20261116/11-public-benchmarks/rewardbench2/predictions.jsonl",
+  "sample_id": "rewardbench2:1409:0:2",
+  "votes": 5,
+  "device": "cpu",
+  "token_budget": 320,
+  "same_request_sha256": "1634ac97f02dbf6542450d6cd148388ef6a3672089c1b2fe2fd69cee75694f17",
+  "generation_stats": [
+    {
+      "tokens": 320,
+      "prompt_tokens": 1216,
+      "batch_seconds": 131.0878613749519,
+      "worker_wall_seconds": 442.37996354233474,
+      "failed_worker_seconds": 305.05989258317277,
+      "seed": 244,
+      "device": "cpu",
+      "fallback_reason": "MPS worker exceeded 300s including model loading; retried in a fresh CPU process"
+    },
+    {
+      "tokens": 320,
+      "prompt_tokens": 1216,
+      "batch_seconds": 131.0878613749519,
+      "worker_wall_seconds": 442.37999945832416,
+      "failed_worker_seconds": 305.05989258317277,
+      "seed": 244,
+      "device": "cpu",
+      "fallback_reason": "MPS worker exceeded 300s including model loading; retried in a fresh CPU process"
+    },
+    {
+      "tokens": 320,
+      "prompt_tokens": 1216,
+      "batch_seconds": 131.0878613749519,
+      "worker_wall_seconds": 442.38000020803884,
+      "failed_worker_seconds": 305.05989258317277,
+      "seed": 244,
+      "device": "cpu",
+      "fallback_reason": "MPS worker exceeded 300s including model loading; retried in a fresh CPU process"
+    },
+    {
+      "tokens": 267,
+      "prompt_tokens": 1216,
+      "batch_seconds": 131.0878613749519,
+      "worker_wall_seconds": 442.3800007500686,
+      "failed_worker_seconds": 305.05989258317277,
+      "seed": 244,
+      "device": "cpu",
+      "fallback_reason": "MPS worker exceeded 300s including model loading; retried in a fresh CPU process"
+    },
+    {
+      "tokens": 320,
+      "prompt_tokens": 1216,
+      "batch_seconds": 131.0878613749519,
+      "worker_wall_seconds": 442.3800012501888,
+      "failed_worker_seconds": 305.05989258317277,
+      "seed": 244,
+      "device": "cpu",
+      "fallback_reason": "MPS worker exceeded 300s including model loading; retried in a fresh CPU process"
+    }
+  ],
+  "identical_prompt_verified": true,
+  "seed_and_votes_preserved": true,
+  "source_record_digest": "b7ff05cb55085a140734404c60e94e850025330f0b90393f65da841f3365d777"
+}

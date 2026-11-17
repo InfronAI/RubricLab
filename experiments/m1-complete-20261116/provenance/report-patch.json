@@ -1,0 +1,6 @@
+{
+  "file": "src/openrubrics_lab/report.py",
+  "sha256": "c52b94cf8ec8e07d4ff599cd95ce2655b065f893f6d63f626839ba32af76974e",
+  "reason": "Clamp negative plotting error extents from floating-point roundoff. No predictions, training or numerical metrics changed.",
+  "applied_before": "first report generation"
+}

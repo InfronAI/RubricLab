@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/google-research/google-research",
+  "revision": "e6890f85757dd84e27ca6df2dd30651dafad28e0",
+  "directory": "instruction_following_eval",
+  "license": "Apache-2.0",
+  "modifications": "No algorithm changes; final newlines normalized in the selected official modules, input data and license."
+}

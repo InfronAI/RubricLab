@@ -1,0 +1,9 @@
+{
+  "groups": 1,
+  "rollouts": 3,
+  "zero_variance_groups": 1,
+  "reward_mean": 0.0,
+  "reference_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+  "actor_adapter": "experiments/m1-complete-20261116/09-ablation-no_format/round-2-judge",
+  "adapter_sha256": "08b3a5127df0c8f567fc2779d8c931ab31e14fd4fc5d384f91e5feee7127bbd0"
+}

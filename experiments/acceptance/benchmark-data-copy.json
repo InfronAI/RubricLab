@@ -1,0 +1,30 @@
+{
+  "source": "experiments/m1-complete-20261116/11-public-benchmarks/data",
+  "destination": "data/m1/benchmarks",
+  "files": {
+    "benchmarks.json": {
+      "sha256": "439a474b93a2545b8de815470c63e45c2a9893a8feeb56eecab6f9531b889cf5",
+      "bytes": 1618
+    },
+    "rewardbench.jsonl": {
+      "sha256": "da2578cd9c842978c7476830ac42287c4aea092f7eeb80bfa9845bc3c8083ca6",
+      "bytes": 9203,
+      "rows": 4
+    },
+    "rewardbench2.jsonl": {
+      "sha256": "e7a9664ebf0fad47e20525a48b58d5f4bf18f62f2357af0987dd6a511c87ce5a",
+      "bytes": 27346,
+      "rows": 6
+    },
+    "rmbench.jsonl": {
+      "sha256": "91628adcf3d82d32f32ee0053d012bf395a939ea633789aa35b7bd00d64c6613",
+      "bytes": 32865,
+      "rows": 9
+    },
+    "writing.jsonl": {
+      "sha256": "c3b1a0f1dce07565363712056c3ca582df6b467f6366c573dbf2719534cf3e29",
+      "bytes": 9567,
+      "rows": 4
+    }
+  }
+}

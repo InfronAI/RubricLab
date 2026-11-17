@@ -1,0 +1,7 @@
+{
+  "pid": 89242,
+  "at": "2026-11-16T03:33:00.558973+00:00",
+  "HF_HUB_OFFLINE": "1",
+  "cache_receipt": "../../acceptance/offline-cache-check.json",
+  "reason": "Resume unchanged method from completed ARM checkpoint without optional network probes"
+}

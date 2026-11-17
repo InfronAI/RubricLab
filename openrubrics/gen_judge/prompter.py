@@ -61,18 +61,11 @@ def clean_judge_format(rubric_text: str) -> str:
     return cleaned
 
 
-def _escape_braces(s: str) -> str:
-    """Escape braces before str.format to avoid KeyError from { } in text."""
-    if not s:
-        return ""
-    return s.replace("{", "{{").replace("}", "}}")
-
-
 def make_judge_prompt_pairwise(instruction: str, rubric: str, responses: list[str]) -> str:
     resa, resb = responses
     return judge_generation_template_pairwise.format(
-        instruction=_escape_braces(instruction or ""),
-        rubric=_escape_braces(rubric or ""),
-        response_a=_escape_braces(resa or ""),
-        response_b=_escape_braces(resb or "")
+        instruction=instruction or "",
+        rubric=rubric or "",
+        response_a=resa or "",
+        response_b=resb or ""
     )

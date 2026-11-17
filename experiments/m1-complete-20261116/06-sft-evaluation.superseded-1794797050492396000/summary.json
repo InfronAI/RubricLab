@@ -1,0 +1,39 @@
+{
+  "n": 2,
+  "generations": 10,
+  "accuracy": 0.0,
+  "majority_accuracy": 0.0,
+  "majority_wilson95": [
+    0.0,
+    0.6576197724933469
+  ],
+  "invalid_rate": 1.0,
+  "abstention_rate": 1.0,
+  "choose_a_rate_valid": null,
+  "group_all_correct": null,
+  "groups": 0,
+  "by_subset": {
+    "validation": {
+      "n": 2,
+      "generations": 10,
+      "accuracy": 0.0,
+      "majority_accuracy": 0.0,
+      "majority_wilson95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "invalid_rate": 1.0,
+      "abstention_rate": 1.0,
+      "choose_a_rate_valid": null,
+      "group_all_correct": null,
+      "groups": 0
+    }
+  },
+  "generation_seconds": 105.18696195865051,
+  "tokens": 3089,
+  "tokens_per_second": 29.366757461959025,
+  "length_limit_rate": 0.9,
+  "rubric_unique_prompts": 2,
+  "rubric_generation_seconds": 12.996461207978427,
+  "order_consistency": 0.0
+}

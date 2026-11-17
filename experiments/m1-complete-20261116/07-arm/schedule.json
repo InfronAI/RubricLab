@@ -1,0 +1,86 @@
+[
+  {
+    "round": 1,
+    "phase": "judge",
+    "sample_ids": [
+      "0140971b9eb8e236"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 0,
+    "reward_mean": 0.015151515151515152,
+    "reference_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+    "actor_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+    "adapter_sha256": "8c459295b0ea8bd553eea15b8b8675601332210cdaacf003424d4735cee05d78"
+  },
+  {
+    "round": 1,
+    "phase": "rubric",
+    "sample_ids": [
+      "0140971b9eb8e236"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+    "adapter_sha256": "259dccd4d5b8ae785f5c9a5aad6575e311408b1083790284d22d02c65e39cd35"
+  },
+  {
+    "round": 2,
+    "phase": "judge",
+    "sample_ids": [
+      "4f2f019b4af24b71"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 0,
+    "reward_mean": 0.030303030303030304,
+    "reference_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+    "actor_adapter": "experiments/m1-complete-20261116/07-arm/round-1-judge",
+    "adapter_sha256": "228088c25061185c25ad22fcd95ede399f824eede441f460e9ff1493efbe3b85"
+  },
+  {
+    "round": 2,
+    "phase": "rubric",
+    "sample_ids": [
+      "4f2f019b4af24b71"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/m1-complete-20261116/07-arm/round-1-rubric",
+    "adapter_sha256": "3630c74592d430d9bce53f27c4e1e6b61d7bb08f4eefd42fa916d2efcc57fd7a"
+  },
+  {
+    "round": 3,
+    "phase": "judge",
+    "sample_ids": [
+      "4395e166f411ae2b"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 0,
+    "reward_mean": 0.030303030303030304,
+    "reference_adapter": "experiments/m1-complete-20261116/03-sft-judge",
+    "actor_adapter": "experiments/m1-complete-20261116/07-arm/round-2-judge",
+    "adapter_sha256": "ddb2b7609757ec8ec0599ba722e73799a7bb0ec7d4b2e6a822006188d62a0347"
+  },
+  {
+    "round": 3,
+    "phase": "rubric",
+    "sample_ids": [
+      "4395e166f411ae2b"
+    ],
+    "groups": 1,
+    "rollouts": 3,
+    "zero_variance_groups": 1,
+    "reward_mean": 0.0,
+    "reference_adapter": "experiments/m1-complete-20261116/02-sft-rubric",
+    "actor_adapter": "experiments/m1-complete-20261116/07-arm/round-2-rubric",
+    "adapter_sha256": "df19df5408dc450451cbf51e33138897e7ec3ce9fb4b4d8b9e749e167778ab12"
+  }
+]

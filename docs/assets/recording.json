@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-11-16T10:20:35.578440+00:00",
+  "run": "/Users/apple/Projects/OpenRubrics/experiments/m1-cpu-training-20261116",
+  "manifest_sha256": "77e710d870452687e547ffdd51805f144b247952737209b488a8c98a15750e97",
+  "browser_errors": [],
+  "recorder_source_sha256": "adfe2ba80c0b1fe061f82c58f4382ddfbd1ef39637ead7043e42a662f5a7f0a6",
+  "viewer_source_sha256": "03ad56528a4339113ef0f4a13a455578cb1db28241604c9e9d858179f09a5c8a",
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 900
+      }
+    ],
+    "format": {
+      "duration": "20.920000"
+    }
+  },
+  "mp4_sha256": "6b8758ae721003ffe5ce8349e5a07ce698f330cb162bed5aae25acd51b44b155",
+  "gif_sha256": "7040e750cf5879cb7809032b068f6cb1cc21d0f7b0ff359e1e8d209df574f4e1",
+  "description": "Actual browser capture of saved outputs; not a live training time-lapse"
+}

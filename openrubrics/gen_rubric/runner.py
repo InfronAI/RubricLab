@@ -2,6 +2,7 @@ import datetime
 import argparse
 import asyncio
 import json 
+from pathlib import Path
 from typing import List, Dict, Any, Optional
 
 from tqdm.asyncio import tqdm_asyncio
@@ -38,7 +39,8 @@ class RubricGenerator:
             output_file = args.output_file
         print(f"Output file: {output_file}, max_samples: {args.max_samples}")
 
-        with open(output_file, "w") as f:
+        Path(output_file).parent.mkdir(parents=True, exist_ok=True)
+        with open(str(output_file) + ".metadata.json", "w") as f:
             meta = {
                 "rubric_generation_info": {
                     "timestamp": datetime.datetime.now().isoformat(),
